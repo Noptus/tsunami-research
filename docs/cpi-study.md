@@ -1,33 +1,31 @@
 # Do released CPI changes add predictive information?
 
-This archival walk-forward study asks whether the BLS headline and core monthly changes improve a one-day U.S. two-year Treasury direction estimate over the previous yield change's sign. The study tests the figures actually present in individual release documents. It does not use consensus data.
+This archival walk-forward study asks whether the BLS headline and core monthly changes improve a one-day U.S. two-year Treasury direction estimate over the previous available yield change's sign. The study uses the figures in the archived BLS releases. It does not use consensus estimates.
 
 ## Protocol
 
-Run `python3 -m tsunami study` for the complete machine-readable analysis. The published site links the generated JSON with every paired prediction and outcome.
+Run `python3 -m tsunami study` for the date-vintaged study. The public site links per-release predictions, outcomes and provenance. The first version remains available through `python3 -m tsunami study --single-vintage`.
 
-1. Start with releases dated January 2020 through November 10, 2026. Extract the embargo and first relevant monthly CPI statements from BLS archive pages. The original HTML hash and retrieval time identify the captured response. The repository includes compact excerpts with separately verified compressed and normalized-text hashes. The full original HTML hashes for this batch require an independent re-fetch to verify.
-2. Link the release date, last two observed pre-release sessions and first observed session after release. All observations come from a November 13, 2026 ALFRED DGS2 vintage. The target is 1 when next-session yield exceeds release-session yield. Flat observations count as 0.
-3. Compare a Laplace-smoothed event-rate baseline, a ridge logistic model using the last pre-release Treasury change's sign, and the same ridge fit with two additional features for headline and core CPI. Use an expanding prior-event window, 24 minimum training observations, training-only standardization and fixed regularization. Prior labels wait two calendar days after their next observation. Skip missing release-day observations or a next-observation gap longer than five days.
-4. Evaluate all methods on identical release dates. Brier error is the squared difference between the stated probability and the binary outcome. Lower is better.
+1. Start with releases dated January 2020 through November 10, 2026. Extract the embargo and first relevant monthly CPI statements from BLS archive pages. The original HTML hash and retrieval time identify the downloaded response. The repository includes compact excerpts with verified compressed and normalized-text hashes. Checking the full original HTML hashes requires an independent re-fetch.
+2. Use two distinct ALFRED DGS2 vintages per release. The pre-release file uses the prior Eastern date and is treated as available at its end. The outcome file uses seven days after release, except the final release, which uses the November 13 vintage. The label compares the release session to the next observed session. Flat observations count as zero. The source supplies dates rather than first-print receipt times. Release and outcome values were looked up in separate snapshots after the events.
+3. Compare a Laplace-smoothed event rate by lag sign, a ridge logistic model on the last pre-release yield change's sign, and the same ridge model with two CPI features. Use at least 24 eligible past labels and training-only standardization. Prior labels enter only after the recorded post-release vintage bound. The November 10 event's lagged value uses data through November 6, the last observation visible in the November 9 vintage.
+4. Evaluate all methods on identical release dates. Brier error is the squared difference between probability and outcome. Lower is better. Estimate an exploratory 95% interval on the mean paired CPI-minus-lag-only difference by circular resampling of contiguous six-release blocks, 4,000 replicates with a fixed seed. The interval describes score-pair variability under that resampling assumption, conditional on the historical model fits.
 
 ## Results
 
-The capture includes 81 BLS releases. The December 18, 2025 release is excluded because it reports a two-month change following the federal shutdown. One captured event lacked the required sessions. After the 24-label warmup, 56 releases from February 10, 2022 through November 10, 2026 contribute matched scores.
+The capture includes 81 BLS releases. The December 18, 2025 release is excluded because it reports a two-month change following the federal shutdown. The April 10, 2020 release is excluded from scoring because ALFRED has no release-session observation. After the 24-label warmup, 56 releases from February 10, 2022 through November 10, 2026 contribute matched scores.
 
-| Model | Mean Brier |
-| --- | ---: |
-| Smoothed event-rate baseline | 0.2846 |
-| Ridge logistic with Treasury lag alone | 0.2878 |
-| Same logistic model with CPI headline and core changes | 0.2923 |
+| Model | Date-vintaged Brier | Initial single-vintage Brier |
+| --- | ---: | ---: |
+| Smoothed event-rate baseline | 0.2924 | 0.2846 |
+| Ridge logistic with Treasury lag alone | 0.2812 | 0.2878 |
+| Same ridge logistic with CPI headline and core | 0.2840 | 0.2923 |
 
-Adding CPI increased mean Brier by 0.0046 in the matched logistic comparison. The study provides no affirmative evidence of incremental forecasting value for these two CPI features. A single model choice, small dependent time sample and lack of market expectations limit the result. The analytical lag rule does not reconstruct earlier publication times, and the later ALFRED vintage can differ from contemporaneously known market levels.
-
-The one-release archive in the main README uses a separately frozen pre-cutoff yield vintage and a daily baseline. It is a distinct estimate from this monthly event study.
+Adding CPI increased mean Brier by 0.0028 in the matched date-vintaged comparison. Its exploratory 95% interval was −0.0149 to +0.0215. The initial single-vintage comparison had a +0.0046 increment. The study leaves the incremental value of these two raw CPI features uncertain. The one-release pilot in the README uses a separately frozen pre-cutoff vintage and a daily, rather than monthly event-conditioned, baseline.
 
 ## Reproduction
 
-The committed excerpt set supports offline reproduction. The optional `python3 -m tools.capture_study /path/to/new-fixture` fetches the original official archive again. Archive bytes can change, so a re-fetch produces a new data capture instead of certifying that an editable page always served the same bytes.
+Run `python3 -m tools.capture_study /path/to/new-fixture`, then `python3 -m tools.capture_yield_vintages /path/to/new-fixture` to re-fetch the archive. The second tool caches completed event pairs and rate-limits sequential requests. Archive bytes can change after publication and a re-fetch records its own retrieval times.
 
 - [BLS CPI release archive](https://www.bls.gov/bls/news-release/cpi.htm)
-- [Frozen ALFRED DGS2 vintage](https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2019-10-01&coed=2026-11-13&vintage_date=2026-11-13)
+- [ALFRED real-time periods](https://fred.stlouisfed.org/docs/api/fred/realtime_period.html)

@@ -41,7 +41,17 @@ The source fixture preserves URL, recorded embargo or conservative vintage bound
 
 ## CPI feature study
 
-The [research protocol](docs/cpi-study.md) compares an event-rate baseline and two matched logistic models, with and without the current CPI figures. The site links row-level predictions, outcomes and provenance. This is exploratory historical work using one frozen yield vintage.
+The [research protocol](docs/cpi-study.md) compares an event-rate baseline and two matched logistic models, with and without the current CPI figures. The site links row-level predictions, outcomes and provenance. The archive uses 162 date-specific pre- and post-event yield snapshots. Adding CPI increased matched Brier by 0.0028 over 56 scored releases (exploratory 95% block interval −0.0149 to +0.0215).
+
+## Forward CPI capture
+
+Use the [official BLS schedule](https://www.bls.gov/schedule/news_release/cpi.htm) to choose the embargo and run a capture within the following 15 minutes.
+
+```sh
+python3 -m tsunami capture-cpi --embargo 2026-12-10T08:30:00-05:00 --output captures/2026-12-10
+```
+
+The tool verifies the official release text against the expected embargo, checks vintage dates, hashes both retrieved sources, and seals a local forecast manifest. No outcome request runs in this path. Publish the content digest to a timestamped external record before the outcome if you want verifiable prospective issuance. The example has not yet run against the live December release.
 
 ## Weekly track record
 

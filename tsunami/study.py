@@ -28,8 +28,9 @@ import gzip
 import hashlib
 import json
 import math
+import random
 import re
-from datetime import date, timedelta
+from datetime import date, datetime, time, timedelta
 from decimal import Decimal
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -75,9 +76,9 @@ def _check_bls_url(url: str, release: date, name: str) -> None:
     """
     parts = urlsplit(url)
     host = (parts.hostname or "").lower()
-    if parts.scheme != "https" or not (host == "bls.gov" or host.endswith(".bls.gov")):
-        raise ReplayError(f"BLS source URL must be an HTTPS bls.gov link: {name}")
-    if f"{release:%m%d%Y}" not in re.sub(r"[^0-9]", "", parts.path):
+    if parts.scheme != "https" or host != "www.bls.gov" or parts.username or parts.password:
+        raise ReplayError(f"BLS source URL must be an HTTPS www.bls.gov link: {name}")
+    if parts.path.lower() != f"/news.release/archives/cpi_{release:%m%d%Y}.htm":
         raise ReplayError(f"BLS source URL does not index the release date: {name}")
 
 
@@ -267,6 +268,62 @@ def _label_event(event: dict, yields: dict[date, Decimal]) -> dict | None:
             "next_change_basis_points": float(change * 100)}
 
 
+def _vintage_record(record: dict, expected: date, *, before: date | None = None) -> tuple[dict, dict]:
+    url = urlsplit(record["url"])
+    if (url.scheme, url.hostname, url.path) != ("https", "alfred.stlouisfed.org", "/graph/alfredgraph.csv"):
+        raise ReplayError("Unexpected event ALFRED URL")
+    day = _date(record["vintage_date"])
+    bound = _instant(record["available_at"])
+    if day != expected or bound != datetime.combine(day, time(23, 59, 59), EASTERN):
+        raise ReplayError("Vintage date or conservative availability bound is inconsistent")
+    if _instant(record["retrieved_at"]) < bound:
+        raise ReplayError("Yield retrieval precedes its eligible vintage bound")
+    text = record["csv"]
+    if hashlib.sha256(text.encode()).hexdigest() != record["sha256"]:
+        raise ReplayError("Event ALFRED source hash mismatch")
+    values, info = _parse_series(text, {"record": {"url": record["url"]}}, day, before=before)
+    info.update({key: record[key] for key in ("url", "available_at", "retrieved_at", "sha256")})
+    return values, info
+
+
+def _vintage_labels(root: Path, events: list[dict]) -> list[dict]:
+    snapshots = json.loads(_contained(root, "vintages.json").read_text(encoding="utf-8"),
+                           object_pairs_hook=_unique_object)["events"]
+    if set(snapshots) != {event["release_date"].isoformat() for event in events}:
+        raise ReplayError("Per-event vintages must cover every retained release exactly once")
+    labeled = []
+    for event in events:
+        release = event["release_date"]
+        pair = snapshots[release.isoformat()]
+        post_vintage = min(release + timedelta(days=7), events[-1]["release_date"] + timedelta(days=3))
+        prior, prior_info = _vintage_record(pair["before"], release - timedelta(days=1), before=release)
+        follow, follow_info = _vintage_record(pair["after"], post_vintage)
+        if any(day < release or day > post_vintage for day in follow):
+            raise ReplayError("Per-event outcome is outside its archive window")
+        label = _label_event(event, prior | follow)
+        labeled.append({**label, "label_available_at": follow_info["available_at"],
+                        "yield_sources": {"before": prior_info, "after": follow_info}})
+    return labeled
+
+
+def _paired_interval(values: list[float], block: int, repetitions: int = 4000) -> dict | None:
+    # Resample contiguous paired score differences and retain each block's order.
+    count = len(values)
+    if count < 2 * block:
+        return None
+    rng = random.Random(731_2026)
+    means = []
+    for _ in range(repetitions):
+        drawn = []
+        while len(drawn) < count:
+            first = rng.randrange(count)
+            drawn.extend(values[(first + offset) % count] for offset in range(block))
+        means.append(sum(drawn[:count]) / count)
+    means.sort()
+    low, high = means[int(0.025 * repetitions)], means[int(0.975 * repetitions) - 1]
+    return {"lower_95": low, "upper_95": high, "block_length_releases": block, "resamples": repetitions}
+
+
 def _event_links(event: dict) -> dict:
     return {"release_date": event["release_date"].isoformat(),
             "source_url": event["source_url"], "path": event["path"],
@@ -277,7 +334,7 @@ def _event_links(event: dict) -> dict:
             "core_monthly_percent": event["core_monthly_percent"]}
 
 
-def study(directory: Path) -> dict:
+def study(directory: Path, *, vintaged: bool = False) -> dict:
     """Run the offline walk-forward ablation over a local immutable fixture.
 
     All prediction probabilities are computed from strictly prior labeled events
@@ -295,8 +352,13 @@ def study(directory: Path) -> dict:
         raise ReplayError("Manifest must contain events and yields")
 
     events = _load_events(root, manifest)
-    yields, yields_info = _load_yields(root, manifest, events[-1]["release_date"])
-    labeled = [_label_event(event, yields) for event in events]
+    if vintaged:
+        labeled = _vintage_labels(root, events)
+        yields_info = {"design": "Each release has separate pre-cutoff and post-outcome ALFRED archives."}
+    else:
+        yields, yields_info = _load_yields(root, manifest, events[-1]["release_date"])
+        yields_info = {**manifest["yields"], **yields_info}
+        labeled = [_label_event(event, yields) for event in events]
 
     # Stage 1: predict every eligible event from strictly prior labeled events.
     # No realized outcome influences any probability (predict-before-score).
@@ -305,8 +367,12 @@ def study(directory: Path) -> dict:
                for event in labeled if event["skipped"] is not None]
     staged = []
     for index, event in enumerate(usable):
-        history = [prior for prior in usable[:index]
-                   if prior["next_date"] + timedelta(days=2) < event["release_date"]]
+        if vintaged:
+            cutoff = _instant(event["embargo_at"]) + timedelta(minutes=15)
+            history = [prior for prior in usable[:index] if _instant(prior["label_available_at"]) <= cutoff]
+        else:
+            history = [prior for prior in usable[:index]
+                       if prior["next_date"] + timedelta(days=2) < event["release_date"]]
         if len(history) < MIN_TRAINING_EVENTS:
             continue
         baseline = _baseline_probability(history, event["lag_sign"])
@@ -348,6 +414,7 @@ def study(directory: Path) -> dict:
             "challenger_brier": challenger_brier,
             "brier_delta": challenger_brier - baseline_brier,
             "source": _event_links(event),
+            **({"yield_sources": event["yield_sources"]} if vintaged else {}),
         })
 
     n = len(scored)
@@ -355,12 +422,11 @@ def study(directory: Path) -> dict:
     mean_market = sum(market_briers) / n if n else None
     mean_challenger = sum(challenger_briers) / n if n else None
     return {
-        "mode": "archived ablation",
+        "mode": "per-event vintaged archived ablation" if vintaged else "archived ablation",
         "title": "CPI text vs. market-only Treasury lag ablation",
         "target": ("Direction of the next observed session's DGS2 minus the release-session "
-                   "DGS2; up means strictly positive. Both levels come from one frozen "
-                   "ALFRED vintage captured after the last event, for archival evaluation only."),
-        "yields": {**manifest["yields"], **yields_info},
+                   "DGS2; up means strictly positive."),
+        "yields": yields_info,
         "counts": {"events": len(events), "labeled": len(usable), "skipped": len(skipped),
                    "scored": n, "minimum_training_events": MIN_TRAINING_EVENTS},
         "range": {"first_release": events[0]["release_date"].isoformat(),
@@ -376,6 +442,9 @@ def study(directory: Path) -> dict:
             "mean_market_only_brier": mean_market,
             "mean_challenger_brier": mean_challenger,
             "mean_cpi_ablation_delta": (mean_challenger - mean_market) if n else None,
+            "cpi_ablation_interval": _paired_interval(
+                [expanded - market for expanded, market in zip(challenger_briers, market_briers)], 6
+            ),
             "mean_brier_delta": (mean_challenger - mean_baseline) if n else None,
         },
         "methodology": {
@@ -392,7 +461,10 @@ def study(directory: Path) -> dict:
                            "CPI changes, standardized with training-only mean and standard "
                            "deviation. Same walk-forward cutoffs as the baseline."),
             "features": list(FEATURES),
-            "label_availability": ("Conservative bound: an event is labeled only when its next "
+            "label_availability": (
+                "The per-event post-vintage is eligible only after its stated Eastern day ends. Training uses "
+                "only prior labels eligible by the current embargo plus 15 minutes. Missing observations are skipped."
+                if vintaged else "Conservative bound: an event is labeled only when its next "
                                    f"observed session is within {LABEL_GAP_CALENDAR_DAYS} calendar "
                                    "days of the release. Training waits two additional calendar days beyond "
                                    "the next observation. These are analytical buffers. "
@@ -404,7 +476,13 @@ def study(directory: Path) -> dict:
         "limitations": [
             "A single small ablation is descriptive; the paired Brier delta is not a significance test.",
             "CPI levels do not measure surprise relative to market expectations.",
-            "Lag values and labels use one frozen post-study vintage. A fully point-in-time study needs each pre-event market vintage and first published outcomes.",
+            (
+                "Each release uses an ALFRED vintage dated the day before the embargo for lag inputs. The outcome is "
+                "from a bounded later vintage, and ALFRED does not establish first-print or intraday receipt in this dataset."
+                if vintaged else
+                "Lag values and labels use one frozen post-study vintage. A fully point-in-time study needs each pre-event "
+                "market vintage and first published outcomes."
+            ),
             "The calendar label bound is conservative and may skip legitimately labeled events.",
             "Observed sessions skip missing values; no exchange-calendar inference or imputation.",
             "The gzip and normalized excerpt hashes are verified offline. Original HTML hashes were recorded at download; re-fetch the original pages to verify those hashes separately.",

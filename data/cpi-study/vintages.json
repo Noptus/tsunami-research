@@ -1,0 +1,1462 @@
+{
+  "events": {
+    "2020-01-14": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2019-12-31&coed=2020-01-13&vintage_date=2020-01-13",
+        "vintage_date": "2020-01-13",
+        "available_at": "2020-01-13T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:42:55+00:00",
+        "sha256": "d5df7e9a2dc74251d28aae4be1792ad9c04fb2168024c21f33440d039f04e402",
+        "csv": "observation_date,DGS2_20200113\n2019-12-31,1.58\n2020-01-01,\n2020-01-02,1.58\n2020-01-03,1.53\n2020-01-06,1.54\n2020-01-07,1.54\n2020-01-08,1.58\n2020-01-09,1.58\n2020-01-10,1.56\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-01-14&coed=2020-01-19&vintage_date=2020-01-21",
+        "vintage_date": "2020-01-21",
+        "available_at": "2020-01-21T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:42:55+00:00",
+        "sha256": "f86f19d1baea97f02715df02a63ca88fb478fbe23cac3c3df91e93e269a70e20",
+        "csv": "observation_date,DGS2_20200121\n2020-01-14,1.58\n2020-01-15,1.56\n2020-01-16,1.58\n2020-01-17,1.58\n"
+      }
+    },
+    "2020-02-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-01-30&coed=2020-02-12&vintage_date=2020-02-12",
+        "vintage_date": "2020-02-12",
+        "available_at": "2020-02-12T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:42:56+00:00",
+        "sha256": "f779a58b947f5da70c763a5ba6c010c54f2a93efa88b10b21fbda92afcb40444",
+        "csv": "observation_date,DGS2_20200212\n2020-01-30,1.41\n2020-01-31,1.33\n2020-02-03,1.36\n2020-02-04,1.41\n2020-02-05,1.44\n2020-02-06,1.44\n2020-02-07,1.41\n2020-02-10,1.37\n2020-02-11,1.41\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-02-13&coed=2020-02-18&vintage_date=2020-02-20",
+        "vintage_date": "2020-02-20",
+        "available_at": "2020-02-20T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:42:57+00:00",
+        "sha256": "9c1e809ba51595d55cfaa66d4fa381d9d0c3f0a025fbd0d9eae61c40214a442f",
+        "csv": "observation_date,DGS2_20200220\n2020-02-13,1.44\n2020-02-14,1.42\n2020-02-17,\n2020-02-18,1.41\n"
+      }
+    },
+    "2020-03-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-02-26&coed=2020-03-10&vintage_date=2020-03-10",
+        "vintage_date": "2020-03-10",
+        "available_at": "2020-03-10T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:42:58+00:00",
+        "sha256": "785c0c314ba918c2669c6393699cc9cbcf515eabb4ddd732d2d4db9f5f930071",
+        "csv": "observation_date,DGS2_20200310\n2020-02-26,1.16\n2020-02-27,1.11\n2020-02-28,0.86\n2020-03-02,0.84\n2020-03-03,0.71\n2020-03-04,0.67\n2020-03-05,0.59\n2020-03-06,0.49\n2020-03-09,0.38\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-03-11&coed=2020-03-16&vintage_date=2020-03-18",
+        "vintage_date": "2020-03-18",
+        "available_at": "2020-03-18T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:42:59+00:00",
+        "sha256": "7ad4b50110484a6d50fca750adb2727c0cc61f69ab10ffab5aafd3fe54951474",
+        "csv": "observation_date,DGS2_20200318\n2020-03-11,0.50\n2020-03-12,0.50\n2020-03-13,0.49\n2020-03-16,0.36\n"
+      }
+    },
+    "2020-04-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-03-27&coed=2020-04-09&vintage_date=2020-04-09",
+        "vintage_date": "2020-04-09",
+        "available_at": "2020-04-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:00+00:00",
+        "sha256": "1764c7c072b35a9c2c2041e8bae0120c6761de60e35689145b28c512dbca4f80",
+        "csv": "observation_date,DGS2_20200409\n2020-03-27,0.25\n2020-03-30,0.23\n2020-03-31,0.23\n2020-04-01,0.23\n2020-04-02,0.23\n2020-04-03,0.23\n2020-04-06,0.27\n2020-04-07,0.28\n2020-04-08,0.27\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-04-10&coed=2020-04-15&vintage_date=2020-04-17",
+        "vintage_date": "2020-04-17",
+        "available_at": "2020-04-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:02+00:00",
+        "sha256": "14f18ce6553f365f899c151723c3b9cb339e54d52581a9e96dc280a001c5c970",
+        "csv": "observation_date,DGS2_20200417\n2020-04-13,0.25\n2020-04-14,0.23\n2020-04-15,0.20\n"
+      }
+    },
+    "2020-05-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-04-28&coed=2020-05-11&vintage_date=2020-05-11",
+        "vintage_date": "2020-05-11",
+        "available_at": "2020-05-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:03+00:00",
+        "sha256": "2e3e69d2003e5a3770f71e1cfe17d2c2d886972dcfd8b37280961495eac620d9",
+        "csv": "observation_date,DGS2_20200511\n2020-04-28,0.20\n2020-04-29,0.20\n2020-04-30,0.20\n2020-05-01,0.20\n2020-05-04,0.19\n2020-05-05,0.19\n2020-05-06,0.17\n2020-05-07,0.13\n2020-05-08,0.16\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-05-12&coed=2020-05-17&vintage_date=2020-05-19",
+        "vintage_date": "2020-05-19",
+        "available_at": "2020-05-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:03+00:00",
+        "sha256": "74f2399c38cf644f61d12016167bf5de0b327a2fb4cd533608c6462b43d1d1c8",
+        "csv": "observation_date,DGS2_20200519\n2020-05-12,0.17\n2020-05-13,0.16\n2020-05-14,0.16\n2020-05-15,0.16\n"
+      }
+    },
+    "2020-06-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-05-27&coed=2020-06-09&vintage_date=2020-06-09",
+        "vintage_date": "2020-06-09",
+        "available_at": "2020-06-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:04+00:00",
+        "sha256": "a1eb49fb5c029ffede726a0be750f72f07923e65f2dbc1e170e88bb46593eeb7",
+        "csv": "observation_date,DGS2_20200609\n2020-05-27,0.19\n2020-05-28,0.17\n2020-05-29,0.16\n2020-06-01,0.14\n2020-06-02,0.17\n2020-06-03,0.19\n2020-06-04,0.19\n2020-06-05,0.22\n2020-06-08,0.22\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-06-10&coed=2020-06-15&vintage_date=2020-06-17",
+        "vintage_date": "2020-06-17",
+        "available_at": "2020-06-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:05+00:00",
+        "sha256": "b1b9ae142ee697bd8d78ca57b7eceea5c06f8b7a0fc252ec2a38189b468f6bed",
+        "csv": "observation_date,DGS2_20200617\n2020-06-10,0.17\n2020-06-11,0.19\n2020-06-12,0.19\n2020-06-15,0.19\n"
+      }
+    },
+    "2020-07-14": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-06-30&coed=2020-07-13&vintage_date=2020-07-13",
+        "vintage_date": "2020-07-13",
+        "available_at": "2020-07-13T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:06+00:00",
+        "sha256": "1cbbd5ee08ba5d80cb5b19c8a76c5ea0db60d3732e44af0d2086c574aef08828",
+        "csv": "observation_date,DGS2_20200713\n2020-06-30,0.16\n2020-07-01,0.17\n2020-07-02,0.16\n2020-07-03,\n2020-07-06,0.16\n2020-07-07,0.16\n2020-07-08,0.16\n2020-07-09,0.16\n2020-07-10,0.16\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-07-14&coed=2020-07-19&vintage_date=2020-07-21",
+        "vintage_date": "2020-07-21",
+        "available_at": "2020-07-21T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:07+00:00",
+        "sha256": "5b0c8b11e511ccbd79f204b908e42660e4eb46d7bdf35d44f14a05f5c586fd3d",
+        "csv": "observation_date,DGS2_20200721\n2020-07-14,0.14\n2020-07-15,0.16\n2020-07-16,0.16\n2020-07-17,0.14\n"
+      }
+    },
+    "2020-08-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-07-29&coed=2020-08-11&vintage_date=2020-08-11",
+        "vintage_date": "2020-08-11",
+        "available_at": "2020-08-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:08+00:00",
+        "sha256": "7cbb23e8bff1310fc735fd8597703ddeea286477a985ae96471ea3cfa7d399d9",
+        "csv": "observation_date,DGS2_20200811\n2020-07-29,0.12\n2020-07-30,0.11\n2020-07-31,0.11\n2020-08-03,0.11\n2020-08-04,0.11\n2020-08-05,0.11\n2020-08-06,0.11\n2020-08-07,0.13\n2020-08-10,0.14\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-08-12&coed=2020-08-17&vintage_date=2020-08-19",
+        "vintage_date": "2020-08-19",
+        "available_at": "2020-08-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:09+00:00",
+        "sha256": "f53d8218dae6598ae9eb92221800d1e5a61644052deb7aeadfd1c00eb44d0e22",
+        "csv": "observation_date,DGS2_20200819\n2020-08-12,0.16\n2020-08-13,0.16\n2020-08-14,0.14\n2020-08-17,0.14\n"
+      }
+    },
+    "2020-09-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-08-28&coed=2020-09-10&vintage_date=2020-09-10",
+        "vintage_date": "2020-09-10",
+        "available_at": "2020-09-10T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:10+00:00",
+        "sha256": "7db292d34a313e40af8b5f8c05092efee52a99a7d375efdfff1c7815347d5ccd",
+        "csv": "observation_date,DGS2_20200910\n2020-08-28,0.14\n2020-08-31,0.14\n2020-09-01,0.13\n2020-09-02,0.14\n2020-09-03,0.13\n2020-09-04,0.14\n2020-09-07,\n2020-09-08,0.14\n2020-09-09,0.14\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-09-11&coed=2020-09-16&vintage_date=2020-09-18",
+        "vintage_date": "2020-09-18",
+        "available_at": "2020-09-18T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:10+00:00",
+        "sha256": "af0818243b6730c446dadbfbf4114268bd3f1de5dffa47cf5ba5925250b58644",
+        "csv": "observation_date,DGS2_20200918\n2020-09-11,0.13\n2020-09-14,0.14\n2020-09-15,0.14\n2020-09-16,0.14\n"
+      }
+    },
+    "2020-10-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-09-29&coed=2020-10-12&vintage_date=2020-10-12",
+        "vintage_date": "2020-10-12",
+        "available_at": "2020-10-12T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:11+00:00",
+        "sha256": "d26fce77b08b3c1064d448832da66157385141ba68a5c612012e4e69fdefef73",
+        "csv": "observation_date,DGS2_20201012\n2020-09-29,0.11\n2020-09-30,0.13\n2020-10-01,0.14\n2020-10-02,0.13\n2020-10-05,0.14\n2020-10-06,0.14\n2020-10-07,0.16\n2020-10-08,0.13\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-10-13&coed=2020-10-18&vintage_date=2020-10-20",
+        "vintage_date": "2020-10-20",
+        "available_at": "2020-10-20T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:12+00:00",
+        "sha256": "e571218612aec05e2f2b34264ee49e09ecc94c937cf82457df896b92d86a0232",
+        "csv": "observation_date,DGS2_20201020\n2020-10-13,0.16\n2020-10-14,0.14\n2020-10-15,0.14\n2020-10-16,0.14\n"
+      }
+    },
+    "2020-11-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-10-29&coed=2020-11-11&vintage_date=2020-11-11",
+        "vintage_date": "2020-11-11",
+        "available_at": "2020-11-11T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:13+00:00",
+        "sha256": "cae4dfbe3481d7b335749f7f3790e97873db82f41a6cc429af9ccfce49902bcd",
+        "csv": "observation_date,DGS2_20201111\n2020-10-29,0.16\n2020-10-30,0.14\n2020-11-02,0.16\n2020-11-03,0.17\n2020-11-04,0.14\n2020-11-05,0.14\n2020-11-06,0.16\n2020-11-09,0.17\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-11-12&coed=2020-11-17&vintage_date=2020-11-19",
+        "vintage_date": "2020-11-19",
+        "available_at": "2020-11-19T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:14+00:00",
+        "sha256": "69b30a48b9650b3b6c219ee241b5511f2ed64e56ab88566ec9e0d4594a135cfb",
+        "csv": "observation_date,DGS2_20201119\n2020-11-12,0.17\n2020-11-13,0.17\n2020-11-16,0.19\n2020-11-17,0.18\n"
+      }
+    },
+    "2020-12-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-11-26&coed=2020-12-09&vintage_date=2020-12-09",
+        "vintage_date": "2020-12-09",
+        "available_at": "2020-12-09T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:15+00:00",
+        "sha256": "4760a3bbca44e62d66e1bbcea220b48a1ce5bf123baca219de0bbe91d10ecbe6",
+        "csv": "observation_date,DGS2_20201209\n2020-11-27,0.16\n2020-11-30,0.16\n2020-12-01,0.17\n2020-12-02,0.16\n2020-12-03,0.16\n2020-12-04,0.16\n2020-12-07,0.14\n2020-12-08,0.14\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-12-10&coed=2020-12-15&vintage_date=2020-12-17",
+        "vintage_date": "2020-12-17",
+        "available_at": "2020-12-17T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:16+00:00",
+        "sha256": "47d1523529a1c039da6a53d475f6b5fc3ff98b52c746e3e9f16858b78d9ce9cd",
+        "csv": "observation_date,DGS2_20201217\n2020-12-10,0.14\n2020-12-11,0.11\n2020-12-14,0.13\n2020-12-15,0.11\n"
+      }
+    },
+    "2021-01-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2020-12-30&coed=2021-01-12&vintage_date=2021-01-12",
+        "vintage_date": "2021-01-12",
+        "available_at": "2021-01-12T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:17+00:00",
+        "sha256": "1dd720d344c94928c0767699c13e96b087484bbd75a04f93d299c2f2f5f2389c",
+        "csv": "observation_date,DGS2_20210112\n2020-12-30,0.12\n2020-12-31,0.13\n2021-01-01,\n2021-01-04,0.11\n2021-01-05,0.13\n2021-01-06,0.14\n2021-01-07,0.14\n2021-01-08,0.14\n2021-01-11,0.14\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-01-13&coed=2021-01-18&vintage_date=2021-01-20",
+        "vintage_date": "2021-01-20",
+        "available_at": "2021-01-20T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:17+00:00",
+        "sha256": "e2bf548aaf92b84f521cf2544244a998070c329c0b92460f5614cd3347980347",
+        "csv": "observation_date,DGS2_20210120\n2021-01-13,0.14\n2021-01-14,0.16\n2021-01-15,0.13\n"
+      }
+    },
+    "2021-02-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-01-27&coed=2021-02-09&vintage_date=2021-02-09",
+        "vintage_date": "2021-02-09",
+        "available_at": "2021-02-09T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:18+00:00",
+        "sha256": "e2aa3ded17a72779181b482ef3050c9568020195350e8c607fd3b23a7f9a5262",
+        "csv": "observation_date,DGS2_20210209\n2021-01-27,0.12\n2021-01-28,0.12\n2021-01-29,0.11\n2021-02-01,0.11\n2021-02-02,0.11\n2021-02-03,0.11\n2021-02-04,0.11\n2021-02-05,0.09\n2021-02-08,0.11\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-02-10&coed=2021-02-15&vintage_date=2021-02-17",
+        "vintage_date": "2021-02-17",
+        "available_at": "2021-02-17T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:19+00:00",
+        "sha256": "8899b6cc1ac803eca6307b93cbf1933feea23e5463eba1871ca8e22f4f751790",
+        "csv": "observation_date,DGS2_20210217\n2021-02-10,0.11\n2021-02-11,0.11\n2021-02-12,0.11\n2021-02-15,\n"
+      }
+    },
+    "2021-03-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-02-24&coed=2021-03-09&vintage_date=2021-03-09",
+        "vintage_date": "2021-03-09",
+        "available_at": "2021-03-09T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:20+00:00",
+        "sha256": "b191f582619a46a18cbb6986be1e51cba10a7a4f8c1fb2c89e9aeb05fe65401d",
+        "csv": "observation_date,DGS2_20210309\n2021-02-24,0.12\n2021-02-25,0.17\n2021-02-26,0.14\n2021-03-01,0.13\n2021-03-02,0.13\n2021-03-03,0.14\n2021-03-04,0.14\n2021-03-05,0.14\n2021-03-08,0.17\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-03-10&coed=2021-03-15&vintage_date=2021-03-17",
+        "vintage_date": "2021-03-17",
+        "available_at": "2021-03-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:21+00:00",
+        "sha256": "1ae29b473f3ab5a6164a5a47724d493c973f3c439483e566bedfa878baa53d39",
+        "csv": "observation_date,DGS2_20210317\n2021-03-10,0.16\n2021-03-11,0.14\n2021-03-12,0.14\n2021-03-15,0.14\n"
+      }
+    },
+    "2021-04-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-03-30&coed=2021-04-12&vintage_date=2021-04-12",
+        "vintage_date": "2021-04-12",
+        "available_at": "2021-04-12T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:22+00:00",
+        "sha256": "a4a682fbc84a14587f6c3428e3d9ae1134003f7643ec6fc77e57ba849ce73ec5",
+        "csv": "observation_date,DGS2_20210412\n2021-03-30,0.16\n2021-03-31,0.16\n2021-04-01,0.17\n2021-04-02,0.19\n2021-04-05,0.17\n2021-04-06,0.16\n2021-04-07,0.16\n2021-04-08,0.14\n2021-04-09,0.16\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-04-13&coed=2021-04-18&vintage_date=2021-04-20",
+        "vintage_date": "2021-04-20",
+        "available_at": "2021-04-20T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:23+00:00",
+        "sha256": "d27461e6cf6e679175ea41b77b8074533b559d81d8b7e298b0f48d66fd0cedb7",
+        "csv": "observation_date,DGS2_20210420\n2021-04-13,0.16\n2021-04-14,0.16\n2021-04-15,0.16\n2021-04-16,0.16\n"
+      }
+    },
+    "2021-05-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-04-28&coed=2021-05-11&vintage_date=2021-05-11",
+        "vintage_date": "2021-05-11",
+        "available_at": "2021-05-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:24+00:00",
+        "sha256": "01b7f00eb8564b82921e137cdcfa0e9e18658e19d9329619a6208db46bfb155a",
+        "csv": "observation_date,DGS2_20210511\n2021-04-28,0.17\n2021-04-29,0.16\n2021-04-30,0.16\n2021-05-03,0.16\n2021-05-04,0.16\n2021-05-05,0.16\n2021-05-06,0.16\n2021-05-07,0.14\n2021-05-10,0.16\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-05-12&coed=2021-05-17&vintage_date=2021-05-19",
+        "vintage_date": "2021-05-19",
+        "available_at": "2021-05-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:24+00:00",
+        "sha256": "00063bc5f5b2da2c5fc83557c7666fa5ba3d4c4c19348890f7b0a2d67b09f183",
+        "csv": "observation_date,DGS2_20210519\n2021-05-12,0.16\n2021-05-13,0.16\n2021-05-14,0.16\n2021-05-17,0.16\n"
+      }
+    },
+    "2021-06-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-05-27&coed=2021-06-09&vintage_date=2021-06-09",
+        "vintage_date": "2021-06-09",
+        "available_at": "2021-06-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:25+00:00",
+        "sha256": "18bb9412b49e4e51feba619cc184ceacaed012291f407f350eab4758a8eb2f15",
+        "csv": "observation_date,DGS2_20210609\n2021-05-27,0.14\n2021-05-28,0.14\n2021-05-31,\n2021-06-01,0.16\n2021-06-02,0.13\n2021-06-03,0.16\n2021-06-04,0.14\n2021-06-07,0.16\n2021-06-08,0.14\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-06-10&coed=2021-06-15&vintage_date=2021-06-17",
+        "vintage_date": "2021-06-17",
+        "available_at": "2021-06-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:26+00:00",
+        "sha256": "f54e68db76d47a0d65d2af0cb4d46b8d4ac28f724cb1d7d74bb1c4b397da136c",
+        "csv": "observation_date,DGS2_20210617\n2021-06-10,0.14\n2021-06-11,0.16\n2021-06-14,0.16\n2021-06-15,0.16\n"
+      }
+    },
+    "2021-07-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-06-29&coed=2021-07-12&vintage_date=2021-07-12",
+        "vintage_date": "2021-07-12",
+        "available_at": "2021-07-12T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:27+00:00",
+        "sha256": "fcf55edd3cc0b194396c7de5154649909aa31763c2066dc434bfc783113f1ea6",
+        "csv": "observation_date,DGS2_20210712\n2021-06-29,0.27\n2021-06-30,0.25\n2021-07-01,0.25\n2021-07-02,0.24\n2021-07-05,\n2021-07-06,0.22\n2021-07-07,0.22\n2021-07-08,0.19\n2021-07-09,0.23\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-07-13&coed=2021-07-18&vintage_date=2021-07-20",
+        "vintage_date": "2021-07-20",
+        "available_at": "2021-07-20T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:28+00:00",
+        "sha256": "25b9af4068271f5dd26e1f9d4daa3baf8b59755e0b158368d9c27adbc7f79bf7",
+        "csv": "observation_date,DGS2_20210720\n2021-07-13,0.26\n2021-07-14,0.23\n2021-07-15,0.23\n2021-07-16,0.25\n"
+      }
+    },
+    "2021-08-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-07-28&coed=2021-08-10&vintage_date=2021-08-10",
+        "vintage_date": "2021-08-10",
+        "available_at": "2021-08-10T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:29+00:00",
+        "sha256": "50163c0d298008f02a7d9451afd10a7638377f6cce8ae4293bc1e8320d353fd9",
+        "csv": "observation_date,DGS2_20210810\n2021-07-28,0.20\n2021-07-29,0.20\n2021-07-30,0.19\n2021-08-02,0.17\n2021-08-03,0.17\n2021-08-04,0.17\n2021-08-05,0.21\n2021-08-06,0.21\n2021-08-09,0.23\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-08-11&coed=2021-08-16&vintage_date=2021-08-18",
+        "vintage_date": "2021-08-18",
+        "available_at": "2021-08-18T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:30+00:00",
+        "sha256": "825ed35cfe4da60cfb2a231592969a1130f4141b63f926e9057b2f8b79a8dae2",
+        "csv": "observation_date,DGS2_20210818\n2021-08-11,0.23\n2021-08-12,0.23\n2021-08-13,0.23\n2021-08-16,0.21\n"
+      }
+    },
+    "2021-09-14": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-08-31&coed=2021-09-13&vintage_date=2021-09-13",
+        "vintage_date": "2021-09-13",
+        "available_at": "2021-09-13T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:31+00:00",
+        "sha256": "f94992dbb14135ac835258d891fd7e632d86011470832c523f6619b39a9f304b",
+        "csv": "observation_date,DGS2_20210913\n2021-08-31,0.20\n2021-09-01,0.20\n2021-09-02,0.20\n2021-09-03,0.21\n2021-09-06,\n2021-09-07,0.22\n2021-09-08,0.22\n2021-09-09,0.23\n2021-09-10,0.23\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-09-14&coed=2021-09-19&vintage_date=2021-09-21",
+        "vintage_date": "2021-09-21",
+        "available_at": "2021-09-21T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:32+00:00",
+        "sha256": "5bc58d656b3227abd34b14ebae2f3491f4d138a6c3c4320fbbdfc10d8f161ca8",
+        "csv": "observation_date,DGS2_20210921\n2021-09-14,0.21\n2021-09-15,0.21\n2021-09-16,0.23\n2021-09-17,0.23\n"
+      }
+    },
+    "2021-10-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-09-29&coed=2021-10-12&vintage_date=2021-10-12",
+        "vintage_date": "2021-10-12",
+        "available_at": "2021-10-12T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:33+00:00",
+        "sha256": "7e0812019bb0c79e441757153efa5b1d8294d2c8eee66df4d4ebdea6a720304c",
+        "csv": "observation_date,DGS2_20211012\n2021-09-29,0.30\n2021-09-30,0.28\n2021-10-01,0.27\n2021-10-04,0.27\n2021-10-05,0.28\n2021-10-06,0.30\n2021-10-07,0.32\n2021-10-08,0.32\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-10-13&coed=2021-10-18&vintage_date=2021-10-20",
+        "vintage_date": "2021-10-20",
+        "available_at": "2021-10-20T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:34+00:00",
+        "sha256": "fb9f9291e3e7d421bebc82b117e95a2006f82740bac42ccc4a707869071bec97",
+        "csv": "observation_date,DGS2_20211020\n2021-10-13,0.37\n2021-10-14,0.36\n2021-10-15,0.41\n2021-10-18,0.44\n"
+      }
+    },
+    "2021-11-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-10-27&coed=2021-11-09&vintage_date=2021-11-09",
+        "vintage_date": "2021-11-09",
+        "available_at": "2021-11-09T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:35+00:00",
+        "sha256": "33bb24fe21e0ad84adb27234e1cb20f9de07dfab2d3b841b5c6a509c9839ec5c",
+        "csv": "observation_date,DGS2_20211109\n2021-10-27,0.50\n2021-10-28,0.50\n2021-10-29,0.48\n2021-11-01,0.50\n2021-11-02,0.46\n2021-11-03,0.47\n2021-11-04,0.41\n2021-11-05,0.39\n2021-11-08,0.45\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-11-10&coed=2021-11-15&vintage_date=2021-11-17",
+        "vintage_date": "2021-11-17",
+        "available_at": "2021-11-17T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:36+00:00",
+        "sha256": "a7c8e8062c3092415e6b3cbfbbf59db0c70791cce414c653b6f9222e6e4c42d3",
+        "csv": "observation_date,DGS2_20211117\n2021-11-10,0.51\n2021-11-11,\n2021-11-12,0.53\n2021-11-15,0.53\n"
+      }
+    },
+    "2021-12-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-11-26&coed=2021-12-09&vintage_date=2021-12-09",
+        "vintage_date": "2021-12-09",
+        "available_at": "2021-12-09T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:37+00:00",
+        "sha256": "aefd352115359e7462d14dff3385f343614a703235896e4893a540179ac60cc8",
+        "csv": "observation_date,DGS2_20211209\n2021-11-26,0.50\n2021-11-29,0.51\n2021-11-30,0.52\n2021-12-01,0.56\n2021-12-02,0.63\n2021-12-03,0.60\n2021-12-06,0.65\n2021-12-07,0.70\n2021-12-08,0.68\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-12-10&coed=2021-12-15&vintage_date=2021-12-17",
+        "vintage_date": "2021-12-17",
+        "available_at": "2021-12-17T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:38+00:00",
+        "sha256": "7ffdd7b921db586fd9dfcaf218644cb2cee025da5fd2e06362c8dbc0491860e7",
+        "csv": "observation_date,DGS2_20211217\n2021-12-10,0.67\n2021-12-13,0.66\n2021-12-14,0.67\n2021-12-15,0.69\n"
+      }
+    },
+    "2022-01-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2021-12-29&coed=2022-01-11&vintage_date=2022-01-11",
+        "vintage_date": "2022-01-11",
+        "available_at": "2022-01-11T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:39+00:00",
+        "sha256": "9d83f56323cf89769ef9f1dd7cfd29c6c347bff5d30ef356608ef91c7ebe55c7",
+        "csv": "observation_date,DGS2_20220111\n2021-12-29,0.75\n2021-12-30,0.73\n2021-12-31,0.73\n2022-01-03,0.78\n2022-01-04,0.77\n2022-01-05,0.83\n2022-01-06,0.88\n2022-01-07,0.87\n2022-01-10,0.92\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-01-12&coed=2022-01-17&vintage_date=2022-01-19",
+        "vintage_date": "2022-01-19",
+        "available_at": "2022-01-19T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:40+00:00",
+        "sha256": "ff7ebbe2e94ba058cfba21700bb7432a7336119459a3b77492d3f0c51f9ba708",
+        "csv": "observation_date,DGS2_20220119\n2022-01-12,0.92\n2022-01-13,0.91\n2022-01-14,0.99\n2022-01-17,\n"
+      }
+    },
+    "2022-02-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-01-27&coed=2022-02-09&vintage_date=2022-02-09",
+        "vintage_date": "2022-02-09",
+        "available_at": "2022-02-09T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:41+00:00",
+        "sha256": "58870cc075951b67d645b3ba2a6fa064f3d266e9083f704718921d2e4898acc5",
+        "csv": "observation_date,DGS2_20220209\n2022-01-27,1.18\n2022-01-28,1.15\n2022-01-31,1.18\n2022-02-01,1.18\n2022-02-02,1.16\n2022-02-03,1.19\n2022-02-04,1.31\n2022-02-07,1.30\n2022-02-08,1.35\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-02-10&coed=2022-02-15&vintage_date=2022-02-17",
+        "vintage_date": "2022-02-17",
+        "available_at": "2022-02-17T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:41+00:00",
+        "sha256": "df9767e1e77c2b329023849ea5ed899ef540993703db2ed6664f91864d1d614b",
+        "csv": "observation_date,DGS2_20220217\n2022-02-10,1.61\n2022-02-11,1.50\n2022-02-14,1.58\n2022-02-15,1.58\n"
+      }
+    },
+    "2022-03-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-02-24&coed=2022-03-09&vintage_date=2022-03-09",
+        "vintage_date": "2022-03-09",
+        "available_at": "2022-03-09T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:42+00:00",
+        "sha256": "d09e863158c8769fb482b19fd02cb08fdd80363e0f41b65fa4e7aeefe26f63a2",
+        "csv": "observation_date,DGS2_20220309\n2022-02-24,1.54\n2022-02-25,1.55\n2022-02-28,1.44\n2022-03-01,1.31\n2022-03-02,1.50\n2022-03-03,1.53\n2022-03-04,1.50\n2022-03-07,1.55\n2022-03-08,1.63\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-03-10&coed=2022-03-15&vintage_date=2022-03-17",
+        "vintage_date": "2022-03-17",
+        "available_at": "2022-03-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:43+00:00",
+        "sha256": "227a85d81d9ec6b0886d7643cd2977102b730019c9dc55b845b915aea7668b6e",
+        "csv": "observation_date,DGS2_20220317\n2022-03-10,1.72\n2022-03-11,1.75\n2022-03-14,1.87\n2022-03-15,1.85\n"
+      }
+    },
+    "2022-04-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-03-29&coed=2022-04-11&vintage_date=2022-04-11",
+        "vintage_date": "2022-04-11",
+        "available_at": "2022-04-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:44+00:00",
+        "sha256": "c57d2ee711192eb5ddc1e5ce09d58af3a17b4935d3498f08d4d9b4316b0ea580",
+        "csv": "observation_date,DGS2_20220411\n2022-03-29,2.35\n2022-03-30,2.31\n2022-03-31,2.28\n2022-04-01,2.44\n2022-04-04,2.43\n2022-04-05,2.51\n2022-04-06,2.50\n2022-04-07,2.47\n2022-04-08,2.53\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-04-12&coed=2022-04-17&vintage_date=2022-04-19",
+        "vintage_date": "2022-04-19",
+        "available_at": "2022-04-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:45+00:00",
+        "sha256": "afcdbbd4c5f50396a3b0273be9c16e20bf53751f1428d9fc9dd2687782588a58",
+        "csv": "observation_date,DGS2_20220419\n2022-04-12,2.39\n2022-04-13,2.37\n2022-04-14,2.47\n2022-04-15,\n"
+      }
+    },
+    "2022-05-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-04-27&coed=2022-05-10&vintage_date=2022-05-10",
+        "vintage_date": "2022-05-10",
+        "available_at": "2022-05-10T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:46+00:00",
+        "sha256": "b1d60a0888c9502f957f7523780295941d819b730000316a15e5de331e8ebf6e",
+        "csv": "observation_date,DGS2_20220510\n2022-04-27,2.58\n2022-04-28,2.63\n2022-04-29,2.70\n2022-05-02,2.73\n2022-05-03,2.78\n2022-05-04,2.66\n2022-05-05,2.71\n2022-05-06,2.72\n2022-05-09,2.61\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-05-11&coed=2022-05-16&vintage_date=2022-05-18",
+        "vintage_date": "2022-05-18",
+        "available_at": "2022-05-18T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:47+00:00",
+        "sha256": "23c3091bcf79fe2741db201cc7042cba1011addb0643f63ef2f81e6151f121cf",
+        "csv": "observation_date,DGS2_20220518\n2022-05-11,2.66\n2022-05-12,2.56\n2022-05-13,2.61\n2022-05-16,2.58\n"
+      }
+    },
+    "2022-06-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-05-27&coed=2022-06-09&vintage_date=2022-06-09",
+        "vintage_date": "2022-06-09",
+        "available_at": "2022-06-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:48+00:00",
+        "sha256": "3561373e576eba15684b0e6756c85a2bea8f1f9ee261e2ad3ff182d07124c5ee",
+        "csv": "observation_date,DGS2_20220609\n2022-05-27,2.47\n2022-05-30,\n2022-05-31,2.53\n2022-06-01,2.66\n2022-06-02,2.65\n2022-06-03,2.66\n2022-06-06,2.73\n2022-06-07,2.75\n2022-06-08,2.78\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-06-10&coed=2022-06-15&vintage_date=2022-06-17",
+        "vintage_date": "2022-06-17",
+        "available_at": "2022-06-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:49+00:00",
+        "sha256": "ce0d1d23c6449108936c6efb5a95e6737e2aee64c4d2e9a00718f37c83ebe9c9",
+        "csv": "observation_date,DGS2_20220617\n2022-06-10,3.06\n2022-06-13,3.40\n2022-06-14,3.45\n2022-06-15,3.20\n"
+      }
+    },
+    "2022-07-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-06-29&coed=2022-07-12&vintage_date=2022-07-12",
+        "vintage_date": "2022-07-12",
+        "available_at": "2022-07-12T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:49+00:00",
+        "sha256": "8b313743822aac441af4f1b46179f3ef0cc093c03cdd92db1a206a1802cc105c",
+        "csv": "observation_date,DGS2_20220712\n2022-06-29,3.06\n2022-06-30,2.92\n2022-07-01,2.84\n2022-07-04,\n2022-07-05,2.82\n2022-07-06,2.97\n2022-07-07,3.03\n2022-07-08,3.12\n2022-07-11,3.07\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-07-13&coed=2022-07-18&vintage_date=2022-07-20",
+        "vintage_date": "2022-07-20",
+        "available_at": "2022-07-20T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:50+00:00",
+        "sha256": "0c88b69867775b339dbec5198f07255161e274fcf3ae96dcd3b3035c5f499d89",
+        "csv": "observation_date,DGS2_20220720\n2022-07-13,3.13\n2022-07-14,3.15\n2022-07-15,3.13\n2022-07-18,3.15\n"
+      }
+    },
+    "2022-08-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-07-27&coed=2022-08-09&vintage_date=2022-08-09",
+        "vintage_date": "2022-08-09",
+        "available_at": "2022-08-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:51+00:00",
+        "sha256": "4f832869f5798b66ff9c6516a4164b02ff4055285ebcee7f84b45163b6391ec2",
+        "csv": "observation_date,DGS2_20220809\n2022-07-27,2.96\n2022-07-28,2.85\n2022-07-29,2.89\n2022-08-01,2.90\n2022-08-02,3.06\n2022-08-03,3.10\n2022-08-04,3.03\n2022-08-05,3.24\n2022-08-08,3.21\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-08-10&coed=2022-08-15&vintage_date=2022-08-17",
+        "vintage_date": "2022-08-17",
+        "available_at": "2022-08-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:52+00:00",
+        "sha256": "456cba9b126d10d816f21fb4102a73cbe280c5045eccb8da99f4c4dc5d6c60d4",
+        "csv": "observation_date,DGS2_20220817\n2022-08-10,3.23\n2022-08-11,3.23\n2022-08-12,3.25\n2022-08-15,3.20\n"
+      }
+    },
+    "2022-09-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-08-30&coed=2022-09-12&vintage_date=2022-09-12",
+        "vintage_date": "2022-09-12",
+        "available_at": "2022-09-12T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:53+00:00",
+        "sha256": "b772d1e178692b69be5dc5c245bdc17c8e286d51ee3c0691ad8f7b0dfc781b37",
+        "csv": "observation_date,DGS2_20220912\n2022-08-30,3.46\n2022-08-31,3.45\n2022-09-01,3.51\n2022-09-02,3.40\n2022-09-05,\n2022-09-06,3.50\n2022-09-07,3.45\n2022-09-08,3.48\n2022-09-09,3.56\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-09-13&coed=2022-09-18&vintage_date=2022-09-20",
+        "vintage_date": "2022-09-20",
+        "available_at": "2022-09-20T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:54+00:00",
+        "sha256": "c12deb053e5b196e9577b4bd134c0d1346d42cc0ed0e3bfa0d59a12b34c8edd0",
+        "csv": "observation_date,DGS2_20220920\n2022-09-13,3.75\n2022-09-14,3.78\n2022-09-15,3.87\n2022-09-16,3.85\n"
+      }
+    },
+    "2022-10-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-09-29&coed=2022-10-12&vintage_date=2022-10-12",
+        "vintage_date": "2022-10-12",
+        "available_at": "2022-10-12T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:55+00:00",
+        "sha256": "5c4393779bb8c2f284880a496cb16b069a4fd7fd6b4427a917217377988a1d2c",
+        "csv": "observation_date,DGS2_20221012\n2022-09-29,4.16\n2022-09-30,4.22\n2022-10-03,4.12\n2022-10-04,4.10\n2022-10-05,4.15\n2022-10-06,4.23\n2022-10-07,4.30\n2022-10-10,\n2022-10-11,4.30\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-10-13&coed=2022-10-18&vintage_date=2022-10-20",
+        "vintage_date": "2022-10-20",
+        "available_at": "2022-10-20T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:43:56+00:00",
+        "sha256": "35a66f1449bc14689baadbb9cd53ab14337d8a5e7a1fc90a10b39e9e6d5cc965",
+        "csv": "observation_date,DGS2_20221020\n2022-10-13,4.47\n2022-10-14,4.48\n2022-10-17,4.45\n2022-10-18,4.43\n"
+      }
+    },
+    "2022-11-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-10-27&coed=2022-11-09&vintage_date=2022-11-09",
+        "vintage_date": "2022-11-09",
+        "available_at": "2022-11-09T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:57+00:00",
+        "sha256": "01b8bfd120e840c96712afeefaab670b22118edeb06cd582fb2756114c753196",
+        "csv": "observation_date,DGS2_20221109\n2022-10-27,4.30\n2022-10-28,4.41\n2022-10-31,4.51\n2022-11-01,4.54\n2022-11-02,4.61\n2022-11-03,4.71\n2022-11-04,4.66\n2022-11-07,4.72\n2022-11-08,4.67\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-11-10&coed=2022-11-15&vintage_date=2022-11-17",
+        "vintage_date": "2022-11-17",
+        "available_at": "2022-11-17T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:58+00:00",
+        "sha256": "546ac1cdeb7effaa8127bdb3ee665452d6e9f74b0008327bc417527c0adb9e16",
+        "csv": "observation_date,DGS2_20221117\n2022-11-10,4.34\n2022-11-11,\n2022-11-14,4.40\n2022-11-15,4.37\n"
+      }
+    },
+    "2022-12-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-11-29&coed=2022-12-12&vintage_date=2022-12-12",
+        "vintage_date": "2022-12-12",
+        "available_at": "2022-12-12T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:43:59+00:00",
+        "sha256": "4f85e96b4cec75315dae8d77a99407f79c0dc46be4fa256d1d85653c8eb55671",
+        "csv": "observation_date,DGS2_20221212\n2022-11-29,4.48\n2022-11-30,4.38\n2022-12-01,4.25\n2022-12-02,4.28\n2022-12-05,4.41\n2022-12-06,4.34\n2022-12-07,4.26\n2022-12-08,4.31\n2022-12-09,4.33\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-12-13&coed=2022-12-18&vintage_date=2022-12-20",
+        "vintage_date": "2022-12-20",
+        "available_at": "2022-12-20T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:00+00:00",
+        "sha256": "144c44e9a243218762b09f9d6c5db6fff3d63832284a55ac8010c5980982e8d0",
+        "csv": "observation_date,DGS2_20221220\n2022-12-13,4.22\n2022-12-14,4.23\n2022-12-15,4.23\n2022-12-16,4.17\n"
+      }
+    },
+    "2023-01-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-12-29&coed=2023-01-11&vintage_date=2023-01-11",
+        "vintage_date": "2023-01-11",
+        "available_at": "2023-01-11T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:01+00:00",
+        "sha256": "bfa626e93f6a83a0afd39326ddaa6d98a240908d502158015c821a2a87d695f8",
+        "csv": "observation_date,DGS2_20230111\n2022-12-29,4.34\n2022-12-30,4.41\n2023-01-02,\n2023-01-03,4.40\n2023-01-04,4.36\n2023-01-05,4.45\n2023-01-06,4.24\n2023-01-09,4.19\n2023-01-10,4.24\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-01-12&coed=2023-01-17&vintage_date=2023-01-19",
+        "vintage_date": "2023-01-19",
+        "available_at": "2023-01-19T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:02+00:00",
+        "sha256": "ed47b7e4669662edd170d09c2e49145641cd25ebb26c9e2293970dfd84b297b6",
+        "csv": "observation_date,DGS2_20230119\n2023-01-12,4.12\n2023-01-13,4.22\n2023-01-16,\n2023-01-17,4.18\n"
+      }
+    },
+    "2023-02-14": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-01-31&coed=2023-02-13&vintage_date=2023-02-13",
+        "vintage_date": "2023-02-13",
+        "available_at": "2023-02-13T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:03+00:00",
+        "sha256": "439058ddd94f1d3d57f8aab05c002d49b10728d9bef676292a2576f03a2a10c1",
+        "csv": "observation_date,DGS2_20230213\n2023-01-31,4.21\n2023-02-01,4.09\n2023-02-02,4.09\n2023-02-03,4.30\n2023-02-06,4.44\n2023-02-07,4.47\n2023-02-08,4.45\n2023-02-09,4.48\n2023-02-10,4.50\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-02-14&coed=2023-02-19&vintage_date=2023-02-21",
+        "vintage_date": "2023-02-21",
+        "available_at": "2023-02-21T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:04+00:00",
+        "sha256": "7d507689bd238c154616c0bbaf07ce4e0a4530c4c7136ef38d94fdbdd5de99ff",
+        "csv": "observation_date,DGS2_20230221\n2023-02-14,4.60\n2023-02-15,4.62\n2023-02-16,4.62\n2023-02-17,4.60\n"
+      }
+    },
+    "2023-03-14": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-02-28&coed=2023-03-13&vintage_date=2023-03-13",
+        "vintage_date": "2023-03-13",
+        "available_at": "2023-03-13T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:05+00:00",
+        "sha256": "f42f2fb943f4166b745c30567bdd02f92e66aea01c28a8375f272b2b5f2fa303",
+        "csv": "observation_date,DGS2_20230313\n2023-02-28,4.81\n2023-03-01,4.89\n2023-03-02,4.89\n2023-03-03,4.86\n2023-03-06,4.89\n2023-03-07,5.00\n2023-03-08,5.05\n2023-03-09,4.90\n2023-03-10,4.60\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-03-14&coed=2023-03-19&vintage_date=2023-03-21",
+        "vintage_date": "2023-03-21",
+        "available_at": "2023-03-21T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:06+00:00",
+        "sha256": "f4609b32d0264458fbe7342127ac82e0e698aabf28370fd9cde6372f417adb60",
+        "csv": "observation_date,DGS2_20230321\n2023-03-14,4.20\n2023-03-15,3.93\n2023-03-16,4.14\n2023-03-17,3.81\n"
+      }
+    },
+    "2023-04-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-03-29&coed=2023-04-11&vintage_date=2023-04-11",
+        "vintage_date": "2023-04-11",
+        "available_at": "2023-04-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:07+00:00",
+        "sha256": "79b18cf0b0b1179faeae7136c6cb69338bad3e15117ec2b2661ed41850703d61",
+        "csv": "observation_date,DGS2_20230411\n2023-03-29,4.08\n2023-03-30,4.10\n2023-03-31,4.06\n2023-04-03,3.97\n2023-04-04,3.84\n2023-04-05,3.79\n2023-04-06,3.82\n2023-04-07,3.97\n2023-04-10,4.00\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-04-12&coed=2023-04-17&vintage_date=2023-04-19",
+        "vintage_date": "2023-04-19",
+        "available_at": "2023-04-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:08+00:00",
+        "sha256": "f440aa83e17c4ca8a358542082349002287423690bd0d7533dc9fb820ebbe583",
+        "csv": "observation_date,DGS2_20230419\n2023-04-12,3.95\n2023-04-13,3.96\n2023-04-14,4.08\n2023-04-17,4.18\n"
+      }
+    },
+    "2023-05-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-04-26&coed=2023-05-09&vintage_date=2023-05-09",
+        "vintage_date": "2023-05-09",
+        "available_at": "2023-05-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:09+00:00",
+        "sha256": "a25747ed6e6dc9ec636b3c7b5493c105db4339b21ae80b47a8876c2c3263aba9",
+        "csv": "observation_date,DGS2_20230509\n2023-04-26,3.90\n2023-04-27,4.07\n2023-04-28,4.04\n2023-05-01,4.14\n2023-05-02,3.97\n2023-05-03,3.89\n2023-05-04,3.75\n2023-05-05,3.92\n2023-05-08,4.00\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-05-10&coed=2023-05-15&vintage_date=2023-05-17",
+        "vintage_date": "2023-05-17",
+        "available_at": "2023-05-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:10+00:00",
+        "sha256": "8b2b085b2a0d2346bddc758c957426967b36d4175d419255959c28b223bfb724",
+        "csv": "observation_date,DGS2_20230517\n2023-05-10,3.90\n2023-05-11,3.89\n2023-05-12,3.98\n2023-05-15,3.99\n"
+      }
+    },
+    "2023-06-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-05-30&coed=2023-06-12&vintage_date=2023-06-12",
+        "vintage_date": "2023-06-12",
+        "available_at": "2023-06-12T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:11+00:00",
+        "sha256": "5cf056fe0ad2dd3fcd03e7b8210efa8f12ef63e77aece2a08ada4617961021f4",
+        "csv": "observation_date,DGS2_20230612\n2023-05-30,4.46\n2023-05-31,4.40\n2023-06-01,4.33\n2023-06-02,4.50\n2023-06-05,4.46\n2023-06-06,4.51\n2023-06-07,4.56\n2023-06-08,4.52\n2023-06-09,4.59\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-06-13&coed=2023-06-18&vintage_date=2023-06-20",
+        "vintage_date": "2023-06-20",
+        "available_at": "2023-06-20T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:12+00:00",
+        "sha256": "522587640eb794ac2a7747ebe0d517e96cb252d3f969e1916f8c178da3aa2704",
+        "csv": "observation_date,DGS2_20230620\n2023-06-13,4.67\n2023-06-14,4.74\n2023-06-15,4.62\n2023-06-16,4.70\n"
+      }
+    },
+    "2023-07-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-06-28&coed=2023-07-11&vintage_date=2023-07-11",
+        "vintage_date": "2023-07-11",
+        "available_at": "2023-07-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:13+00:00",
+        "sha256": "d1441c99adf983b67ef9f7b2eb67443d2e2b489fab14a157756dd0f8c017fee1",
+        "csv": "observation_date,DGS2_20230711\n2023-06-28,4.71\n2023-06-29,4.87\n2023-06-30,4.87\n2023-07-03,4.94\n2023-07-04,\n2023-07-05,4.94\n2023-07-06,4.99\n2023-07-07,4.94\n2023-07-10,4.85\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-07-12&coed=2023-07-17&vintage_date=2023-07-19",
+        "vintage_date": "2023-07-19",
+        "available_at": "2023-07-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:14+00:00",
+        "sha256": "301ab3b969ad5e12b694dad3861dca740301e91bb733f3b63757c4764f3603c9",
+        "csv": "observation_date,DGS2_20230719\n2023-07-12,4.72\n2023-07-13,4.59\n2023-07-14,4.74\n2023-07-17,4.74\n"
+      }
+    },
+    "2023-08-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-07-27&coed=2023-08-09&vintage_date=2023-08-09",
+        "vintage_date": "2023-08-09",
+        "available_at": "2023-08-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:15+00:00",
+        "sha256": "c9375ce8ba0a247b8e5ce82b3126f2930c887f305340b976a5773e16c70f8e38",
+        "csv": "observation_date,DGS2_20230809\n2023-07-27,4.91\n2023-07-28,4.87\n2023-07-31,4.88\n2023-08-01,4.92\n2023-08-02,4.88\n2023-08-03,4.90\n2023-08-04,4.78\n2023-08-07,4.76\n2023-08-08,4.74\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-08-10&coed=2023-08-15&vintage_date=2023-08-17",
+        "vintage_date": "2023-08-17",
+        "available_at": "2023-08-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:16+00:00",
+        "sha256": "8eaea954c3fceac8f5ec4c2aa39e4b49eb3a5b120fd7083a514ec532df7c3d51",
+        "csv": "observation_date,DGS2_20230817\n2023-08-10,4.82\n2023-08-11,4.89\n2023-08-14,4.96\n2023-08-15,4.92\n"
+      }
+    },
+    "2023-09-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-08-30&coed=2023-09-12&vintage_date=2023-09-12",
+        "vintage_date": "2023-09-12",
+        "available_at": "2023-09-12T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:17+00:00",
+        "sha256": "150ac7496759b6165122685eabb9a967666ce5c14940f2f7c38977f5f97582c0",
+        "csv": "observation_date,DGS2_20230912\n2023-08-30,4.90\n2023-08-31,4.85\n2023-09-01,4.87\n2023-09-04,\n2023-09-05,4.94\n2023-09-06,5.01\n2023-09-07,4.94\n2023-09-08,4.98\n2023-09-11,4.97\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-09-13&coed=2023-09-18&vintage_date=2023-09-20",
+        "vintage_date": "2023-09-20",
+        "available_at": "2023-09-20T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:18+00:00",
+        "sha256": "a4f799d6340ffe9883d8e023f037c19dc57194b31dd6baddf7a9df54685e05d5",
+        "csv": "observation_date,DGS2_20230920\n2023-09-13,4.96\n2023-09-14,5.00\n2023-09-15,5.02\n2023-09-18,5.05\n"
+      }
+    },
+    "2023-10-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-09-28&coed=2023-10-11&vintage_date=2023-10-11",
+        "vintage_date": "2023-10-11",
+        "available_at": "2023-10-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:19+00:00",
+        "sha256": "7ef200e6b030d333fd0d297360c765a0e6cf9844912393471d83e6b6c7cdcf11",
+        "csv": "observation_date,DGS2_20231011\n2023-09-28,5.04\n2023-09-29,5.03\n2023-10-02,5.12\n2023-10-03,5.15\n2023-10-04,5.05\n2023-10-05,5.03\n2023-10-06,5.08\n2023-10-09,\n2023-10-10,4.96\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-10-12&coed=2023-10-17&vintage_date=2023-10-19",
+        "vintage_date": "2023-10-19",
+        "available_at": "2023-10-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:20+00:00",
+        "sha256": "9ae7a06d07265ebb0dff2d7a77d5f915c5dd6e722a5d39dd772cfd6138dafedd",
+        "csv": "observation_date,DGS2_20231019\n2023-10-12,5.06\n2023-10-13,5.04\n2023-10-16,5.09\n2023-10-17,5.19\n"
+      }
+    },
+    "2023-11-14": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-10-31&coed=2023-11-13&vintage_date=2023-11-13",
+        "vintage_date": "2023-11-13",
+        "available_at": "2023-11-13T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:21+00:00",
+        "sha256": "761796b865196fe5ac7ce125a4011d9bfea37b1a1e171202150440bf609ca206",
+        "csv": "observation_date,DGS2_20231113\n2023-10-31,5.07\n2023-11-01,4.95\n2023-11-02,4.98\n2023-11-03,4.83\n2023-11-06,4.93\n2023-11-07,4.91\n2023-11-08,4.93\n2023-11-09,5.03\n2023-11-10,5.04\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-11-14&coed=2023-11-19&vintage_date=2023-11-21",
+        "vintage_date": "2023-11-21",
+        "available_at": "2023-11-21T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:22+00:00",
+        "sha256": "c35c672bd90a8c234386140c6a4adbc60846b1c0a5cf5c7e68cbc414c086aaa2",
+        "csv": "observation_date,DGS2_20231121\n2023-11-14,4.80\n2023-11-15,4.90\n2023-11-16,4.83\n2023-11-17,4.88\n"
+      }
+    },
+    "2023-12-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-11-28&coed=2023-12-11&vintage_date=2023-12-11",
+        "vintage_date": "2023-12-11",
+        "available_at": "2023-12-11T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:23+00:00",
+        "sha256": "6ebd8bd9c0e1246ed5a00cbe26e3a6424c77fa36c69eaecbdd0ecadd6cd2f2de",
+        "csv": "observation_date,DGS2_20231211\n2023-11-28,4.73\n2023-11-29,4.64\n2023-11-30,4.73\n2023-12-01,4.56\n2023-12-04,4.64\n2023-12-05,4.57\n2023-12-06,4.60\n2023-12-07,4.58\n2023-12-08,4.71\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-12-12&coed=2023-12-17&vintage_date=2023-12-19",
+        "vintage_date": "2023-12-19",
+        "available_at": "2023-12-19T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:24+00:00",
+        "sha256": "c333b089f32bb4e92bf189d244b3cd6a120872e18cbee49b764345b47a8886ea",
+        "csv": "observation_date,DGS2_20231219\n2023-12-12,4.73\n2023-12-13,4.46\n2023-12-14,4.37\n2023-12-15,4.44\n"
+      }
+    },
+    "2024-01-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2023-12-28&coed=2024-01-10&vintage_date=2024-01-10",
+        "vintage_date": "2024-01-10",
+        "available_at": "2024-01-10T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:25+00:00",
+        "sha256": "d08e33620edd3e35900a1cc4914e141c20ce12c39a3073e6479e96327aa78ce6",
+        "csv": "observation_date,DGS2_20240110\n2023-12-28,4.26\n2023-12-29,4.23\n2024-01-01,\n2024-01-02,4.33\n2024-01-03,4.33\n2024-01-04,4.38\n2024-01-05,4.40\n2024-01-08,4.36\n2024-01-09,4.36\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-01-11&coed=2024-01-16&vintage_date=2024-01-18",
+        "vintage_date": "2024-01-18",
+        "available_at": "2024-01-18T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:26+00:00",
+        "sha256": "c6bc414adff62b6f60fc8ff39246c2ad91717628c66edde7f378944b356a1b38",
+        "csv": "observation_date,DGS2_20240118\n2024-01-11,4.26\n2024-01-12,4.14\n2024-01-15,\n2024-01-16,4.22\n"
+      }
+    },
+    "2024-02-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-01-30&coed=2024-02-12&vintage_date=2024-02-12",
+        "vintage_date": "2024-02-12",
+        "available_at": "2024-02-12T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:27+00:00",
+        "sha256": "8c470c64320669b0ffb6f788908066894805690c1e84e3d447a38460a7735ccd",
+        "csv": "observation_date,DGS2_20240212\n2024-01-30,4.36\n2024-01-31,4.27\n2024-02-01,4.20\n2024-02-02,4.36\n2024-02-05,4.46\n2024-02-06,4.39\n2024-02-07,4.41\n2024-02-08,4.46\n2024-02-09,4.48\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-02-13&coed=2024-02-18&vintage_date=2024-02-20",
+        "vintage_date": "2024-02-20",
+        "available_at": "2024-02-20T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:28+00:00",
+        "sha256": "db1d096f304704718e312de9cd4d491e5275c4065bd4958b84be46ff36a287d6",
+        "csv": "observation_date,DGS2_20240220\n2024-02-13,4.64\n2024-02-14,4.56\n2024-02-15,4.56\n2024-02-16,4.64\n"
+      }
+    },
+    "2024-03-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-02-27&coed=2024-03-11&vintage_date=2024-03-11",
+        "vintage_date": "2024-03-11",
+        "available_at": "2024-03-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:29+00:00",
+        "sha256": "35ba61b25d6d62647f328b9e915b01222d5058854c07aac42f86288a88d976b2",
+        "csv": "observation_date,DGS2_20240311\n2024-02-27,4.70\n2024-02-28,4.64\n2024-02-29,4.64\n2024-03-01,4.54\n2024-03-04,4.61\n2024-03-05,4.54\n2024-03-06,4.55\n2024-03-07,4.50\n2024-03-08,4.48\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-03-12&coed=2024-03-17&vintage_date=2024-03-19",
+        "vintage_date": "2024-03-19",
+        "available_at": "2024-03-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:30+00:00",
+        "sha256": "338f1f89ffb7f0ab62ef152ac9d429106385e51d41724abaff44b2c707f95225",
+        "csv": "observation_date,DGS2_20240319\n2024-03-12,4.58\n2024-03-13,4.61\n2024-03-14,4.68\n2024-03-15,4.72\n"
+      }
+    },
+    "2024-04-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-03-27&coed=2024-04-09&vintage_date=2024-04-09",
+        "vintage_date": "2024-04-09",
+        "available_at": "2024-04-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:31+00:00",
+        "sha256": "c8943f520d2af01dd3b9439e97c3c94693ea25131b7e2200a6b57071f3d6fae1",
+        "csv": "observation_date,DGS2_20240409\n2024-03-27,4.54\n2024-03-28,4.59\n2024-03-29,\n2024-04-01,4.72\n2024-04-02,4.70\n2024-04-03,4.68\n2024-04-04,4.65\n2024-04-05,4.73\n2024-04-08,4.78\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-04-10&coed=2024-04-15&vintage_date=2024-04-17",
+        "vintage_date": "2024-04-17",
+        "available_at": "2024-04-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:32+00:00",
+        "sha256": "12bdf455c89621f6b7a0611fc274f0dc152fda874ef227c36884f301681c5f55",
+        "csv": "observation_date,DGS2_20240417\n2024-04-10,4.97\n2024-04-11,4.93\n2024-04-12,4.88\n2024-04-15,4.93\n"
+      }
+    },
+    "2024-05-15": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-05-01&coed=2024-05-14&vintage_date=2024-05-14",
+        "vintage_date": "2024-05-14",
+        "available_at": "2024-05-14T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:33+00:00",
+        "sha256": "b3becc2f17b0a6f94a2b6c3bdc40d3487d3ec360489c04bcd8d4ce2ae03438b3",
+        "csv": "observation_date,DGS2_20240514\n2024-05-01,4.96\n2024-05-02,4.87\n2024-05-03,4.81\n2024-05-06,4.82\n2024-05-07,4.82\n2024-05-08,4.84\n2024-05-09,4.80\n2024-05-10,4.87\n2024-05-13,4.85\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-05-15&coed=2024-05-20&vintage_date=2024-05-22",
+        "vintage_date": "2024-05-22",
+        "available_at": "2024-05-22T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:34+00:00",
+        "sha256": "4d1dd7871d218657aeecf1b90942da6e2e97a99e708629d9cbf47fc94700954c",
+        "csv": "observation_date,DGS2_20240522\n2024-05-15,4.73\n2024-05-16,4.78\n2024-05-17,4.83\n2024-05-20,4.82\n"
+      }
+    },
+    "2024-06-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-05-29&coed=2024-06-11&vintage_date=2024-06-11",
+        "vintage_date": "2024-06-11",
+        "available_at": "2024-06-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:35+00:00",
+        "sha256": "49ec2781baebec430583ea4aad607a67bbe1162c8cebd3bd4db52e5b37fa4b7a",
+        "csv": "observation_date,DGS2_20240611\n2024-05-29,4.96\n2024-05-30,4.92\n2024-05-31,4.89\n2024-06-03,4.82\n2024-06-04,4.77\n2024-06-05,4.72\n2024-06-06,4.72\n2024-06-07,4.87\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-06-12&coed=2024-06-17&vintage_date=2024-06-19",
+        "vintage_date": "2024-06-19",
+        "available_at": "2024-06-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:36+00:00",
+        "sha256": "a7270545c071a8a368ecc704808a0793290570bfae448c227350eb41d1260d6e",
+        "csv": "observation_date,DGS2_20240619\n2024-06-12,4.75\n2024-06-13,4.68\n2024-06-14,4.67\n2024-06-17,4.75\n"
+      }
+    },
+    "2024-07-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-06-27&coed=2024-07-10&vintage_date=2024-07-10",
+        "vintage_date": "2024-07-10",
+        "available_at": "2024-07-10T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:37+00:00",
+        "sha256": "2c4f37e2e08ed4f68cff0b6f0215c0b99edee0d9ce63fe93326ca96cae735648",
+        "csv": "observation_date,DGS2_20240710\n2024-06-27,4.70\n2024-06-28,4.71\n2024-07-01,4.77\n2024-07-02,4.74\n2024-07-03,4.71\n2024-07-04,\n2024-07-05,4.60\n2024-07-08,4.62\n2024-07-09,4.62\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-07-11&coed=2024-07-16&vintage_date=2024-07-18",
+        "vintage_date": "2024-07-18",
+        "available_at": "2024-07-18T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:38+00:00",
+        "sha256": "328ed0040013591284cf2c450341684e8a06a8ca53487caa5c9bfb66cb70b683",
+        "csv": "observation_date,DGS2_20240718\n2024-07-11,4.50\n2024-07-12,4.45\n2024-07-15,4.44\n2024-07-16,4.43\n"
+      }
+    },
+    "2024-08-14": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-07-31&coed=2024-08-13&vintage_date=2024-08-13",
+        "vintage_date": "2024-08-13",
+        "available_at": "2024-08-13T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:39+00:00",
+        "sha256": "0ef31ed70eaa4187654590bb74057494efaeab83bf3d300f190f76d966b024d3",
+        "csv": "observation_date,DGS2_20240813\n2024-07-31,4.29\n2024-08-01,4.16\n2024-08-02,3.88\n2024-08-05,3.89\n2024-08-06,3.99\n2024-08-07,4.00\n2024-08-08,4.04\n2024-08-09,4.05\n2024-08-12,4.01\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-08-14&coed=2024-08-19&vintage_date=2024-08-21",
+        "vintage_date": "2024-08-21",
+        "available_at": "2024-08-21T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:40+00:00",
+        "sha256": "f56c92255d2c85b3565b32371211fefb4373b410fca1132be077188a9c6435db",
+        "csv": "observation_date,DGS2_20240821\n2024-08-14,3.94\n2024-08-15,4.08\n2024-08-16,4.06\n2024-08-19,4.06\n"
+      }
+    },
+    "2024-09-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-08-28&coed=2024-09-10&vintage_date=2024-09-10",
+        "vintage_date": "2024-09-10",
+        "available_at": "2024-09-10T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:41+00:00",
+        "sha256": "3cae20a267ab24eb6991c7db9bb13c9e7ff7357f1dcf7c6f4210746c0f5a6936",
+        "csv": "observation_date,DGS2_20240910\n2024-08-28,3.83\n2024-08-29,3.87\n2024-08-30,3.91\n2024-09-02,\n2024-09-03,3.88\n2024-09-04,3.76\n2024-09-05,3.75\n2024-09-06,3.66\n2024-09-09,3.68\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-09-11&coed=2024-09-16&vintage_date=2024-09-18",
+        "vintage_date": "2024-09-18",
+        "available_at": "2024-09-18T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:42+00:00",
+        "sha256": "2706738b0d5b14ae8c04eec742c4d79ffd8fde7a45b4cb43ee26f91f4efb02cc",
+        "csv": "observation_date,DGS2_20240918\n2024-09-11,3.62\n2024-09-12,3.64\n2024-09-13,3.57\n2024-09-16,3.56\n"
+      }
+    },
+    "2024-10-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-09-26&coed=2024-10-09&vintage_date=2024-10-09",
+        "vintage_date": "2024-10-09",
+        "available_at": "2024-10-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:43+00:00",
+        "sha256": "9f4d6bd999be360f8dd886f8fe81e84d7b7b7939eaced1ab2f183ce7f643bf0d",
+        "csv": "observation_date,DGS2_20241009\n2024-09-26,3.60\n2024-09-27,3.55\n2024-09-30,3.66\n2024-10-01,3.61\n2024-10-02,3.63\n2024-10-03,3.70\n2024-10-04,3.93\n2024-10-07,3.99\n2024-10-08,3.98\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-10-10&coed=2024-10-15&vintage_date=2024-10-17",
+        "vintage_date": "2024-10-17",
+        "available_at": "2024-10-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:44+00:00",
+        "sha256": "fe746c1d0585e893dede6979cba370e2e68b26133751d9fe04a52272832fd53c",
+        "csv": "observation_date,DGS2_20241017\n2024-10-10,3.98\n2024-10-11,3.95\n2024-10-14,\n2024-10-15,3.95\n"
+      }
+    },
+    "2024-11-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-10-30&coed=2024-11-12&vintage_date=2024-11-12",
+        "vintage_date": "2024-11-12",
+        "available_at": "2024-11-12T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:45+00:00",
+        "sha256": "371131b0228b867a1a41fb2b96a792b0ecf44646905cc351b9cfa703ccbb8b9f",
+        "csv": "observation_date,DGS2_20241112\n2024-10-30,4.15\n2024-10-31,4.16\n2024-11-01,4.21\n2024-11-04,4.17\n2024-11-05,4.19\n2024-11-06,4.27\n2024-11-07,4.21\n2024-11-08,4.26\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-11-13&coed=2024-11-18&vintage_date=2024-11-20",
+        "vintage_date": "2024-11-20",
+        "available_at": "2024-11-20T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:46+00:00",
+        "sha256": "7f36684e5cea4f09e2a1fa53f0c4c1fe31da644e24c52888a43558361588e2ee",
+        "csv": "observation_date,DGS2_20241120\n2024-11-13,4.27\n2024-11-14,4.34\n2024-11-15,4.31\n2024-11-18,4.29\n"
+      }
+    },
+    "2024-12-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-11-27&coed=2024-12-10&vintage_date=2024-12-10",
+        "vintage_date": "2024-12-10",
+        "available_at": "2024-12-10T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:47+00:00",
+        "sha256": "b54089aa52debabf62a5bf7375c894b2d09acc851edc5352951bf39a0abc71ca",
+        "csv": "observation_date,DGS2_20241210\n2024-11-27,4.19\n2024-11-28,\n2024-11-29,4.13\n2024-12-02,4.17\n2024-12-03,4.17\n2024-12-04,4.13\n2024-12-05,4.15\n2024-12-06,4.10\n2024-12-09,4.13\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2024-12-11&coed=2024-12-16&vintage_date=2024-12-18",
+        "vintage_date": "2024-12-18",
+        "available_at": "2024-12-18T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:48+00:00",
+        "sha256": "5bad21b2bbdf81f28fc97575f990b71471177c6f0a6e9b977b3f1585859876ee",
+        "csv": "observation_date,DGS2_20241218\n2024-12-11,4.15\n2024-12-12,4.18\n2024-12-13,4.25\n2024-12-16,4.25\n"
+      }
+    },
+    "2025-01-15": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-01-01&coed=2025-01-14&vintage_date=2025-01-14",
+        "vintage_date": "2025-01-14",
+        "available_at": "2025-01-14T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:49+00:00",
+        "sha256": "1df69133ab72a55f055c76b12a71745b4d4862c5d409bd3025fd6463c5e804ec",
+        "csv": "observation_date,DGS2_20250114\n2025-01-02,4.25\n2025-01-03,4.28\n2025-01-06,4.28\n2025-01-07,4.30\n2025-01-08,4.28\n2025-01-09,4.27\n2025-01-10,4.40\n2025-01-13,4.40\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-01-15&coed=2025-01-20&vintage_date=2025-01-22",
+        "vintage_date": "2025-01-22",
+        "available_at": "2025-01-22T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:50+00:00",
+        "sha256": "f23b4d2aa36681139fb2241602da4f5803af992762c0e5ed589f84547f380174",
+        "csv": "observation_date,DGS2_20250122\n2025-01-15,4.27\n2025-01-16,4.23\n2025-01-17,4.27\n2025-01-20,\n"
+      }
+    },
+    "2025-02-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-01-29&coed=2025-02-11&vintage_date=2025-02-11",
+        "vintage_date": "2025-02-11",
+        "available_at": "2025-02-11T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:51+00:00",
+        "sha256": "4c4388592a3db733ec48b50d3e1bae4cde458eb155004d61c879492d754747a6",
+        "csv": "observation_date,DGS2_20250211\n2025-01-29,4.21\n2025-01-30,4.18\n2025-01-31,4.22\n2025-02-03,4.26\n2025-02-04,4.21\n2025-02-05,4.17\n2025-02-06,4.21\n2025-02-07,4.29\n2025-02-10,4.28\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-02-12&coed=2025-02-17&vintage_date=2025-02-19",
+        "vintage_date": "2025-02-19",
+        "available_at": "2025-02-19T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:44:52+00:00",
+        "sha256": "5003d6ddb251db0d93d21474f3f33cd07ce6c4b1f530c18f8f803dfc7f43132a",
+        "csv": "observation_date,DGS2_20250219\n2025-02-12,4.36\n2025-02-13,4.31\n2025-02-14,4.26\n2025-02-17,\n"
+      }
+    },
+    "2025-03-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-02-26&coed=2025-03-11&vintage_date=2025-03-11",
+        "vintage_date": "2025-03-11",
+        "available_at": "2025-03-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:53+00:00",
+        "sha256": "c7b2a8934b5ba12eff146240871c78c71cf2ab55f0f7a7e7df6df6606a963bea",
+        "csv": "observation_date,DGS2_20250311\n2025-02-26,4.05\n2025-02-27,4.07\n2025-02-28,3.99\n2025-03-03,3.96\n2025-03-04,3.96\n2025-03-05,3.99\n2025-03-06,3.96\n2025-03-07,3.99\n2025-03-10,3.89\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-03-12&coed=2025-03-17&vintage_date=2025-03-19",
+        "vintage_date": "2025-03-19",
+        "available_at": "2025-03-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:53+00:00",
+        "sha256": "8064d222efe7b458f7b6ba993efd0f05dfc01de1ba95d4f173d899b2f3dbc2e4",
+        "csv": "observation_date,DGS2_20250319\n2025-03-12,4.01\n2025-03-13,3.94\n2025-03-14,4.02\n2025-03-17,4.06\n"
+      }
+    },
+    "2025-04-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-03-27&coed=2025-04-09&vintage_date=2025-04-09",
+        "vintage_date": "2025-04-09",
+        "available_at": "2025-04-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:54+00:00",
+        "sha256": "3fb18e6edec10439706f3c3db1e8ebe5d9037286a02b3db9e9a03ce55efb2e79",
+        "csv": "observation_date,DGS2_20250409\n2025-03-27,3.97\n2025-03-28,3.89\n2025-03-31,3.89\n2025-04-01,3.87\n2025-04-02,3.91\n2025-04-03,3.71\n2025-04-04,3.68\n2025-04-07,3.73\n2025-04-08,3.71\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-04-10&coed=2025-04-15&vintage_date=2025-04-17",
+        "vintage_date": "2025-04-17",
+        "available_at": "2025-04-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:55+00:00",
+        "sha256": "18635d965785fbff39ecb4978cb6b1f7f3637efa7ca4318536426c4f4f8eccd5",
+        "csv": "observation_date,DGS2_20250417\n2025-04-10,3.84\n2025-04-11,3.96\n2025-04-14,3.84\n2025-04-15,3.84\n"
+      }
+    },
+    "2025-05-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-04-29&coed=2025-05-12&vintage_date=2025-05-12",
+        "vintage_date": "2025-05-12",
+        "available_at": "2025-05-12T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:56+00:00",
+        "sha256": "0737ae64f64621f3909388c9222c0fc000a21fd367fc27b6235c6670a45bd7e4",
+        "csv": "observation_date,DGS2_20250512\n2025-04-29,3.65\n2025-04-30,3.60\n2025-05-01,3.70\n2025-05-02,3.83\n2025-05-05,3.83\n2025-05-06,3.78\n2025-05-07,3.78\n2025-05-08,3.90\n2025-05-09,3.88\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-05-13&coed=2025-05-18&vintage_date=2025-05-20",
+        "vintage_date": "2025-05-20",
+        "available_at": "2025-05-20T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:57+00:00",
+        "sha256": "85dbd4fe64c79e6e1a67b39d32e5026cf2dbcd5259c3559624158de35664e637",
+        "csv": "observation_date,DGS2_20250520\n2025-05-13,4.02\n2025-05-14,4.05\n2025-05-15,3.96\n2025-05-16,3.98\n"
+      }
+    },
+    "2025-06-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-05-28&coed=2025-06-10&vintage_date=2025-06-10",
+        "vintage_date": "2025-06-10",
+        "available_at": "2025-06-10T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:58+00:00",
+        "sha256": "97dd1214e092a68f62b777df3a284661c0b9c08dcaef144428e2fea0858190b9",
+        "csv": "observation_date,DGS2_20250610\n2025-05-28,3.96\n2025-05-29,3.92\n2025-05-30,3.89\n2025-06-02,3.94\n2025-06-03,3.96\n2025-06-04,3.87\n2025-06-05,3.92\n2025-06-06,4.04\n2025-06-09,4.01\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-06-11&coed=2025-06-16&vintage_date=2025-06-18",
+        "vintage_date": "2025-06-18",
+        "available_at": "2025-06-18T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:58+00:00",
+        "sha256": "13783fa730407f4162dd65f0d51c85e658981665b3608cf05c4a7fa5b31f331c",
+        "csv": "observation_date,DGS2_20250618\n2025-06-11,3.94\n2025-06-12,3.90\n2025-06-13,3.96\n2025-06-16,3.97\n"
+      }
+    },
+    "2025-07-15": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-07-01&coed=2025-07-14&vintage_date=2025-07-14",
+        "vintage_date": "2025-07-14",
+        "available_at": "2025-07-14T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:44:59+00:00",
+        "sha256": "805fad666335acf98de763396d971ef4c3b2ce003b40395eb0e241bd98dfc69d",
+        "csv": "observation_date,DGS2_20250714\n2025-07-01,3.78\n2025-07-02,3.78\n2025-07-03,3.88\n2025-07-04,\n2025-07-07,3.90\n2025-07-08,3.90\n2025-07-09,3.86\n2025-07-10,3.86\n2025-07-11,3.90\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-07-15&coed=2025-07-20&vintage_date=2025-07-22",
+        "vintage_date": "2025-07-22",
+        "available_at": "2025-07-22T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:00+00:00",
+        "sha256": "b7bdab4a293a1df389b07b9c9b5fe609636f62f06262b12d1da7a0717e3761e3",
+        "csv": "observation_date,DGS2_20250722\n2025-07-15,3.95\n2025-07-16,3.88\n2025-07-17,3.91\n2025-07-18,3.88\n"
+      }
+    },
+    "2025-08-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-07-29&coed=2025-08-11&vintage_date=2025-08-11",
+        "vintage_date": "2025-08-11",
+        "available_at": "2025-08-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:01+00:00",
+        "sha256": "9c997b1b1cedbe479232d2de9dd32444d4712093d8bf27c2db719ed8e5318ee9",
+        "csv": "observation_date,DGS2_20250811\n2025-07-29,3.86\n2025-07-30,3.94\n2025-07-31,3.94\n2025-08-01,3.69\n2025-08-04,3.69\n2025-08-05,3.72\n2025-08-06,3.69\n2025-08-07,3.72\n2025-08-08,3.76\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-08-12&coed=2025-08-17&vintage_date=2025-08-19",
+        "vintage_date": "2025-08-19",
+        "available_at": "2025-08-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:02+00:00",
+        "sha256": "f9bf8006fda126795304dba5500e02f06c6575119fee5fb1b44f882bdf3dbebb",
+        "csv": "observation_date,DGS2_20250819\n2025-08-12,3.72\n2025-08-13,3.67\n2025-08-14,3.74\n2025-08-15,3.75\n"
+      }
+    },
+    "2025-09-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-08-28&coed=2025-09-10&vintage_date=2025-09-10",
+        "vintage_date": "2025-09-10",
+        "available_at": "2025-09-10T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:03+00:00",
+        "sha256": "dd83e356c5bb8d4191dc725652cafa9eca628e6421e51eed69c9e737dd9eb7fe",
+        "csv": "observation_date,DGS2_20250910\n2025-08-28,3.62\n2025-08-29,3.59\n2025-09-01,\n2025-09-02,3.66\n2025-09-03,3.61\n2025-09-04,3.59\n2025-09-05,3.51\n2025-09-08,3.49\n2025-09-09,3.54\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-09-11&coed=2025-09-16&vintage_date=2025-09-18",
+        "vintage_date": "2025-09-18",
+        "available_at": "2025-09-18T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:04+00:00",
+        "sha256": "70dabf43ae4581d83f960308081d0dc589bdbe0795bfc813b18936548c725087",
+        "csv": "observation_date,DGS2_20250918\n2025-09-11,3.52\n2025-09-12,3.56\n2025-09-15,3.54\n2025-09-16,3.51\n"
+      }
+    },
+    "2025-10-24": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-10-10&coed=2025-10-23&vintage_date=2025-10-23",
+        "vintage_date": "2025-10-23",
+        "available_at": "2025-10-23T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:05+00:00",
+        "sha256": "8c392e6567943bcf54150a40057503f82ae2ab6a6b7ebaaf55205d109f5005e8",
+        "csv": "observation_date,DGS2_20251023\n2025-10-10,3.52\n2025-10-13,\n2025-10-14,3.48\n2025-10-15,3.50\n2025-10-16,3.41\n2025-10-17,3.46\n2025-10-20,3.46\n2025-10-21,3.45\n2025-10-22,3.45\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-10-24&coed=2025-10-29&vintage_date=2025-10-31",
+        "vintage_date": "2025-10-31",
+        "available_at": "2025-10-31T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:06+00:00",
+        "sha256": "2161de322f65b6e93c9fde2167b6b0c04086db0045561ae72a0edddff636c8d7",
+        "csv": "observation_date,DGS2_20251031\n2025-10-24,3.48\n2025-10-27,3.48\n2025-10-28,3.47\n2025-10-29,3.59\n"
+      }
+    },
+    "2026-01-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-12-30&coed=2026-01-12&vintage_date=2026-01-12",
+        "vintage_date": "2026-01-12",
+        "available_at": "2026-01-12T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:45:07+00:00",
+        "sha256": "524969cb6d0dee43dce51d5d5a79808a3f879c04a30323799c50594a218ddac7",
+        "csv": "observation_date,DGS2_20260112\n2025-12-30,3.45\n2025-12-31,3.47\n2026-01-01,\n2026-01-02,3.47\n2026-01-05,3.46\n2026-01-06,3.47\n2026-01-07,3.47\n2026-01-08,3.49\n2026-01-09,3.54\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-01-13&coed=2026-01-18&vintage_date=2026-01-20",
+        "vintage_date": "2026-01-20",
+        "available_at": "2026-01-20T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:45:08+00:00",
+        "sha256": "1c920d011390eee68895254001673698a1823c6bec0559fb69b2ab0b5b0daeec",
+        "csv": "observation_date,DGS2_20260120\n2026-01-13,3.53\n2026-01-14,3.51\n2026-01-15,3.56\n2026-01-16,3.59\n"
+      }
+    },
+    "2026-02-13": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-01-30&coed=2026-02-12&vintage_date=2026-02-12",
+        "vintage_date": "2026-02-12",
+        "available_at": "2026-02-12T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:45:09+00:00",
+        "sha256": "8d79dfe1fdbd7f36b3740c9ec800d1ca308b5ec976dc927e1e098724daa2b4df",
+        "csv": "observation_date,DGS2_20260212\n2026-01-30,3.52\n2026-02-02,3.57\n2026-02-03,3.57\n2026-02-04,3.57\n2026-02-05,3.47\n2026-02-06,3.50\n2026-02-09,3.48\n2026-02-10,3.45\n2026-02-11,3.52\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-02-13&coed=2026-02-18&vintage_date=2026-02-20",
+        "vintage_date": "2026-02-20",
+        "available_at": "2026-02-20T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:45:10+00:00",
+        "sha256": "8bd8252ce6073a82c2b7b71bbe863a1717be786f836e37af36387fdc7ef8094b",
+        "csv": "observation_date,DGS2_20260220\n2026-02-13,3.40\n2026-02-16,\n2026-02-17,3.43\n2026-02-18,3.47\n"
+      }
+    },
+    "2026-03-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-02-25&coed=2026-03-10&vintage_date=2026-03-10",
+        "vintage_date": "2026-03-10",
+        "available_at": "2026-03-10T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:11+00:00",
+        "sha256": "9679895cbdba05b5e3f9c85ec0eafb98a854831330a103ccfe46432c15f628b9",
+        "csv": "observation_date,DGS2_20260310\n2026-02-25,3.45\n2026-02-26,3.42\n2026-02-27,3.38\n2026-03-02,3.47\n2026-03-03,3.51\n2026-03-04,3.54\n2026-03-05,3.57\n2026-03-06,3.56\n2026-03-09,3.56\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-03-11&coed=2026-03-16&vintage_date=2026-03-18",
+        "vintage_date": "2026-03-18",
+        "available_at": "2026-03-18T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:12+00:00",
+        "sha256": "51ca24ae058b66fe5df946d665775508d3cbbefbeced77c6fe7e3c1df34b48ef",
+        "csv": "observation_date,DGS2_20260318\n2026-03-11,3.64\n2026-03-12,3.76\n2026-03-13,3.73\n2026-03-16,3.68\n"
+      }
+    },
+    "2026-04-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-03-27&coed=2026-04-09&vintage_date=2026-04-09",
+        "vintage_date": "2026-04-09",
+        "available_at": "2026-04-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:13+00:00",
+        "sha256": "4ea20ed0a2bd0b668c20e4c4b07bfc47952464aba2f88c878683ffd61563388e",
+        "csv": "observation_date,DGS2_20260409\n2026-03-27,3.88\n2026-03-30,3.82\n2026-03-31,3.79\n2026-04-01,3.81\n2026-04-02,3.79\n2026-04-03,3.84\n2026-04-06,3.84\n2026-04-07,3.81\n2026-04-08,3.79\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-04-10&coed=2026-04-15&vintage_date=2026-04-17",
+        "vintage_date": "2026-04-17",
+        "available_at": "2026-04-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:14+00:00",
+        "sha256": "1da957e8ce316b2e2dea80c8ccef0d8ced9332241052f6635e750669c672a482",
+        "csv": "observation_date,DGS2_20260417\n2026-04-10,3.81\n2026-04-13,3.78\n2026-04-14,3.76\n2026-04-15,3.76\n"
+      }
+    },
+    "2026-05-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-04-28&coed=2026-05-11&vintage_date=2026-05-11",
+        "vintage_date": "2026-05-11",
+        "available_at": "2026-05-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:15+00:00",
+        "sha256": "c8d94fa7d81526b03801d1a03e89a0828190c17ee2af0b7bbd93bad251593f91",
+        "csv": "observation_date,DGS2_20260511\n2026-04-28,3.84\n2026-04-29,3.92\n2026-04-30,3.88\n2026-05-01,3.88\n2026-05-04,3.95\n2026-05-05,3.93\n2026-05-06,3.87\n2026-05-07,3.92\n2026-05-08,3.90\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-05-12&coed=2026-05-17&vintage_date=2026-05-19",
+        "vintage_date": "2026-05-19",
+        "available_at": "2026-05-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:16+00:00",
+        "sha256": "2d7ead3797b8415d01e62dd3162b7df7684487c629bd842dbd2962d20021843e",
+        "csv": "observation_date,DGS2_20260519\n2026-05-12,4.00\n2026-05-13,3.98\n2026-05-14,4.00\n2026-05-15,4.09\n"
+      }
+    },
+    "2026-06-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-05-27&coed=2026-06-09&vintage_date=2026-06-09",
+        "vintage_date": "2026-06-09",
+        "available_at": "2026-06-09T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:16+00:00",
+        "sha256": "28d36a890d5c9ab70b59bd7c5e59b2f3dbfbb3fe6158985742bf3e78dc060464",
+        "csv": "observation_date,DGS2_20260609\n2026-05-27,4.00\n2026-05-28,3.99\n2026-05-29,3.98\n2026-06-01,4.05\n2026-06-02,4.05\n2026-06-03,4.08\n2026-06-04,4.05\n2026-06-05,4.17\n2026-06-08,4.15\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-06-10&coed=2026-06-15&vintage_date=2026-06-17",
+        "vintage_date": "2026-06-17",
+        "available_at": "2026-06-17T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:17+00:00",
+        "sha256": "2b146a2e44fa29afe5c08d4ae43ce246e5c22bbb9f191a1b3802b5cd180501aa",
+        "csv": "observation_date,DGS2_20260617\n2026-06-10,4.13\n2026-06-11,4.05\n2026-06-12,4.09\n2026-06-15,4.07\n"
+      }
+    },
+    "2026-07-14": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-06-30&coed=2026-07-13&vintage_date=2026-07-13",
+        "vintage_date": "2026-07-13",
+        "available_at": "2026-07-13T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:18+00:00",
+        "sha256": "45b7947d287fb63c747d0d696d1036f589f228750974548f7c18659be97abb96",
+        "csv": "observation_date,DGS2_20260713\n2026-06-30,4.14\n2026-07-01,4.17\n2026-07-02,4.14\n2026-07-03,\n2026-07-06,4.13\n2026-07-07,4.19\n2026-07-08,4.21\n2026-07-09,4.16\n2026-07-10,4.21\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-07-14&coed=2026-07-19&vintage_date=2026-07-21",
+        "vintage_date": "2026-07-21",
+        "available_at": "2026-07-21T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:19+00:00",
+        "sha256": "e2eeb01e578c868bee459a7ac6ad04710404f75c6da5fd039f7fe23ced74a941",
+        "csv": "observation_date,DGS2_20260721\n2026-07-14,4.18\n2026-07-15,4.13\n2026-07-16,4.16\n2026-07-17,4.18\n"
+      }
+    },
+    "2026-08-12": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-07-29&coed=2026-08-11&vintage_date=2026-08-11",
+        "vintage_date": "2026-08-11",
+        "available_at": "2026-08-11T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:20+00:00",
+        "sha256": "d948c16beb7aa06b8587a5736c861c1ec78afbbfc0e15da79d9f931773c5753e",
+        "csv": "observation_date,DGS2_20260811\n2026-07-29,4.22\n2026-07-30,4.23\n2026-07-31,4.28\n2026-08-03,4.25\n2026-08-04,4.20\n2026-08-05,4.18\n2026-08-06,4.25\n2026-08-07,4.19\n2026-08-10,4.25\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-08-12&coed=2026-08-17&vintage_date=2026-08-19",
+        "vintage_date": "2026-08-19",
+        "available_at": "2026-08-19T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:21+00:00",
+        "sha256": "ed09ee9b8a099aee6411fd47423f3fae5abca6ef51121ca332771fbaf0a998a4",
+        "csv": "observation_date,DGS2_20260819\n2026-08-12,4.20\n2026-08-13,4.15\n2026-08-14,4.17\n2026-08-17,4.19\n"
+      }
+    },
+    "2026-09-11": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-08-28&coed=2026-09-10&vintage_date=2026-09-10",
+        "vintage_date": "2026-09-10",
+        "available_at": "2026-09-10T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:22+00:00",
+        "sha256": "1809cfe48aaf5362f2d5f4b8308d8a16785f1a41be960a90bbef47684e01ec06",
+        "csv": "observation_date,DGS2_20260910\n2026-08-28,4.34\n2026-08-31,4.34\n2026-09-01,4.39\n2026-09-02,4.39\n2026-09-03,4.34\n2026-09-04,4.37\n2026-09-07,\n2026-09-08,4.39\n2026-09-09,4.43\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-09-11&coed=2026-09-16&vintage_date=2026-09-18",
+        "vintage_date": "2026-09-18",
+        "available_at": "2026-09-18T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:23+00:00",
+        "sha256": "90a87c91e4418ec95c98762f191c2249152eea49cb11718fcb1dec639e74c2ae",
+        "csv": "observation_date,DGS2_20260918\n2026-09-11,4.63\n2026-09-14,4.65\n2026-09-15,4.67\n2026-09-16,4.74\n"
+      }
+    },
+    "2026-10-14": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-09-30&coed=2026-10-13&vintage_date=2026-10-13",
+        "vintage_date": "2026-10-13",
+        "available_at": "2026-10-13T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:24+00:00",
+        "sha256": "e6285433ba9053e7390c138c92a7156b9d67fb1db4ea3e280b4ac4aaa06d1d83",
+        "csv": "observation_date,DGS2_20261013\n2026-09-30,4.88\n2026-10-01,4.78\n2026-10-02,4.83\n2026-10-05,4.84\n2026-10-06,4.79\n2026-10-07,4.77\n2026-10-08,4.75\n2026-10-09,4.80\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-10-14&coed=2026-10-19&vintage_date=2026-10-21",
+        "vintage_date": "2026-10-21",
+        "available_at": "2026-10-21T23:59:59-04:00",
+        "retrieved_at": "2026-11-14T21:45:25+00:00",
+        "sha256": "75ba24a3c50e446f340949a36d769f21c89a208a5d1892a84b73b2202bf6a24e",
+        "csv": "observation_date,DGS2_20261021\n2026-10-14,4.82\n2026-10-15,4.77\n2026-10-16,4.74\n2026-10-19,4.77\n"
+      }
+    },
+    "2026-11-10": {
+      "before": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-10-27&coed=2026-11-09&vintage_date=2026-11-09",
+        "vintage_date": "2026-11-09",
+        "available_at": "2026-11-09T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:45:25+00:00",
+        "sha256": "ae795a8f52c830af207ea2af116f0328441a00e9a1f144cf131ddb96184739d2",
+        "csv": "observation_date,DGS2_20261109\n2026-10-27,4.70\n2026-10-28,4.67\n2026-10-29,4.61\n2026-10-30,4.56\n2026-11-02,4.59\n2026-11-03,4.61\n2026-11-04,4.58\n2026-11-05,4.46\n2026-11-06,4.51\n"
+      },
+      "after": {
+        "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-11-10&coed=2026-11-13&vintage_date=2026-11-13",
+        "vintage_date": "2026-11-13",
+        "available_at": "2026-11-13T23:59:59-05:00",
+        "retrieved_at": "2026-11-14T21:45:26+00:00",
+        "sha256": "7779360e9aa01436fea2494193d5024f5f075794b101ab021ea7821b6765b3b5",
+        "csv": "observation_date,DGS2_20261113\n2026-11-10,4.73\n2026-11-11,\n2026-11-12,4.86\n"
+      }
+    }
+  }
+}

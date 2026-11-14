@@ -7,6 +7,7 @@ import json
 import sys
 from pathlib import Path
 
+from .capture import capture_cpi
 from .cpi import replay
 from .draft import propose
 from .ledger import (
@@ -108,6 +109,10 @@ def main(argv: list[str] | None = None) -> int:
     run_study = commands.add_parser("study", help="Evaluate the archived CPI feature ablation")
     run_study.add_argument("--fixture", type=Path, default=STUDY)
     run_study.add_argument("--output", type=Path)
+    run_study.add_argument("--single-vintage", action="store_true", help="Reproduce the initial single-vintage analysis")
+    capture = commands.add_parser("capture-cpi", help="Freeze an upcoming CPI release within 15 minutes of embargo lift")
+    capture.add_argument("--embargo", required=True, help="Expected BLS release time in ISO 8601 with offset")
+    capture.add_argument("--output", type=Path, required=True)
     build = commands.add_parser("build", help="Render the GitHub Pages site")
     build.add_argument("--output", type=Path, default=ROOT / "_site")
     draft = commands.add_parser("propose-week", help="Build a reviewable weekly market issue draft")
@@ -131,10 +136,12 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "replay":
             _write(replay(args.fixture), args.output)
         elif args.command == "study":
-            _write(study(args.fixture), args.output)
+            _write(study(args.fixture, vintaged=not args.single_vintage), args.output)
+        elif args.command == "capture-cpi":
+            _write(capture_cpi(args.embargo, args.output))
         elif args.command == "build":
             forecasts, results = load_ledger(ROOT)
-            render(args.output, replay(DEMO), forecasts, results, study=study(STUDY))
+            render(args.output, replay(DEMO), forecasts, results, study=study(STUDY, vintaged=True))
         elif args.command == "propose-week":
             _write(propose(args.week))
         elif args.command == "baseline":

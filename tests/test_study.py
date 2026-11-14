@@ -367,3 +367,19 @@ class LogisticTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class OfficialStudySmoke(unittest.TestCase):
+    def test_official_snapshots_and_scores(self):
+        root = Path(__file__).resolve().parents[1] / "data" / "cpi-study"
+        result = study.study(root, vintaged=True)
+        self.assertEqual(result["counts"]["events"], 81)
+        self.assertEqual(result["counts"]["scored"], 56)
+        last = result["scored_events"][-1]
+        self.assertEqual(last["release_date"], "2026-11-10")
+        self.assertEqual(last["reference_date"], "2026-11-06")
+        self.assertEqual(last["next_date"], "2026-11-12")
+        self.assertEqual(last["yield_sources"]["before"]["vintage_date"], "2026-11-09")
+        self.assertEqual(last["yield_sources"]["after"]["vintage_date"], "2026-11-13")
+        self.assertAlmostEqual(result["summary"]["mean_cpi_ablation_delta"], 0.002798068489841432)
+        self.assertLess(result["summary"]["cpi_ablation_interval"]["lower_95"], 0)
+        self.assertGreater(result["summary"]["cpi_ablation_interval"]["upper_95"], 0)

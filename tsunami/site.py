@@ -275,13 +275,18 @@ def _study(report: dict | None) -> str:
         comparison = f" Adding CPI changed mean Brier by {delta:+.3f} against the matched lag-only model."
     else:
         comparison = ""
+    interval = _mapping(summary.get("cpi_ablation_interval"))
+    interval_line = (
+        f' The 95% paired block-bootstrap interval spanned {interval["lower_95"]:+.3f} to {interval["upper_95"]:+.3f}.'
+        if interval else ""
+    )
     return (
         '<article class="replay study"><h3>Do released CPI changes add signal?</h3>'
         f'<p>Expanding-window comparison over {_e(counts["scored"])} scored releases'
         f' ({_time(range_["first_scored"])} to {_time(range_["last_scored"])}).'
-        f'{comparison}</p><dl class="timing">{metrics}</dl>'
-        '<p>All lagged yields and outcomes use a single frozen post-study ALFRED vintage. '
-        'The study is exploratory, and the CPI readings exclude consensus surprises.</p>'
+        f'{comparison}{interval_line}</p><dl class="timing">{metrics}</dl>'
+        '<p>Each release uses its own ALFRED yield snapshots from before and after the event. '
+        'This archival study uses published CPI readings. Market-consensus surprises are outside its scope.</p>'
         '<p><a href="study.json">Walk-forward results · per-release sources, probabilities and scores</a></p></article>'
     )
 
