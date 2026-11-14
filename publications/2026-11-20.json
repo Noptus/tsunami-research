@@ -1,0 +1,10 @@
+{
+  "asset_id": 748841265,
+  "asset_sha256": "99c572755d63ccfcd082297655bd6546bedb5f32896f6b68518749acf85586f2",
+  "asset_url": "https://github.com/Noptus/tsunami-research/releases/download/forecast-2026-11-20/2026-11-20.json",
+  "immutable": true,
+  "issue_sha256": "146118d1005afa0725dcda800792f3892f7929928c8f3a1327a275e4aeb5a0d3",
+  "published_at": "2026-11-14T21:33:09Z",
+  "release_id": 445604623,
+  "url": "https://github.com/Noptus/tsunami-research/releases/tag/forecast-2026-11-20"
+}
