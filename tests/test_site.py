@@ -85,10 +85,13 @@ class SiteTests(unittest.TestCase):
         self.clock.start()
         self.addCleanup(self.clock.stop)
 
-    def publish(self, forecasts=None, results=None, replay=None):
+    def publish(self, forecasts=None, results=None, replay=None, **kwargs):
         render(self.output, {} if replay is None else replay,
-               [] if forecasts is None else forecasts, {} if results is None else results)
+               [] if forecasts is None else forecasts, {} if results is None else results, **kwargs)
         return (self.output / "index.html").read_text(encoding="utf-8")
+
+    def issue(self, week="2026-11-20"):
+        return (self.output / "issues" / f"{week}.html").read_text(encoding="utf-8")
 
     def scores(self):
         return json.loads((self.output / "scores.json").read_text(encoding="utf-8"))
@@ -99,7 +102,7 @@ class SiteTests(unittest.TestCase):
         source = self.publish([data], replay=replay)
         doc = Document(source)
         tags = [tag for tag, _ in doc.elements]
-        for landmark in ("header", "nav", "main", "footer", "table", "caption", "article"):
+        for landmark in ("header", "nav", "main", "footer", "table", "caption"):
             self.assertIn(landmark, tags)
         self.assertIn('<html lang="en">', source)
         self.assertIn("Tsunami Research", source)
@@ -112,7 +115,7 @@ class SiteTests(unittest.TestCase):
                          (self.output / "styles.css").read_bytes())
         for href in doc.links:
             if not href.startswith(("http", "#")):
-                self.assertTrue((self.output / href).is_file(), href)
+                self.assertTrue((self.output / href.split("#", 1)[0]).is_file(), href)
         anchors = {attrs["id"] for _, attrs in doc.elements if "id" in attrs}
         for href in doc.links:
             if href.startswith("#"):
@@ -121,9 +124,7 @@ class SiteTests(unittest.TestCase):
         self.assertTrue(any(attrs.get("scope") == "col" for tag, attrs in doc.elements if tag == "th"))
         self.assertTrue(any(attrs.get("role") == "region" and attrs.get("tabindex") == "0"
                             and attrs.get("aria-label") for _, attrs in doc.elements))
-        bars = [attrs for _, attrs in doc.elements if attrs.get("class") == "bar"]
-        self.assertTrue(bars)
-        self.assertTrue(all(attrs.get("aria-hidden") == "true" for attrs in bars))
+        self.assertIn("article", [tag for tag, _ in Document(self.issue()).elements])
         self.assertIn("65%", "".join(doc.text))
         css = (self.output / "styles.css").read_text()
         self.assertIn("overflow-x: auto", css)
@@ -161,7 +162,8 @@ class SiteTests(unittest.TestCase):
         safe = ["https://example.org/a?x=1&y=2", "http://example.org/path", "HTTPS://example.org/upper"]
         data = forecast(evidence=[{"title": f"Source {i}", "url": url, "available_at": "2026-01-01"}
                                   for i, url in enumerate(unsafe + safe)])
-        source = self.publish([data], {data["id"]: resolved(source_urls=unsafe + safe)})
+        self.publish([data], {data["id"]: resolved(source_urls=unsafe + safe)})
+        source = self.issue()
         links = Document(source).links
         for url in unsafe:
             self.assertNotIn(url, links)
@@ -216,17 +218,14 @@ class SiteTests(unittest.TestCase):
         self.assertIn("Unresolved · deadline ahead", source)
         self.assertIn("Deadline passed · awaiting resolution", source)
         self.assertIn("Unresolved · deadline unverified", source)
-        self.assertIn("Latest live evidence as of", source)
-        self.assertIn("2026-11-09T08:30:00+00:00", source)
-        edition = source.split('<aside class="edition"', 1)[1].split("</aside>", 1)[0]
-        self.assertNotIn("2099", edition)
-        self.assertIn("2026-11-14T12:00:00+00:00", edition)
-        for label in ("Issued", "Evidence as of", "Week ending", "Resolution deadline",
-                      "Static edition built", "Prospective · live record", "Archived replay · not live"):
-            self.assertIn(label, source)
-        self.assertIn("not a promised publication schedule", source)
+        issue = self.issue()
+        self.assertIn("2026-11-09T08:30:00+00:00", issue)
+        self.assertNotIn("2099", issue)
+        self.assertEqual(self.scores()["built_at"], "2026-11-14T12:00:00+00:00")
+        for label in ("Issued", "Evidence cutoff", "Deadline"):
+            self.assertIn(label, issue)
         self.assertIn("Passing a deadline does not resolve a question", source)
-        doc = Document(source)
+        doc = Document(issue)
         self.assertFalse(any(attrs.get("datetime") == "not a timestamp" for _, attrs in doc.elements))
 
     def test_only_resolved_live_records_enter_summaries(self):
@@ -265,16 +264,16 @@ class SiteTests(unittest.TestCase):
         self.assertEqual(summary["resolved_count"], 0)
         self.assertIsNone(summary["mean_brier"])
         self.assertIsNone(summary["mean_baseline_brier"])
-        self.assertIn("No live as-of timestamp available", source)
+        self.assertIn("No dated issues yet", source)
         self.assertIn("No forecasts published", source)
-        self.assertIn("Not available", source)
+        self.assertIn("Awaiting the first forecast outcomes", source)
 
     def test_zero_probabilities_and_scores_are_not_missing(self):
         source = self.publish([forecast(probability=0, baseline_probability=0)],
                               {"live-01": resolved(outcome=0, brier=0, baseline_brier=0)},
                               {"title": "Zero baseline", "baseline_probability": 0, "baseline_score": 0})
         self.assertIn('class="probability">0%</span>', source)
-        self.assertIn("--probability: 0.00%", source)
+        self.assertIn('class="probability">0.0%</span>', source)
         self.assertEqual(self.scores()["summary"]["mean_baseline_brier"], 0)
         replay = source.split('<div class="replay">', 1)[1].split('</div><p class="empty">', 1)[0]
         self.assertIn("0.000", replay)
@@ -315,8 +314,8 @@ class SiteTests(unittest.TestCase):
         self.assertNotIn('class="bar"', source)
         self.assertIn("Not available", source)
         source = self.publish([forecast(probability=1, baseline_probability=0)])
-        self.assertIn("--probability: 100.00%", source)
-        self.assertIn("--probability: 0.00%", source)
+        self.assertIn('class="probability">100%</span>', source)
+        self.assertIn('class="probability">0.0%</span>', source)
 
     def test_unknown_replay_schema_remains_available(self):
         replay = {"title": "Future format", "predictions": [], "baseline": "unknown shape",
@@ -363,6 +362,114 @@ class SiteTests(unittest.TestCase):
             self.publish()
         self.assertEqual(sentinel.read_text(), "keep")
         self.assertFalse((self.output / "index.html").exists())
+
+    def test_issues_directory_symlink_is_rejected_before_any_write(self):
+        real = self.work / "real"
+        real.mkdir()
+        self.output.mkdir(parents=True)
+        (self.output / "issues").symlink_to(real, target_is_directory=True)
+        with self.assertRaisesRegex(ValueError, "symlink"):
+            self.publish([forecast(week_ending="2026-11-20")])
+        self.assertFalse((self.output / "index.html").exists())
+        self.assertEqual(list(real.iterdir()), [])
+
+    def test_latest_issue_leads_home_with_synthesis_and_outcome_state(self):
+        issue = [forecast("a", question="Up question?"), forecast("b", question="Down question?"),
+                 forecast("c", question="Event question?")]
+        source = self.publish(issue)
+        doc = Document(source)
+        live = source.split('id="live"', 1)[1].split('id="archive"', 1)[0]
+        # Three probability rows lead the home page inside the latest issue.
+        self.assertEqual(sum(tag == "tr" for tag, _ in Document(live).elements), 4)
+        self.assertIn("Latest issue · week ending", live)
+        self.assertIn("synthesis", live)
+        self.assertIn("Unresolved · deadline ahead", live)
+        anchors = {attrs["id"] for tag, attrs in doc.elements if tag == "tr" and "id" in attrs}
+        details = Document(self.issue())
+        self.assertEqual(len(anchors), 3)
+        for anchor in anchors:
+            self.assertIn(f"issues/2026-11-20.html#{anchor}", doc.links)
+            self.assertIn(anchor, {attrs.get("id") for tag, attrs in details.elements if tag == "article"})
+        self.assertNotIn("Evidence cutoff", live)
+
+    def test_older_issues_get_stable_permalinks_and_archive_index(self):
+        issue = [forecast("new-1", week_ending="2026-11-20", question="Latest week?"),
+                 forecast("old-1", week_ending="2026-11-13", question="Earlier week?"),
+                 forecast("old-2", week_ending="2026-11-13", question="Earlier week two?")]
+        source = self.publish(issue)
+        permalink = self.output / "issues" / "2026-11-13.html"
+        latest_permalink = self.output / "issues" / "2026-11-20.html"
+        self.assertTrue(permalink.is_file())
+        self.assertTrue(latest_permalink.is_file())  # the lead issue is also addressable
+        archive = source.split('id="archive"', 1)[1]
+        self.assertIn("issues/2026-11-13.html", Document(source).links)
+        self.assertIn("November 13, 2026", archive)
+        # The home page leads with the newest week only.
+        live = source.split('id="live"', 1)[1].split('id="archive"', 1)[0]
+        self.assertIn("Latest week?", live)
+        self.assertNotIn("Earlier week?", live)
+        # The permalink carries full immutable detail for its two forecasts.
+        page = permalink.read_text(encoding="utf-8")
+        pdoc = Document(page)
+        self.assertIn("Earlier week?", page)
+        self.assertIn("Earlier week two?", page)
+        self.assertNotIn("Latest week?", page)
+        forecast_ids = {attrs["id"] for _, attrs in pdoc.elements if attrs.get("class") == "forecast"}
+        self.assertEqual(len(forecast_ids), 2)
+        self.assertTrue(forecast_ids <= {attrs.get("id") for _, attrs in Document(archive).elements})
+        # Permalink links resolve relative to issues/ via the ../ base.
+        for href in pdoc.links:
+            if href.startswith("../") and "#" not in href:
+                self.assertTrue((self.output / "issues" / href).resolve().is_file(), href)
+        self.assertEqual((self.output / "styles.css").read_bytes(),
+                         (ROOT / "tsunami/static/styles.css").read_bytes())
+
+    def test_permalinks_only_for_plain_iso_week_dates(self):
+        issue = [forecast("ok", week_ending="2026-11-20"),
+                 forecast("weird", week_ending="not a date"),
+                 forecast("empty", week_ending="")]
+        source = self.publish(issue)
+        names = {p.name for p in (self.output / "issues").glob("*.html")}
+        self.assertEqual(names, {"2026-11-20.html"})
+        # Undated and malformed groups never become files or inject link paths.
+        for href in Document(source).links:
+            if href.startswith("issues/"):
+                self.assertRegex(href, r"^issues/\d{4}-\d{2}-\d{2}\.html$")
+
+    def test_outcome_state_reflects_resolution_distinct_from_projection(self):
+        issue = [forecast("a", week_ending="2026-11-13"), forecast("b", week_ending="2026-11-13")]
+        results = {"a": resolved("a", outcome=1), "b": resolved("b", outcome=0)}
+        self.publish(issue, results)
+        page = (self.output / "issues" / "2026-11-13.html").read_text(encoding="utf-8")
+        self.assertIn("Resolved · 1 of 2 scored Yes", page)
+        self.assertIn("Brier 0.122", page)  # outcome scored apart from original probability
+        # The frozen origin probability is still shown on the permalink.
+        self.assertIn("65%", page)
+
+    def test_authored_and_fallback_editorial_copy(self):
+        # No opening commentary is fabricated when the editor has not provided it.
+        source = self.publish([forecast(week_ending="2026-12-04")])
+        self.assertIn("Week ending December 4, 2026", source)
+        self.assertNotIn('class="synthesis"', source)
+        # An override is escaped and used verbatim as the opening synthesis.
+        authored = self.publish([forecast(week_ending="2026-12-04")],
+                                editorial={"2026-12-04": {"synthesis": "Edited <b>opening</b> line.",
+                                                          "note": "Audited note."}})
+        self.assertIn("Edited &lt;b&gt;opening&lt;/b&gt; line.", authored)
+        self.assertNotIn("<b>opening</b>", authored)
+        self.assertIn("Audited note.", self.issue("2026-12-04"))
+
+    def test_tracked_editorial_copy_is_used_for_the_first_release(self):
+        # The authored 2026-11-20 synthesis ships in the tracked editorial file.
+        source = self.publish([forecast(week_ending="2026-11-20")])
+        self.assertIn("NVIDIA reports after a change at the top", source)
+        self.assertIn("November 14 release holds the original forecasts", self.issue())
+
+    def test_render_signature_stays_backward_compatible(self):
+        # The historical positional signature and study keyword still work.
+        self.publish([forecast()], {}, {"title": "Replay"})
+        render(self.output / "two", {"title": "R"}, [forecast()], {}, study=None)
+        self.assertTrue((self.output / "two" / "index.html").is_file())
 
 
 if __name__ == "__main__":

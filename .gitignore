@@ -5,3 +5,4 @@ __pycache__/
 _site/
 .*.lock
 .*.tmp
+.editorial/

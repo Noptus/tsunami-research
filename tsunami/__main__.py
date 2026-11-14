@@ -7,6 +7,7 @@ import json
 import sys
 from pathlib import Path
 
+from . import editorial
 from .capture import capture_cpi
 from .cpi import replay
 from .draft import propose
@@ -100,6 +101,39 @@ def _adjudicate(args: argparse.Namespace) -> None:
     _write(scored)
 
 
+def _editorial_prepare(args: argparse.Namespace) -> None:
+    proposal = read_json(args.proposal) if args.proposal else None
+    sources = read_json(args.sources) if args.sources else None
+    manifest_dir = args.sources.resolve().parent if args.sources else None
+    packet = editorial.prepare(
+        args.week, proposal=proposal, sources=sources,
+        manifest_dir=manifest_dir, root=ROOT,
+    )
+    write_new(args.output, packet)
+    _write(packet)
+
+
+def _editorial_review(args: argparse.Namespace) -> None:
+    packet = read_json(args.packet)
+    issue = read_json(args.candidate)
+    report = editorial.review(packet, issue, args.week)
+    if args.output is not None:
+        # Content-addressed by issue digest so a changed candidate never
+        # overwrites a prior review.
+        path = args.output if args.output.suffix == ".json" else (
+            args.output / f"review-{report['issue_sha256']}-{report['packet_digest']}.json"
+        )
+        write_new(path, report)
+    _write(report)
+
+
+def _editorial_stage(args: argparse.Namespace) -> None:
+    issue = read_json(args.candidate)
+    report = read_json(args.report)
+    result = editorial.stage(ROOT, issue, args.week, read_json(args.packet), report)
+    _write(result)
+
+
 def main(argv: list[str] | None = None) -> int:
     cli = argparse.ArgumentParser(prog="python3 -m tsunami", description=__doc__)
     commands = cli.add_subparsers(dest="command", required=True)
@@ -131,6 +165,23 @@ def main(argv: list[str] | None = None) -> int:
     adjudicate.add_argument("--outcome", choices=("yes", "no", "void"), required=True)
     adjudicate.add_argument("--note", required=True)
     adjudicate.add_argument("--source", nargs="+", required=True)
+    editorial_cli = commands.add_parser("editorial", help="Offline editorial intake and reproducible issue review")
+    editorial_sub = editorial_cli.add_subparsers(dest="stage", required=True)
+    prepare = editorial_sub.add_parser("prepare", help="Freeze an immutable local packet of baselines and source receipts")
+    prepare.add_argument("--week", required=True)
+    prepare.add_argument("--output", type=Path, required=True)
+    prepare.add_argument("--proposal", type=Path, help="Existing proposal JSON; otherwise propose and source baselines")
+    prepare.add_argument("--sources", type=Path, help="Optional JSON manifest of supplemental primary-source receipts")
+    review = editorial_sub.add_parser("review", help="Validate a candidate issue against a saved packet")
+    review.add_argument("--week", required=True)
+    review.add_argument("--packet", type=Path, required=True)
+    review.add_argument("--candidate", type=Path, required=True)
+    review.add_argument("--output", type=Path, help="Write the review (content-addressed by issue digest)")
+    stage_cmd = editorial_sub.add_parser("stage", help="Copy a validated candidate into forecasts/ (no publish)")
+    stage_cmd.add_argument("--week", required=True)
+    stage_cmd.add_argument("--candidate", type=Path, required=True)
+    stage_cmd.add_argument("--report", type=Path, required=True)
+    stage_cmd.add_argument("--packet", type=Path, required=True)
     args = cli.parse_args(argv)
     try:
         if args.command == "replay":
@@ -152,6 +203,13 @@ def main(argv: list[str] | None = None) -> int:
             _settle()
         elif args.command == "adjudicate":
             _adjudicate(args)
+        elif args.command == "editorial":
+            if args.stage == "prepare":
+                _editorial_prepare(args)
+            elif args.stage == "review":
+                _editorial_review(args)
+            elif args.stage == "stage":
+                _editorial_stage(args)
         elif args.command == "validate":
             replay(DEMO)
             checked, results = load_ledger(ROOT, allow_unpublished=True)

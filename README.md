@@ -1,8 +1,6 @@
 # Tsunami Research
 
-**A public ledger for market forecasts that can be checked.**
-
-Tsunami freezes a probability, links the evidence available at issue, and records outcomes against rules published with the forecast. It includes a reproducible CPI replay and a weekly ledger for large market moves and precisely defined corporate events.
+Tsunami is a weekly market research journal. Each issue records a probability, the evidence available at the time, and the rule that will decide the outcome. The archive includes dated issues, resolved forecasts and reproducible research on CPI releases.
 
 ## Start here
 
@@ -17,7 +15,7 @@ python3 -m tsunami build
 python3 -m http.server --directory _site 8000
 ```
 
-The [public ledger](https://noptus.github.io/tsunami-research/) separates locked forecasts, resolved forecasts and archived analysis. [The weekly editorial runbook](docs/weekly-editorial.md) covers research, immutability, scorekeeping and the next issue.
+Read the [journal](https://noptus.github.io/tsunami-research/) or use the [weekly editorial workflow](docs/weekly-editorial.md) to produce a new issue. Claude Code can use the [editorial skill](.claude/skills/tsunami-editorial/SKILL.md) from this checkout.
 
 ## CPI replay
 
