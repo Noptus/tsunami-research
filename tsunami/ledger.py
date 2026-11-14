@@ -214,6 +214,7 @@ def market_baseline(forecast: dict) -> dict:
     # window bounded by the anchor; the first observation can be later.
     start = anchor - timedelta(days=3650)
     values, url, raw_digest = fetch_sp500(start, anchor)
+    _require(anchor in values, "FRED has no published close for the anchor Friday")
     pairs = [
         (day, day + timedelta(days=7))
         for day in sorted(values)

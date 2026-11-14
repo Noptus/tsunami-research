@@ -16,11 +16,12 @@ Run these commands from the checkout. Replace the example week with the actual i
 
 ```sh
 week=2026-11-20
+python3 -m tsunami propose-week --week "$week"
 python3 -m tsunami validate
 python3 -m tsunami baseline --week "$week"
 ```
 
-Place the validated issue in `forecasts/$week.json`. Record a common UTC issue time after the evidence cutoff. For a Friday-to-Friday market forecast, publish before the following Monday's regular open. Use main and an immutable release with the issue file attached. Verify the asset before committing the receipt.
+The proposal command previews a baseline-only draft and may abstain when evidence or timing is ineligible. Review and enrich its records before placing the issue in `forecasts/$week.json`. Record a common UTC issue time after the evidence cutoff. For a Friday-to-Friday market forecast, publish before the following Monday's regular open. Use main and an immutable release with the issue file attached. Verify the asset before committing the receipt.
 
 ```sh
 git add "forecasts/$week.json"

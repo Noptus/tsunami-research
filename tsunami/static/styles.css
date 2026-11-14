@@ -90,8 +90,7 @@ li + li { margin-top: .6rem; }
 .archive .replay { border-bottom: 1px solid var(--rule); padding-bottom: 1rem; }
 .replay > p { font-size: .8rem; max-width: 85ch; }
 .replay .timing { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.observations { padding-left: 1.3rem; font-size: .8rem; }
-.observations li::marker { color: var(--accent); }
+.replay + .study { margin-top: 1.2rem; }
 pre { white-space: pre-wrap; overflow-wrap: anywhere; font: .72rem/1.65 ui-monospace, "SFMono-Regular", Consolas, monospace; padding: 1rem; background: white; border: 1px solid var(--rule); }
 .reading { padding: 3rem 0; }
 .reading .detail-grid { margin-top: 1.8rem; }

@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 from .cpi import replay
+from .draft import propose
 from .ledger import (
     digest,
     json_bytes,
@@ -22,10 +23,12 @@ from .ledger import (
 )
 from .publication import attest
 from .site import render
+from .study import study
 
 
 ROOT = Path.cwd()
 DEMO = ROOT / "data" / "cpi-2026-11-10"
+STUDY = ROOT / "data" / "cpi-study"
 
 
 def _write(value: object, path: Path | None = None) -> None:
@@ -102,8 +105,13 @@ def main(argv: list[str] | None = None) -> int:
     run_replay = commands.add_parser("replay", help="Run an offline historical CPI replay")
     run_replay.add_argument("--fixture", type=Path, default=DEMO)
     run_replay.add_argument("--output", type=Path)
+    run_study = commands.add_parser("study", help="Evaluate the archived CPI feature ablation")
+    run_study.add_argument("--fixture", type=Path, default=STUDY)
+    run_study.add_argument("--output", type=Path)
     build = commands.add_parser("build", help="Render the GitHub Pages site")
     build.add_argument("--output", type=Path, default=ROOT / "_site")
+    draft = commands.add_parser("propose-week", help="Build a reviewable weekly market issue draft")
+    draft.add_argument("--week", required=True)
     baseline = commands.add_parser("baseline", help="Compute FRED SP500 base rates for a weekly issue")
     baseline.add_argument("--week", required=True)
     baseline.add_argument("--apply", action="store_true", help="Record the base rates in an unpublished draft")
@@ -122,9 +130,13 @@ def main(argv: list[str] | None = None) -> int:
     try:
         if args.command == "replay":
             _write(replay(args.fixture), args.output)
+        elif args.command == "study":
+            _write(study(args.fixture), args.output)
         elif args.command == "build":
             forecasts, results = load_ledger(ROOT)
-            render(args.output, replay(DEMO), forecasts, results)
+            render(args.output, replay(DEMO), forecasts, results, study=study(STUDY))
+        elif args.command == "propose-week":
+            _write(propose(args.week))
         elif args.command == "baseline":
             _baseline(args)
         elif args.command == "attest":

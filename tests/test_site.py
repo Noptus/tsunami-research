@@ -305,7 +305,7 @@ class SiteTests(unittest.TestCase):
                                       "baseline": {"probability": 0, "score": 0}})
         self.assertIn("Chronological observations", source)
         self.assertIn("2024-02-01T12:00:00Z", source)
-        self.assertIn('&quot;outcome&quot;: 0', source)
+        self.assertIn("Outcome: 0", source)
         self.assertIn("0.000", source)
 
     def test_probability_values_cannot_inject_css(self):

@@ -1,0 +1,833 @@
+{
+  "archive_index": {
+    "url": "https://www.bls.gov/bls/news-release/cpi.htm",
+    "retrieved_at": "2026-11-14T21:36:38+00:00",
+    "sha256": "a069474cfb01f3d64419d2c1f6ac6d25354fed8afe71216994d34220762359dd"
+  },
+  "capture_failures": [
+    {
+      "release_date": "2025-12-18",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_12182025.htm",
+      "reason": "Shutdown release reports a two-month change, not a comparable monthly release"
+    }
+  ],
+  "events": [
+    {
+      "release_date": "2020-01-14",
+      "embargo_at": "2020-01-14T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_01142020.htm",
+      "path": "2020-01-14.html.gz",
+      "sha256": "8def1e5fd505b5cc7e486830fa9194db73116df6fd7c9e5f13d9efc0a1c6dee8",
+      "source_sha256": "c7d562b90700ee348c1e1e718174109cf0bdc9ff91e8fe16d6801b999ce6b996",
+      "retrieved_at": "2026-11-14T21:36:39+00:00",
+      "excerpt_sha256": "92276c748451fbb1088b730829e476842bc48c2b0561530289239fb72ababbfd"
+    },
+    {
+      "release_date": "2020-02-13",
+      "embargo_at": "2020-02-13T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_02132020.htm",
+      "path": "2020-02-13.html.gz",
+      "sha256": "f099650fb3d8a02c2641908c588dbd064e389dee2d2de827c9ea902d6d1fa747",
+      "source_sha256": "100d48638053e7f088a9fd3b7c40840ddd7a1cfa8773ad0b019058ecdd3d430c",
+      "retrieved_at": "2026-11-14T21:36:38+00:00",
+      "excerpt_sha256": "c8c89f3acb7bc422fc76f888ecd747729ceb08f51925d9fb09f8793a6a5f7d66"
+    },
+    {
+      "release_date": "2020-03-11",
+      "embargo_at": "2020-03-11T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_03112020.htm",
+      "path": "2020-03-11.html.gz",
+      "sha256": "5dce3c4f7830e02619a0c1feda90256bd519e3480483e8001cf51d0f1abd7928",
+      "source_sha256": "14beb15daece4465624a71218fe95a9368e7c832bcf43f46003a3c0d09a835ed",
+      "retrieved_at": "2026-11-14T21:36:38+00:00",
+      "excerpt_sha256": "23b63f534da466d9588fcee0946280787aebee0cd6c2179340c8fb71833a75f7"
+    },
+    {
+      "release_date": "2020-04-10",
+      "embargo_at": "2020-04-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_04102020.htm",
+      "path": "2020-04-10.html.gz",
+      "sha256": "6eeb5f8d0dcc62a2b0c42b089055bec08f3aae72ee32fe740cd72e3bb62d731a",
+      "source_sha256": "0a41f1cefc23f6a91d3508d2829d7678ec7aa715a6bded9d13c4c767a14aea60",
+      "retrieved_at": "2026-11-14T21:36:38+00:00",
+      "excerpt_sha256": "003b823413609e2c2a7da795592242795a5fa89db9fefc1ebc2d257c77d77b0a"
+    },
+    {
+      "release_date": "2020-05-12",
+      "embargo_at": "2020-05-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_05122020.htm",
+      "path": "2020-05-12.html.gz",
+      "sha256": "f1875b0708e7a682483863a5b6279035ce1fde44fc827006196e4c810fc52cad",
+      "source_sha256": "37d460adff26a09e991486c026da97530c9e7ed5171407aa50afe66988e67e6f",
+      "retrieved_at": "2026-11-14T21:36:39+00:00",
+      "excerpt_sha256": "5d6ef993a60d1e35a17528cb938b68d1195329879f62f443a12e4e3fd1c731e3"
+    },
+    {
+      "release_date": "2020-06-10",
+      "embargo_at": "2020-06-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_06102020.htm",
+      "path": "2020-06-10.html.gz",
+      "sha256": "4b48ad52cbc6a1dccb00abf32abc21588aa1874a99829d2adc3265ea9cfddb5b",
+      "source_sha256": "eaa46817707fa1eb90bd00acc0c4d4bcfbd114332d9ad5614df3f9e29857d56d",
+      "retrieved_at": "2026-11-14T21:36:39+00:00",
+      "excerpt_sha256": "721d62eed969a64cd225f67f6a9a190c1b15b8f2a8c9d6773c595e50df8a0591"
+    },
+    {
+      "release_date": "2020-07-14",
+      "embargo_at": "2020-07-14T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_07142020.htm",
+      "path": "2020-07-14.html.gz",
+      "sha256": "195bb5fb10d020f6ab307d2bbdebd5265a17e9e516647f4cb14e8a3268033a81",
+      "source_sha256": "0d090e8ae9e17119137eb25e7c39cd6fe1f694ce2ce21fde864d3f8b2c2013ed",
+      "retrieved_at": "2026-11-14T21:36:39+00:00",
+      "excerpt_sha256": "aec33efbcb23822c5205f56202e7339cc4a558a639c2aa1bbf5d5a16b35264f0"
+    },
+    {
+      "release_date": "2020-08-12",
+      "embargo_at": "2020-08-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_08122020.htm",
+      "path": "2020-08-12.html.gz",
+      "sha256": "b54a52d8061e8f9f080cfb5925abfd13d58a379fd8a5caa62175258a30d83080",
+      "source_sha256": "275282438cdde41d57e910a064e1cb52bb90a76a8fd27cd1ac8d4d2dd41e3df1",
+      "retrieved_at": "2026-11-14T21:36:39+00:00",
+      "excerpt_sha256": "8abe4a5477eb68391afc5889b282c577588842a7066f96a477ea77e6ab24e2ad"
+    },
+    {
+      "release_date": "2020-09-11",
+      "embargo_at": "2020-09-11T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_09112020.htm",
+      "path": "2020-09-11.html.gz",
+      "sha256": "c0ed9234634cf6c81193e86df463b78c0736b1dea2eb8760ea80c5a1500608b0",
+      "source_sha256": "84106828c3bf392ebdfc42c13eb809610618ed9e04f8cbc4956bd00df55f0155",
+      "retrieved_at": "2026-11-14T21:36:39+00:00",
+      "excerpt_sha256": "4c7da7f051fae413e6db9164c7d736872d2f5785bad7ae550387314857c7faa8"
+    },
+    {
+      "release_date": "2020-10-13",
+      "embargo_at": "2020-10-13T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_10132020.htm",
+      "path": "2020-10-13.html.gz",
+      "sha256": "f8095ef029f02ba85b858bcce1ab5d663863c2a6624dc9cc03016c099c5c00ab",
+      "source_sha256": "cdbd784a4a6529cedb2505c63f1178633910d360300498d54bd75635d3cbcf69",
+      "retrieved_at": "2026-11-14T21:36:39+00:00",
+      "excerpt_sha256": "367b98bdeec3e897597c1136bce52e0f4408d66f38b2831ae335d86d48d5728b"
+    },
+    {
+      "release_date": "2020-11-12",
+      "embargo_at": "2020-11-12T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_11122020.htm",
+      "path": "2020-11-12.html.gz",
+      "sha256": "c19b8269caa54956f1827b1dcf2ce0f6526ebeb7e2f65d5e07428d86f57aa5aa",
+      "source_sha256": "f3d9e64aae0b1b100c09b3079458e177e9928276c1f8e08e509f0916b0120447",
+      "retrieved_at": "2026-11-14T21:36:40+00:00",
+      "excerpt_sha256": "b5856e7e0aeece01fad6afded827a2d75c4e4233d94975831b41f3897427893f"
+    },
+    {
+      "release_date": "2020-12-10",
+      "embargo_at": "2020-12-10T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_12102020.htm",
+      "path": "2020-12-10.html.gz",
+      "sha256": "719f97ca38d111da44f0c28b4bd4b77ec7caa6b15c6e535b15f11d4672ce87fe",
+      "source_sha256": "75802ca6cfaedbbf5d708430442d2c6d681afbb7185e7203d04678e58e84f3db",
+      "retrieved_at": "2026-11-14T21:36:40+00:00",
+      "excerpt_sha256": "8fad2ca051bbd1d5c59822fb1ea29143e4320cf7a3521f64afe2c29660a15670"
+    },
+    {
+      "release_date": "2021-01-13",
+      "embargo_at": "2021-01-13T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_01132021.htm",
+      "path": "2021-01-13.html.gz",
+      "sha256": "d0bacaf747e9b5f4263e90934f99fe29484b6365c371421d36fb914aa3a9b345",
+      "source_sha256": "f7b6d7eca3581cc433cb22ab9ced35a312e7eef9e1d0f792c08e525ca815be24",
+      "retrieved_at": "2026-11-14T21:36:40+00:00",
+      "excerpt_sha256": "4ebd6073887534eda0b986a5c3b6a8d0274ef7d58d456f6ca4237493b3feec87"
+    },
+    {
+      "release_date": "2021-02-10",
+      "embargo_at": "2021-02-10T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_02102021.htm",
+      "path": "2021-02-10.html.gz",
+      "sha256": "825c1e8df3845e57d87a57d545820f08bf201699e5bca7712b569ace1c6a8e51",
+      "source_sha256": "eaaef559ebf762734a493ba94b7bbf70aa46e8b677b93a3ac7fa945dc7c1bf24",
+      "retrieved_at": "2026-11-14T21:36:40+00:00",
+      "excerpt_sha256": "bdb4a98f5eda6c63a122008af559736625e0d7a67e1d188adabe18854c05bd62"
+    },
+    {
+      "release_date": "2021-03-10",
+      "embargo_at": "2021-03-10T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_03102021.htm",
+      "path": "2021-03-10.html.gz",
+      "sha256": "c271deb7d0c30800e6a1b2c6ab2b050b0a0172e629f325d7e8be815e29b22d28",
+      "source_sha256": "9eb097bc23c10e0ffba7fd92cd34ee0014411d2485f3d7bc2462c6ffbd9b7f6e",
+      "retrieved_at": "2026-11-14T21:36:40+00:00",
+      "excerpt_sha256": "e0ca96d18c1313510f0380c8810453ada6c64367f91b419a8e8f462e4f33457e"
+    },
+    {
+      "release_date": "2021-04-13",
+      "embargo_at": "2021-04-13T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_04132021.htm",
+      "path": "2021-04-13.html.gz",
+      "sha256": "c29a66a711af0bf1fcf36d99bc96490ed67324c5503964a3d5d4e3a42fb2c71f",
+      "source_sha256": "02b0a042b2f7cd949b5beea112e67c31ceeb62496304b6dd58a26c54946f52bf",
+      "retrieved_at": "2026-11-14T21:36:40+00:00",
+      "excerpt_sha256": "9bfb70f420e75bcc95b3d10c473d54fcb4f660f1c75a14437948b187e4ab20c3"
+    },
+    {
+      "release_date": "2021-05-12",
+      "embargo_at": "2021-05-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_05122021.htm",
+      "path": "2021-05-12.html.gz",
+      "sha256": "519e2f75067e3d871d49fb8c1d9991d1cffaf6c8d29f4248b0fe5b0e81fd6b90",
+      "source_sha256": "7a47157c7e3ccbe0e8df8d80c7962eae84efc897f944d2ac05658e389ab7c5f3",
+      "retrieved_at": "2026-11-14T21:36:40+00:00",
+      "excerpt_sha256": "6f4f722dca482036c29d1d7361fe55b2bc33edf082caefe6d9df65e7428098dd"
+    },
+    {
+      "release_date": "2021-06-10",
+      "embargo_at": "2021-06-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_06102021.htm",
+      "path": "2021-06-10.html.gz",
+      "sha256": "35457abeeaec92b928c885ca32755b28a59b6b8d2132da19b1f4b5a3afa32d43",
+      "source_sha256": "39a26c02dce23a052e8b90f2f4c32012ab954ce2b179c0eebd067f93a48813be",
+      "retrieved_at": "2026-11-14T21:36:41+00:00",
+      "excerpt_sha256": "f01c8836142af13a6b8f5b4f35e0850d246b7f790c91cfea9ee94897971ac4fe"
+    },
+    {
+      "release_date": "2021-07-13",
+      "embargo_at": "2021-07-13T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_07132021.htm",
+      "path": "2021-07-13.html.gz",
+      "sha256": "b8f07dc335d81231d099c6f1d4e2f25496fd60d4e94f5d367b523c0543479dd7",
+      "source_sha256": "97787ef2ecec12f6fa8a634552a448df29e83f69710f6d9b77b2f7e5dba3b318",
+      "retrieved_at": "2026-11-14T21:36:41+00:00",
+      "excerpt_sha256": "3bfde661c9e1aae405d967e045bb2bceb15b266d7576186c6a7c9f2d205a96df"
+    },
+    {
+      "release_date": "2021-08-11",
+      "embargo_at": "2021-08-11T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_08112021.htm",
+      "path": "2021-08-11.html.gz",
+      "sha256": "2513db73286ac4d60252adb7676fa6725a852b86d0ef454e91a1695237df36d3",
+      "source_sha256": "3aae191db6782a7b5cbf24f4e91f7da4b644054ce97a38482bcf2b0d8db509df",
+      "retrieved_at": "2026-11-14T21:36:41+00:00",
+      "excerpt_sha256": "a83acfb73bfd788d2133602f8844f7f50a2f320130af51e2a045ff073418cd0b"
+    },
+    {
+      "release_date": "2021-09-14",
+      "embargo_at": "2021-09-14T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_09142021.htm",
+      "path": "2021-09-14.html.gz",
+      "sha256": "4dd50c0604f6d19b7e1744aa6ab58887d0d5d8657009e4ae1fbc86a674f59384",
+      "source_sha256": "48f57344a9f457b40295444a531fb2888ddc8ab4414a20feaca8355f4d963c89",
+      "retrieved_at": "2026-11-14T21:36:41+00:00",
+      "excerpt_sha256": "719af9d2773568dd150ecff609a4e612aa373da0905d55ac3d1867bd3635b82a"
+    },
+    {
+      "release_date": "2021-10-13",
+      "embargo_at": "2021-10-13T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_10132021.htm",
+      "path": "2021-10-13.html.gz",
+      "sha256": "96f8b8a55400cebd53a3faa9e3ff75637d43d03f725a09f6a323e6fc12a341fa",
+      "source_sha256": "781f454108ff26581b6e588f5ea7ef1bdb31a853cbe2d26f6d389d35492251ca",
+      "retrieved_at": "2026-11-14T21:36:41+00:00",
+      "excerpt_sha256": "f2150e8845bb29f361d545bbea9b926fe260d0eed921940dec241ddff82da925"
+    },
+    {
+      "release_date": "2021-11-10",
+      "embargo_at": "2021-11-10T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_11102021.htm",
+      "path": "2021-11-10.html.gz",
+      "sha256": "aa1839999bd7ffe8fb250ca44d65aa93d4afbd0c4ce951d93b5e23092dcb0298",
+      "source_sha256": "7cd6e19b25801c6c0fc1ea47daada29ef2c1fc8f07cbc86cd6f305cb8fce684a",
+      "retrieved_at": "2026-11-14T21:36:41+00:00",
+      "excerpt_sha256": "50bfa7d43f5636d55de76a89dd3307b6306549e10f24e2100a79fb15ca282266"
+    },
+    {
+      "release_date": "2021-12-10",
+      "embargo_at": "2021-12-10T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_12102021.htm",
+      "path": "2021-12-10.html.gz",
+      "sha256": "29867009fda166d33734cdcff2cda1902e29e7c5d4e9c8555c1b9359af511633",
+      "source_sha256": "af93439757010f85ae189def01776fd25c7464498a50a5f25fd9c2bc25645432",
+      "retrieved_at": "2026-11-14T21:36:41+00:00",
+      "excerpt_sha256": "bf595acfab3349fbd3968543b7a7109111962a74ebc26277b6549cb1a26092dd"
+    },
+    {
+      "release_date": "2022-01-12",
+      "embargo_at": "2022-01-12T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_01122022.htm",
+      "path": "2022-01-12.html.gz",
+      "sha256": "d26a12c4d9a0e6c5e22f73bb7efbeeef50d7aea90981084766e476a52d7a00df",
+      "source_sha256": "45ca364e1633fd50ab3a299a5da2abe5cf9086f36c8aecfe4dd9f4658df50174",
+      "retrieved_at": "2026-11-14T21:36:42+00:00",
+      "excerpt_sha256": "64dfbe2c20080b4890579553c9a1685e793fdb2814f4a85b4864e7094c99d9d2"
+    },
+    {
+      "release_date": "2022-02-10",
+      "embargo_at": "2022-02-10T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_02102022.htm",
+      "path": "2022-02-10.html.gz",
+      "sha256": "4917559946224147bba0b538641b168d8f0eb31b36e3d9bb15f3faa0da87f886",
+      "source_sha256": "278ff1e8da6a2c199312427cba7e1dbd0102da6a31d2c0dd2264113834abbd1f",
+      "retrieved_at": "2026-11-14T21:36:42+00:00",
+      "excerpt_sha256": "f11ecb89f4398760f81f54229de218e726427f6f60f5a31105a28dd4da751e4a"
+    },
+    {
+      "release_date": "2022-03-10",
+      "embargo_at": "2022-03-10T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_03102022.htm",
+      "path": "2022-03-10.html.gz",
+      "sha256": "ede63490fc74e699200f11c3c62018a79d209ee97d7197d21b1d8c650cad3461",
+      "source_sha256": "89ebc9016ab0ea900fefddf2f3f186b8bcbe7a00cf8684f8059c3363ea7dc35a",
+      "retrieved_at": "2026-11-14T21:36:42+00:00",
+      "excerpt_sha256": "65e6aad61a33d3688bb9f3c43c6bb41df861bebe3f5181c676daff34968b6db8"
+    },
+    {
+      "release_date": "2022-04-12",
+      "embargo_at": "2022-04-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_04122022.htm",
+      "path": "2022-04-12.html.gz",
+      "sha256": "0aca85de3ef62f4956a9be98cf6d109ffbb9ba1ff70dd82d3fa0f68d46a2dd90",
+      "source_sha256": "7d654607289ed3e15ec297d2be342975a2121ce5d4c6deb25c61ec044785f18b",
+      "retrieved_at": "2026-11-14T21:36:42+00:00",
+      "excerpt_sha256": "d20a42f2d92a45a70c7bb72f025f20e95f660f173510921686681921d0806790"
+    },
+    {
+      "release_date": "2022-05-11",
+      "embargo_at": "2022-05-11T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_05112022.htm",
+      "path": "2022-05-11.html.gz",
+      "sha256": "78d54127def7ecde0838b9eede5c9d5eac30661ffb98de5ff2ef9636749e7351",
+      "source_sha256": "d9d7eaa0508822501f09a3c5e691d64c23c9a9c1fbb48a1cc6d3fd5b2aa8c0eb",
+      "retrieved_at": "2026-11-14T21:36:42+00:00",
+      "excerpt_sha256": "d5ede03f6186fe379b643e4b748b83a97329f99256cf1924cc45692dcfb39136"
+    },
+    {
+      "release_date": "2022-06-10",
+      "embargo_at": "2022-06-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_06102022.htm",
+      "path": "2022-06-10.html.gz",
+      "sha256": "3afdef7c7b5bc562803959040b3f8bcbb27af9b051df3954d1cea456fb952a2d",
+      "source_sha256": "03658a0ce2c08701bb423cf232e8c255555abe84fc77ff802fe2e728927fc7d9",
+      "retrieved_at": "2026-11-14T21:36:42+00:00",
+      "excerpt_sha256": "856a0dd21f03ca7441ad87d0a4f00d2823cfa12dc35488bd858e2c861a8bcf76"
+    },
+    {
+      "release_date": "2022-07-13",
+      "embargo_at": "2022-07-13T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_07132022.htm",
+      "path": "2022-07-13.html.gz",
+      "sha256": "21650e7031b84c82af01bdc2b313617f6a43000d26aa88be7f3214d16175a7c4",
+      "source_sha256": "0e4feecbeb007b5271816feb7a6209b3becb651ec0a850d56dcdd3f7e9c8b8a6",
+      "retrieved_at": "2026-11-14T21:36:42+00:00",
+      "excerpt_sha256": "fd022175c86f519887b99b0c7057670a14442afd1856a8c1680ddd1c745ab111"
+    },
+    {
+      "release_date": "2022-08-10",
+      "embargo_at": "2022-08-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_08102022.htm",
+      "path": "2022-08-10.html.gz",
+      "sha256": "7605b64435d5bf16ee8b5b700877decfa7a089bdb6ce3c5740f72e52c48d4972",
+      "source_sha256": "f613dce5a40c06f857fc4c92f181dac917405bb541d707fbdc7d123787feff38",
+      "retrieved_at": "2026-11-14T21:36:43+00:00",
+      "excerpt_sha256": "ad061af1fd7f65f9f7326062fe04dd6901d9a375befb62d6cc3f995feb4b51ca"
+    },
+    {
+      "release_date": "2022-09-13",
+      "embargo_at": "2022-09-13T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_09132022.htm",
+      "path": "2022-09-13.html.gz",
+      "sha256": "60954b0702a4a45d608b48ed4e71e9e4c21d2692284123f5092c27d931ad9529",
+      "source_sha256": "0fe793a6526f424fa85619b4283e172f0ae143ae94162f1a1910b968be1b97c3",
+      "retrieved_at": "2026-11-14T21:36:43+00:00",
+      "excerpt_sha256": "d29d6a3afc0b7027fb2ab225a15beac66993f3b3de53bd2401642387ff13b70b"
+    },
+    {
+      "release_date": "2022-10-13",
+      "embargo_at": "2022-10-13T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_10132022.htm",
+      "path": "2022-10-13.html.gz",
+      "sha256": "76e00668bc7bc8a010072563f3892e51586694858e194d28f42cc4afe3c11134",
+      "source_sha256": "10186f619f5b69fc3f0589a3953544ec72e730da62e0ac2593e89360889358a0",
+      "retrieved_at": "2026-11-14T21:36:43+00:00",
+      "excerpt_sha256": "075030fa9343293be9a1d36ca78c2bdbb194c96f0a5474cdf60e952113c73660"
+    },
+    {
+      "release_date": "2022-11-10",
+      "embargo_at": "2022-11-10T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_11102022.htm",
+      "path": "2022-11-10.html.gz",
+      "sha256": "e7671f98dfacf5f240022c4ab9de9653afe6159f9e8b8a7e8833721253be2fc4",
+      "source_sha256": "003a8366cdc1ba4750dff3bf753d79ae3aba7b5965821dd0fb44581ed17d80f0",
+      "retrieved_at": "2026-11-14T21:36:43+00:00",
+      "excerpt_sha256": "a9fdf185d9b550a44923294bf1d1b678bfc15a2bd109d97a7bfa8538e1ae9534"
+    },
+    {
+      "release_date": "2022-12-13",
+      "embargo_at": "2022-12-13T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_12132022.htm",
+      "path": "2022-12-13.html.gz",
+      "sha256": "765e5b3cda9284ce0c0bc909a0cca8cb38c6cfc4d58ea171363b954265fe9473",
+      "source_sha256": "a4897e63121e1941cdfee5d6f412df676a00e1f1b2c852859b2554bae48c2b69",
+      "retrieved_at": "2026-11-14T21:36:43+00:00",
+      "excerpt_sha256": "6886aa9bde92b9146e3d867b3f7a3997a0283c2641231c70a1353cd373211014"
+    },
+    {
+      "release_date": "2023-01-12",
+      "embargo_at": "2023-01-12T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_01122023.htm",
+      "path": "2023-01-12.html.gz",
+      "sha256": "5c5378a54a7ace0affa7f6265ddf0aeb260bd4011f1f11e930a51683ec9113e9",
+      "source_sha256": "9d5d5aa086ad1b9f299e9ea2603ef76695b4b2c8abe48ca90554c9237e8d60a1",
+      "retrieved_at": "2026-11-14T21:36:43+00:00",
+      "excerpt_sha256": "00d51df8743b7ceb12d959c76b835ee25f59b53bb62f891eded8f2f990317a84"
+    },
+    {
+      "release_date": "2023-02-14",
+      "embargo_at": "2023-02-14T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_02142023.htm",
+      "path": "2023-02-14.html.gz",
+      "sha256": "d90f8db2381fd64a3a37eb5b72f3240bf89e1150bebee7f8186a565c459f6150",
+      "source_sha256": "5bddfbdd162cc083d7b8db217f5093612544f1b6f29a525740f65bfb34223c00",
+      "retrieved_at": "2026-11-14T21:36:44+00:00",
+      "excerpt_sha256": "aff2d4322206482f64f95206943d3c2f2df9536b084101f16345e84d089ebf40"
+    },
+    {
+      "release_date": "2023-03-14",
+      "embargo_at": "2023-03-14T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_03142023.htm",
+      "path": "2023-03-14.html.gz",
+      "sha256": "19e1733f4e3164606b76affd2bc7e069e21535f3da596180bdbebf3ad49d1334",
+      "source_sha256": "0d1282519139a5511365c44bafe20353c3a0fd41a81f0b94202df7238042cf41",
+      "retrieved_at": "2026-11-14T21:36:44+00:00",
+      "excerpt_sha256": "d618c859cbc773a814bd81d34ba6f589773843c2456be050118866248d94df93"
+    },
+    {
+      "release_date": "2023-04-12",
+      "embargo_at": "2023-04-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_04122023.htm",
+      "path": "2023-04-12.html.gz",
+      "sha256": "6488d67c45de501acff8236810e07f4753b8a919d6735f0b66ef5754adcdc612",
+      "source_sha256": "ffdfcfe1c00558469848e28eeb1f0a1f716be8f90879a45f6ccd8d18daa34cb9",
+      "retrieved_at": "2026-11-14T21:36:44+00:00",
+      "excerpt_sha256": "541c3689601cdf1a0f017d9a9ba919dbbeb53d5f08f860f0bb6049cc42e63ac6"
+    },
+    {
+      "release_date": "2023-05-10",
+      "embargo_at": "2023-05-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_05102023.htm",
+      "path": "2023-05-10.html.gz",
+      "sha256": "33b65215ceae8fa72f0aac3edf2f1f14ad75a6a82bbf402c8ff8796d70ea0ebc",
+      "source_sha256": "0586dd5f313c59d400ca5795c3d202e0740317dd643fb25325abe3b513a27766",
+      "retrieved_at": "2026-11-14T21:36:44+00:00",
+      "excerpt_sha256": "a286b7e387bdbae19fa5c9bfaf09311e626b00dfa88e4635a652e16bfc41da6a"
+    },
+    {
+      "release_date": "2023-06-13",
+      "embargo_at": "2023-06-13T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_06132023.htm",
+      "path": "2023-06-13.html.gz",
+      "sha256": "ddb3b7e54faba5bb3bd6186b4864d6217ec7786adfe251a50ff076e5a630f8b3",
+      "source_sha256": "441fbaa7e7e15727f107dbf06b7965dd0e35621501952af435d9a2ce12b26f65",
+      "retrieved_at": "2026-11-14T21:36:44+00:00",
+      "excerpt_sha256": "7d3e0fa7fd4a7de70d663f56b072d7d9147a0d6910774386b8f4deb057e68ed4"
+    },
+    {
+      "release_date": "2023-07-12",
+      "embargo_at": "2023-07-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_07122023.htm",
+      "path": "2023-07-12.html.gz",
+      "sha256": "664d26386a07874ee6d76cda25f47bbf3ab4071b3167110b9e09cfd7e1bade5d",
+      "source_sha256": "0dac29c5d2b108e4b32731f6b1db8d8da5372ddf6ac4802b4b1ee4932b3265d1",
+      "retrieved_at": "2026-11-14T21:36:44+00:00",
+      "excerpt_sha256": "d56678c0ed5a0179df71eb6271a96607084d496b6f68b01745067336c50336f6"
+    },
+    {
+      "release_date": "2023-08-10",
+      "embargo_at": "2023-08-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_08102023.htm",
+      "path": "2023-08-10.html.gz",
+      "sha256": "609bbe51e0ca397bcf6b3df39e5be847b9cdf1531fb8398d45854d1e40efe9ce",
+      "source_sha256": "847727876ffbf92677e38b6591743411666107ba883e90f2bd9da3584d96568b",
+      "retrieved_at": "2026-11-14T21:36:45+00:00",
+      "excerpt_sha256": "a1e8fbb4ccdabfecc4c13371be4449fd8a5bc3ea86b7f8486c6fa5c63fa9366b"
+    },
+    {
+      "release_date": "2023-09-13",
+      "embargo_at": "2023-09-13T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_09132023.htm",
+      "path": "2023-09-13.html.gz",
+      "sha256": "19058ce1d24998d5a9960a4da0ab4fa974187a93f19a178b1cd2ca700a26e862",
+      "source_sha256": "83a7380d4e81463a3266935617ac086f8edc5f2ef3b9fee826bd2b521eaccf49",
+      "retrieved_at": "2026-11-14T21:36:44+00:00",
+      "excerpt_sha256": "00aff361178fe03eab3f5690d64ffb9b0bd5d5e55e1815dd8aae86f53cd65853"
+    },
+    {
+      "release_date": "2023-10-12",
+      "embargo_at": "2023-10-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_10122023.htm",
+      "path": "2023-10-12.html.gz",
+      "sha256": "176de66f423a8df2b3bbd379432839709ac6ab700f5140c8025ed009aeefc7d7",
+      "source_sha256": "5d33f0a6efd860412cdefe5911ab4cf0fa27e0dc852102c1cc5a6619bfb413cd",
+      "retrieved_at": "2026-11-14T21:36:45+00:00",
+      "excerpt_sha256": "16c9b55b1d181a08897f7210196738ea0021918197e14e5b271908e100a2454d"
+    },
+    {
+      "release_date": "2023-11-14",
+      "embargo_at": "2023-11-14T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_11142023.htm",
+      "path": "2023-11-14.html.gz",
+      "sha256": "60bd261b7907648fb8d6a3d8eb164c623aff3e52a9f4956bba53f23e3eed7fd7",
+      "source_sha256": "95e006e0d5d3093939016bd5b08159fb688aae1de2f256ef56caf041763d946b",
+      "retrieved_at": "2026-11-14T21:36:45+00:00",
+      "excerpt_sha256": "a3bcca57212678fee83dec6a485834b8ba6d6a0418ad66a3e903a04bdd0a8218"
+    },
+    {
+      "release_date": "2023-12-12",
+      "embargo_at": "2023-12-12T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_12122023.htm",
+      "path": "2023-12-12.html.gz",
+      "sha256": "ca8ec39a43c30a3c1d46e41d9ea740049c9ad59f4493c94836f94237d528452f",
+      "source_sha256": "0342155f3fcb4dd68166c8c8e33e0a049662c97100de2d0f4903628d179b660e",
+      "retrieved_at": "2026-11-14T21:36:45+00:00",
+      "excerpt_sha256": "21e13469e1b3a3836d7d63653948c6a24780593212493288f995524d235a71dd"
+    },
+    {
+      "release_date": "2024-01-11",
+      "embargo_at": "2024-01-11T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_01112024.htm",
+      "path": "2024-01-11.html.gz",
+      "sha256": "efc7d1dbbae58d47379d355b0d0f34cf15508a012d0a2b70d0bea138bbce4e2b",
+      "source_sha256": "5af03777daf991ada26ce61a3002e3f49d9f8f25c3e4ce88131692c86a6eb7e6",
+      "retrieved_at": "2026-11-14T21:36:45+00:00",
+      "excerpt_sha256": "e6e4272e10c229b6371ff73fad39e1a42fa2c0b069124d53d1ca7cc9ed966f0e"
+    },
+    {
+      "release_date": "2024-02-13",
+      "embargo_at": "2024-02-13T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_02132024.htm",
+      "path": "2024-02-13.html.gz",
+      "sha256": "9a74b9dc0483d90314d7b9145163b438db1ed1a43fb1855968be47d497c29b81",
+      "source_sha256": "90914201190d8f8b1f19da73932f83e2c3651f31316a65de6de5dd605647cb16",
+      "retrieved_at": "2026-11-14T21:36:45+00:00",
+      "excerpt_sha256": "fbd0c302cef5597e5073f602a2f3bb329a73d78e8c3e2298ad427842829d2b88"
+    },
+    {
+      "release_date": "2024-03-12",
+      "embargo_at": "2024-03-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_03122024.htm",
+      "path": "2024-03-12.html.gz",
+      "sha256": "824cf617281731f368532244c7a6d0b8394629a7ba0d1ec7f30e815c7b84457c",
+      "source_sha256": "233d5f46067ec4110fcbb59e3c19a880f81184177f56733062dd312e4253ae66",
+      "retrieved_at": "2026-11-14T21:36:45+00:00",
+      "excerpt_sha256": "f0ac8f35142d228697ae5f15c9f959deefa54012b9d261ae9b5ae35848b33e99"
+    },
+    {
+      "release_date": "2024-04-10",
+      "embargo_at": "2024-04-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_04102024.htm",
+      "path": "2024-04-10.html.gz",
+      "sha256": "7a9fbcb70edefaeb48cdc63db27c342704cb6148a3301b855e8fc3a7d62c6e8c",
+      "source_sha256": "c23838dff36779ca5a3e439b9d5c451b1cbb8689adebcfb42c477dd9284337b8",
+      "retrieved_at": "2026-11-14T21:36:45+00:00",
+      "excerpt_sha256": "fee2cda6a3dd8b354e85e7c62f45b862231e965bc84e6c5ba9b8bd95ba925b08"
+    },
+    {
+      "release_date": "2024-05-15",
+      "embargo_at": "2024-05-15T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_05152024.htm",
+      "path": "2024-05-15.html.gz",
+      "sha256": "f88ee87eab9ce34e0cbd1ffddc66cfe071592af2d5c8e00fd6e8ace0eaf0f239",
+      "source_sha256": "5ed19921c617b95f99140ad464a59c142d5d24726a39508a67d471660a4185c8",
+      "retrieved_at": "2026-11-14T21:36:46+00:00",
+      "excerpt_sha256": "8bc6538a071c4edd56fedfefa890c96db8dacf1ae19cfc1df698033c621211b2"
+    },
+    {
+      "release_date": "2024-06-12",
+      "embargo_at": "2024-06-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_06122024.htm",
+      "path": "2024-06-12.html.gz",
+      "sha256": "c415f4fe2344fa7fc6dcd489b94cf8d1d6d86459b28282182e701ba292c9285b",
+      "source_sha256": "76eff97eff76a812263bd21d8e55c29c42ea2b883c7dea4ff98f326112cf8437",
+      "retrieved_at": "2026-11-14T21:36:46+00:00",
+      "excerpt_sha256": "e488e31bc14110c57583a8160908c0b5f7b8d9cf98d0a8898c02084e16f2a2f5"
+    },
+    {
+      "release_date": "2024-07-11",
+      "embargo_at": "2024-07-11T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_07112024.htm",
+      "path": "2024-07-11.html.gz",
+      "sha256": "a47175912a6156a22c3b3a3b3a32e6ac9cd41b82566802f5ec117b5ca6f36620",
+      "source_sha256": "fb0a5c1351be3a2a15c6c249ed792d630af5e47e4c7278db492c079a702086db",
+      "retrieved_at": "2026-11-14T21:36:46+00:00",
+      "excerpt_sha256": "182aa8303f1382d3b7588d97d1dc81ca2a21229f4e74e80564e5040ea93bb44e"
+    },
+    {
+      "release_date": "2024-08-14",
+      "embargo_at": "2024-08-14T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_08142024.htm",
+      "path": "2024-08-14.html.gz",
+      "sha256": "4322d38bc04d21f805e408557f4762dc34c430bbf007ea5bb324d4523403940d",
+      "source_sha256": "4568374b38f65dac54e32f3a166725e7e62fa2ed8ba38bc7aa280ba625e82781",
+      "retrieved_at": "2026-11-14T21:36:46+00:00",
+      "excerpt_sha256": "43467686738d1807f9e718cd99221a33dbaefc368b85753f08b2594adc7b49df"
+    },
+    {
+      "release_date": "2024-09-11",
+      "embargo_at": "2024-09-11T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_09112024.htm",
+      "path": "2024-09-11.html.gz",
+      "sha256": "1d5e914c11543d23331596a29bf139d8801d234d405cd56a40ad3f2d422cf491",
+      "source_sha256": "0d933d2577073291772e8123c6f1b7def0822ae3f4a009c0ef028587bad98217",
+      "retrieved_at": "2026-11-14T21:36:47+00:00",
+      "excerpt_sha256": "3745b7d87e29804543e7d9af2a78d7e16b041ceb8bb3958ee4c4f3a32eb1e1ba"
+    },
+    {
+      "release_date": "2024-10-10",
+      "embargo_at": "2024-10-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_10102024.htm",
+      "path": "2024-10-10.html.gz",
+      "sha256": "9bb2315953a80a91cec930b0f64b3d363f8a73e43ca1b911c6289d0945a7e588",
+      "source_sha256": "e2d8d6f1689494275ef6879be7548b97fcaec8862c944f6fc0f1911c621f6ac0",
+      "retrieved_at": "2026-11-14T21:36:47+00:00",
+      "excerpt_sha256": "4141809ad069fcd964aa13bfcc7e3210aaca70581625fb1290630f4afd2109b1"
+    },
+    {
+      "release_date": "2024-11-13",
+      "embargo_at": "2024-11-13T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_11132024.htm",
+      "path": "2024-11-13.html.gz",
+      "sha256": "eae1a2868b878a2ccac3d8a7479e3ad9b53d17002a28c49675f7fa62403ab8da",
+      "source_sha256": "ad0279d8d9bf165360affa63a8b640b28dbea9c49c6bfcc6f66f451d9e637769",
+      "retrieved_at": "2026-11-14T21:36:47+00:00",
+      "excerpt_sha256": "1a14938cb09fa7e33010c3f24c86f79bbf36b9c7adfa5c7df1eef292327264d6"
+    },
+    {
+      "release_date": "2024-12-11",
+      "embargo_at": "2024-12-11T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_12112024.htm",
+      "path": "2024-12-11.html.gz",
+      "sha256": "aed3079b6fd8f60658896353984480179b420c9e4b354519bda2b91fdd624a19",
+      "source_sha256": "415282398015c224606261fb978ec7c61c35647ec5b3438fa3f613111217bb0e",
+      "retrieved_at": "2026-11-14T21:36:47+00:00",
+      "excerpt_sha256": "0227b626e445a040c5ec81ea7b73f778bdf3140d14143c28f137303c1721708d"
+    },
+    {
+      "release_date": "2025-01-15",
+      "embargo_at": "2025-01-15T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_01152025.htm",
+      "path": "2025-01-15.html.gz",
+      "sha256": "266e848e14ed5b0bbdb0fa63528ec20e3ee035c6f1d4a77e667cf0dc5fd135f5",
+      "source_sha256": "6e90f322584a8e8e776433678ff20e96ca1eb4f3545ecbfb067b9408a92e5abc",
+      "retrieved_at": "2026-11-14T21:36:47+00:00",
+      "excerpt_sha256": "2a49b6c85d6e7cb27d52b9bb273964a5a2cc34a3cd0f7fdaf15e7ec6618fbd2c"
+    },
+    {
+      "release_date": "2025-02-12",
+      "embargo_at": "2025-02-12T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_02122025.htm",
+      "path": "2025-02-12.html.gz",
+      "sha256": "96fc7e32373320675631ed3fb09ebe4ee806fac2f10dfc231af2eac0f15ac4cb",
+      "source_sha256": "92bf745a006f02fe197e880f81d2d7c56e56f8d297a713a02b0fe5aef4e588e1",
+      "retrieved_at": "2026-11-14T21:36:47+00:00",
+      "excerpt_sha256": "1d02ccd0eeac1bcc7f5ab294d8536a67127385150859dfa83498f00f46be0fa6"
+    },
+    {
+      "release_date": "2025-03-12",
+      "embargo_at": "2025-03-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_03122025.htm",
+      "path": "2025-03-12.html.gz",
+      "sha256": "035391a10a8c373737272cd8a32966885db838f640f721c93268444dcc6db6af",
+      "source_sha256": "8d76b5e0f06f42521a0d325ed4dfa56985629fab354dde5b3ac52269e487fa53",
+      "retrieved_at": "2026-11-14T21:36:47+00:00",
+      "excerpt_sha256": "fdf99de77d167f3d3cdeb758abcbc12d2e6edf02fbc25de3f82001afe3d5f08c"
+    },
+    {
+      "release_date": "2025-04-10",
+      "embargo_at": "2025-04-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_04102025.htm",
+      "path": "2025-04-10.html.gz",
+      "sha256": "b6208a26fd8b1789d91b1c4f3328cfdfa7fd9de153d0ac67a11338bedb3b8618",
+      "source_sha256": "b40ef03dec713fc7ca0e5e64e4043f2d9fa95e42a0e806b9dc101a64ca9bf424",
+      "retrieved_at": "2026-11-14T21:36:48+00:00",
+      "excerpt_sha256": "2cbef5d8a063e4f42307f3c744f8cb94bb63edbaac7f7e5cedd240dad7eddf08"
+    },
+    {
+      "release_date": "2025-05-13",
+      "embargo_at": "2025-05-13T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_05132025.htm",
+      "path": "2025-05-13.html.gz",
+      "sha256": "9c51bb5a425e1f006e12e6608efe108121516acadc8fbeb4aaa5436a2f6a6b73",
+      "source_sha256": "d6b6ade9054d2af5f2de6aa342b8bbc7ba2ca0f5a5b090080ce7fc7dd6b45c10",
+      "retrieved_at": "2026-11-14T21:36:48+00:00",
+      "excerpt_sha256": "f6bd4685d4a19c419fad1ba8f9bd6dfec18ae2ae10223663925493ba693c1455"
+    },
+    {
+      "release_date": "2025-06-11",
+      "embargo_at": "2025-06-11T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_06112025.htm",
+      "path": "2025-06-11.html.gz",
+      "sha256": "a31aeff83c4cc5b75f498f16b59b9cecf68524187ff27ead05d906d8e25313a5",
+      "source_sha256": "0250b81ace8d66bb97595624259c8079deb2ad941e23f42dd4ce955b5ea75cf3",
+      "retrieved_at": "2026-11-14T21:36:48+00:00",
+      "excerpt_sha256": "e4bd6bea205559c8d7f5e65a5857cfc578929215b8234d20629d0b9c250c8737"
+    },
+    {
+      "release_date": "2025-07-15",
+      "embargo_at": "2025-07-15T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_07152025.htm",
+      "path": "2025-07-15.html.gz",
+      "sha256": "30adea59ee8efadbc88a9bec7cd0146fcd59751347c1839672f49a7376b13011",
+      "source_sha256": "a0905a0de50db59be573b829d999a98d32512dc9d4e6f22ed789c64eed4fbcb2",
+      "retrieved_at": "2026-11-14T21:36:48+00:00",
+      "excerpt_sha256": "2b179856aa09feb21948ebbb7d45c551adae9dc680c9f4b806a91f957d157ddd"
+    },
+    {
+      "release_date": "2025-08-12",
+      "embargo_at": "2025-08-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_08122025.htm",
+      "path": "2025-08-12.html.gz",
+      "sha256": "f3654d408e85343933eb172c2b05463bbb22c9ffda87d0f6af62c4a185dde1bf",
+      "source_sha256": "a7651ec9f9870e9efab3f1659639d06aa80c43c2862d009a76ade1d16f941913",
+      "retrieved_at": "2026-11-14T21:36:48+00:00",
+      "excerpt_sha256": "ff86048227a6fca064d8c8de5bc74a3af21198449682c5cc0945cd9176f06e14"
+    },
+    {
+      "release_date": "2025-09-11",
+      "embargo_at": "2025-09-11T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_09112025.htm",
+      "path": "2025-09-11.html.gz",
+      "sha256": "0b11d6f4da0c72fd8972b7302a3c32828dd85d6ca61322b1e7c98eb5b18cfa42",
+      "source_sha256": "f376b178ee4e16a7cc2ae6810e2164cad96aa8da156900623b2ff780a78f26bf",
+      "retrieved_at": "2026-11-14T21:36:48+00:00",
+      "excerpt_sha256": "6fbb59acf38bc3eb30627177947db83b3798558394f2fe487896eea4afc398ec"
+    },
+    {
+      "release_date": "2025-10-24",
+      "embargo_at": "2025-10-24T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_10242025.htm",
+      "path": "2025-10-24.html.gz",
+      "sha256": "06347b26ad07c1861c6942b170105c9dcc13900ee9ce84056cceffb74bf775ce",
+      "source_sha256": "ab7e0e431246f6f983575529cf4eae509706963fa893b6156576a2c320556397",
+      "retrieved_at": "2026-11-14T21:36:48+00:00",
+      "excerpt_sha256": "bbb410e3146c1b8bf336d9033aaa84b33a97da4e054c0bba11c8cc75214d6f61"
+    },
+    {
+      "release_date": "2026-01-13",
+      "embargo_at": "2026-01-13T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_01132026.htm",
+      "path": "2026-01-13.html.gz",
+      "sha256": "316c007ad3c5c63857a2168f4e7888d884aa17a290581a8225e7ebf161657533",
+      "source_sha256": "bbdb2ecf47afdc9e0daad8555b1a3bf38b8a8981eacaf42d08d3d4953ba632fd",
+      "retrieved_at": "2026-11-14T21:36:49+00:00",
+      "excerpt_sha256": "9f473eb2393c0d9ac2134a6111e63b733344736db0f6a2df97c856594c79d769"
+    },
+    {
+      "release_date": "2026-02-13",
+      "embargo_at": "2026-02-13T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_02132026.htm",
+      "path": "2026-02-13.html.gz",
+      "sha256": "ef2f10dae3bd0423463232af49f0fed02a588836df27027ebb62df244f7833d6",
+      "source_sha256": "e187d5e926bb71670d6b82fad7540c4a4804a9e25ec132a27d8fb701b0d371fc",
+      "retrieved_at": "2026-11-14T21:36:49+00:00",
+      "excerpt_sha256": "badca9218bb5eb5bd6664c91b9307cac001d85733b256dd43653c07322314d53"
+    },
+    {
+      "release_date": "2026-03-11",
+      "embargo_at": "2026-03-11T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_03112026.htm",
+      "path": "2026-03-11.html.gz",
+      "sha256": "7e477e07003e1651fb3a7ba8244b5b05e7fb2653d5383841a6395c40ce0edd90",
+      "source_sha256": "11f673e859eccffabc53987c0fb6cb02760c0601a4d24c1f03d62d162774f168",
+      "retrieved_at": "2026-11-14T21:36:49+00:00",
+      "excerpt_sha256": "9fc3a10997a246e4589feea3aa0f44a29e6d9efb77de92a999e240b8674009c1"
+    },
+    {
+      "release_date": "2026-04-10",
+      "embargo_at": "2026-04-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_04102026.htm",
+      "path": "2026-04-10.html.gz",
+      "sha256": "edfa42a1781049578ad1116e366e2fb4614ee9440c75b0a08b2a2108f414908b",
+      "source_sha256": "2f00ec5a10c8d2f0e6e879d8ae8762af555cb7ef26805b37b627ad47c93012f0",
+      "retrieved_at": "2026-11-14T21:36:49+00:00",
+      "excerpt_sha256": "b8fb18d804e49a3c773d553cd55851cf67b1df4239350f1992b2797927d3ca61"
+    },
+    {
+      "release_date": "2026-05-12",
+      "embargo_at": "2026-05-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_05122026.htm",
+      "path": "2026-05-12.html.gz",
+      "sha256": "ae99f166445068d86c3cec1657cdea803d22f7afaeca8bb55c46d473282957aa",
+      "source_sha256": "bfee220ac431aefa8dcd000040996fce59d17c06ea2fe2b297db0f3a6d5b659f",
+      "retrieved_at": "2026-11-14T21:36:49+00:00",
+      "excerpt_sha256": "a37f7056e6e8d0a1bd76c0c86b2601d61db1adf658a29887cb9f6c06bd79f566"
+    },
+    {
+      "release_date": "2026-06-10",
+      "embargo_at": "2026-06-10T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_06102026.htm",
+      "path": "2026-06-10.html.gz",
+      "sha256": "b25418cee90367b6f4510ff7d45d4f2f6c9c4ac91ec0388c135b788ed8ec1116",
+      "source_sha256": "ba198a462a41b85b997df781558b90d3ab4663d9640efc8cdccca9e81e046a2f",
+      "retrieved_at": "2026-11-14T21:36:49+00:00",
+      "excerpt_sha256": "42650260208b5b60f2f8f2b758873a909c29e30423050d63bc7852e23068888a"
+    },
+    {
+      "release_date": "2026-07-14",
+      "embargo_at": "2026-07-14T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_07142026.htm",
+      "path": "2026-07-14.html.gz",
+      "sha256": "6b3c8f133193e5b30c51424136d71c706d7657af4f6ac5f88c3556a4c9809a2f",
+      "source_sha256": "382f20db3bdeba1f45a7783dacdaebb87e4ca8461ae2e701db803538afdfc790",
+      "retrieved_at": "2026-11-14T21:36:50+00:00",
+      "excerpt_sha256": "596f7cfb6ca11bda4f2a27c7da21d7f6ecb0a5bedf9569459009797636f818da"
+    },
+    {
+      "release_date": "2026-08-12",
+      "embargo_at": "2026-08-12T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_08122026.htm",
+      "path": "2026-08-12.html.gz",
+      "sha256": "0579a87a556ffe3db097643946987b794a7958cdd572b61c0e84251ffa38d0ad",
+      "source_sha256": "d18471db7736e302e35085e14d746eddf51a4f6d27b954642e3ddec3e85778e5",
+      "retrieved_at": "2026-11-14T21:36:50+00:00",
+      "excerpt_sha256": "c6a6b68c1a4d2f2f07fd2676d2b4ec2e116eb01276b9a84dc983abbc555bf2bc"
+    },
+    {
+      "release_date": "2026-09-11",
+      "embargo_at": "2026-09-11T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_09112026.htm",
+      "path": "2026-09-11.html.gz",
+      "sha256": "15e86dcbf010a30e1be9f88c9c87258059cf68d3ae9f42c42c02e16931224542",
+      "source_sha256": "aee0cdff604c295d784e6302b2ba74130f10f535675a5a0fb7262c936edaaabd",
+      "retrieved_at": "2026-11-14T21:36:50+00:00",
+      "excerpt_sha256": "7c237f3b6fecca5806cc76c72ecf20aa0551916ac4612e423f6dad30a0b69f26"
+    },
+    {
+      "release_date": "2026-10-14",
+      "embargo_at": "2026-10-14T08:30:00-04:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+      "path": "2026-10-14.html.gz",
+      "sha256": "4b887734e56f9d16674e4da57a0a4c14f27170b60c1c6baccce2d216c5a9fe1f",
+      "source_sha256": "b9f981390c08f4a530d839495fce582124015b979bac0398bfcc35ffde0544e4",
+      "retrieved_at": "2026-11-14T21:36:50+00:00",
+      "excerpt_sha256": "e9d1c1704fbe416358caeb5a6c108c553336f6f3cb94faa78cbb651eaddfd37d"
+    },
+    {
+      "release_date": "2026-11-10",
+      "embargo_at": "2026-11-10T08:30:00-05:00",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+      "path": "2026-11-10.html.gz",
+      "sha256": "b438beac7bbe12434531522bc138e370e6e91ee0e8fa530853fbcbe9619d9dae",
+      "source_sha256": "ee0bffd2cfb13f9faf79b5b23e5b74d87d67f61888dfd34346f81dee9182a320",
+      "retrieved_at": "2026-11-14T21:36:50+00:00",
+      "excerpt_sha256": "0bb83a981a18453c0ace70b02e936ba070431511f69aa182d9cd76174c5f58f0"
+    }
+  ],
+  "yields": {
+    "path": "alfred-dgs2.csv",
+    "sha256": "1eed100374050a8059fcaccdb964afebdc54f46488a97489c8da2d3f8914b42a",
+    "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2019-10-01&coed=2026-11-13&vintage_date=2026-11-13",
+    "vintage_date": "2026-11-13",
+    "retrieved_at": "2026-11-14T21:36:54+00:00"
+  }
+}

@@ -10,6 +10,7 @@ Python 3.11 or newer is enough. The research replay, test suite and static site 
 
 ```sh
 python3 -m tsunami replay
+python3 -m tsunami study
 python3 -m unittest discover -s tests -v
 python3 -m tsunami validate
 python3 -m tsunami build
@@ -37,6 +38,10 @@ The prediction target is the direction from release-session DGS2 to next observe
 November 11 is missing in the [frozen evaluation vintage](https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-11-10&coed=2026-11-12&vintage_date=2026-11-13), so the next observation is November 12. The evaluation values are from the November 13 vintage. Per-observation first-print timestamps were unavailable in these exports.
 
 The source fixture preserves URL, recorded embargo or conservative vintage bound, observed retrieval time and SHA-256. Forecast inputs are loaded before outcome bytes. The stored BLS page is compressed losslessly, with checksums for both compressed bytes and source bytes. The timestamp and source assertions can be inspected in [the manifest](data/cpi-2026-11-10/event.json). Source data were retrieved after the event. This is an archival reconstruction and supplies one Brier trial.
+
+## CPI feature study
+
+The [research protocol](docs/cpi-study.md) compares an event-rate baseline and two matched logistic models, with and without the current CPI figures. The site links row-level predictions, outcomes and provenance. This is exploratory historical work using one frozen yield vintage.
 
 ## Weekly track record
 

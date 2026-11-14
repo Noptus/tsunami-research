@@ -157,6 +157,11 @@ def _ledger(forecasts: list[dict], results: dict, artifacts: dict, now: datetime
                           f'<p>Brier: {_score(result.get("brier")) if _resolved(result) else "Not scored"}'
                           f' · Baseline Brier: {_score(result.get("baseline_brier")) if _resolved(result) else "Not scored"}</p>'
                           f'<ul class="sources">{sources}</ul></section>')
+        publication = _mapping(f.get("publication"))
+        receipt = ""
+        if publication.get("url"):
+            receipt = (f' · {_link(publication["url"], "Immutable GitHub release")}'
+                       f' · Published {_time(publication.get("published_at"))}')
         method = f'<p><strong>Method.</strong> {_e(f["method"])}</p>' if f.get("method") else ""
         articles.append(
             f'<article class="forecast" id="{anchor}"><header><p class="eyebrow">{mode}</p>'
@@ -167,8 +172,8 @@ def _ledger(forecasts: list[dict], results: dict, artifacts: dict, now: datetime
             f'<div class="detail-grid"><section><h4>What could change the view</h4><ul>{risks}</ul>'
             f'<h4>Resolution rule</h4><p>{_e(f.get("resolution_rule", ""))}</p></section>'
             f'<section><h4>Evidence available at issue</h4><ul class="sources">{evidence}</ul></section></div>'
-            f'{resolution}</details><p class="artifact"><a href="forecasts/{name}">Immutable forecast JSON</a>'
-            f' <span class="muted">· content-addressed record</span></p></article>')
+            f'{resolution}</details><p class="artifact"><a href="forecasts/{name}">Forecast JSON</a>'
+            f'{receipt}</p></article>')
     return (f'<div class="table-scroll" role="region" aria-label="{label} forecast ledger" tabindex="0">'
             f'<table><caption>{label} forecast ledger · probabilities of Yes</caption><thead><tr>'
             '<th scope="col">Question / record</th><th scope="col">Week ending</th>'
@@ -213,17 +218,72 @@ def _replay(replay: dict) -> str:
             instant = _instant(value + "T00:00:00Z")
         return (instant is None, instant or datetime.max.replace(tzinfo=timezone.utc), str(value))
 
-    observations = "".join(f'<li><p>{_time(when(o))} · {_e(o.get("observation", "Observation"))}</p>'
-                           f'<pre>{_e(json.dumps(o, ensure_ascii=True, sort_keys=True, indent=2))}</pre></li>'
-                           for o in sorted(outcomes, key=order))
+    rows = []
+    for observation in sorted(outcomes, key=order):
+        role = observation.get("observation", "Observation")
+        labels = {"event": "Release session", "next": "Next observed session"}
+        raw_level = observation.get("DGS2")
+        level = f"{raw_level:.2f}%" if type(raw_level) in (int, float) else "—"
+        raw_change = observation.get("change_basis_points")
+        change = f"{raw_change:+g} bp" if type(raw_change) in (int, float) else "—"
+        if observation.get("brier") is not None:
+            score_text = "Scored target"
+        elif "outcome" in observation:
+            score_text = f"Outcome: {observation['outcome']}"
+        else:
+            score_text = "Context"
+        rows.append(f'<tr><th scope="row">{_e(labels.get(role, role))}</th>'
+                    f'<td>{_time(when(observation))}</td><td>{level}</td><td>{change}</td><td>{_e(score_text)}</td></tr>')
+    observations = (
+        '<div class="table-scroll" role="region" aria-label="Chronological Treasury observations" tabindex="0">'
+        '<table><caption>Chronological observations</caption><thead><tr><th scope="col">Session</th>'
+        '<th scope="col">Date</th><th scope="col">2-year yield</th><th scope="col">Change</th>'
+        '<th scope="col">Use</th></tr></thead><tbody>' + "".join(rows) + '</tbody></table></div>'
+    ) if rows else ""
+    cpi = _mapping(replay.get("cpi"))
+    cpi_line = ""
+    if type(cpi.get("headline_monthly_percent")) in (int, float) and type(cpi.get("core_monthly_percent")) in (int, float):
+        source = _mapping(_mapping(replay.get("sources")).get("bls"))
+        cpi_line = (f'<p>Monthly headline CPI was <strong>{cpi["headline_monthly_percent"]:+g}%</strong>, '
+                    f'with core CPI at <strong>{cpi["core_monthly_percent"]:+g}%</strong>. '
+                    f'{_link(source.get("url"), "BLS release")}</p>')
     return (f'<h3>{_e(title)}</h3><dl class="timing"><div><dt>Replay cutoff</dt><dd>{_time(cutoff)}</dd></div>'
             f'<div><dt>Baseline probability</dt><dd>{_probability(probability)}</dd></div>'
             f'<div><dt>Baseline Brier score</dt><dd>{_score(score)}</dd></div></dl>'
-            + ('<h4>Chronological observations</h4><ol class="observations">' + observations + '</ol>' if observations else '')
-            + '<p>Historical reconstruction, not a prospective track record. Next-session observations are descriptive, '
-            'not additional scored forecasts. A single event does not demonstrate predictive skill.</p>'
-            '<p><a href="replay.json">Detailed replay JSON · complete inputs and outcomes</a></p>'
-            '<p class="muted">Fields not recognized by this edition remain available in the detailed file.</p>')
+            + cpi_line + observations
+            + '<p>The scored event is the change from the release session to the next observed session. '
+            'This archival reconstruction supplies one Brier trial.</p>'
+            '<p><a href="replay.json">Detailed replay JSON · source hashes, timing and scores</a></p>')
+
+
+def _study(report: dict | None) -> str:
+    if report is None:
+        return ""
+    summary = report["summary"]
+    counts = report["counts"]
+    range_ = report["range"]
+    metrics = "".join(
+        f'<div><dt>{label}</dt><dd>{_score(summary.get(key))}</dd></div>'
+        for label, key in (
+            ("Event-rate Brier", "mean_baseline_brier"),
+            ("Lag-only logistic Brier", "mean_market_only_brier"),
+            ("CPI + lag logistic Brier", "mean_challenger_brier"),
+        )
+    )
+    delta = summary.get("mean_cpi_ablation_delta")
+    if type(delta) in (int, float) and math.isfinite(delta):
+        comparison = f" Adding CPI changed mean Brier by {delta:+.3f} against the matched lag-only model."
+    else:
+        comparison = ""
+    return (
+        '<article class="replay study"><h3>Do released CPI changes add signal?</h3>'
+        f'<p>Expanding-window comparison over {_e(counts["scored"])} scored releases'
+        f' ({_time(range_["first_scored"])} to {_time(range_["last_scored"])}).'
+        f'{comparison}</p><dl class="timing">{metrics}</dl>'
+        '<p>All lagged yields and outcomes use a single frozen post-study ALFRED vintage. '
+        'The study is exploratory, and the CPI readings exclude consensus surprises.</p>'
+        '<p><a href="study.json">Walk-forward results · per-release sources, probabilities and scores</a></p></article>'
+    )
 
 
 def _destination(output: Path) -> Path:
@@ -238,7 +298,8 @@ def _destination(output: Path) -> Path:
     return candidate
 
 
-def render(output: Path, replay: dict, forecasts: list[dict], results: dict[str, dict]) -> None:
+def render(output: Path, replay: dict, forecasts: list[dict], results: dict[str, dict],
+           *, study: dict | None = None) -> None:
     """Publish a static edition, preserving immutable forecast JSON artifacts.
 
     Scores are reported as supplied, never recomputed. Summary denominators
@@ -275,11 +336,11 @@ def render(output: Path, replay: dict, forecasts: list[dict], results: dict[str,
 <title>Tsunami Research — The forecast ledger</title><link rel="stylesheet" href="styles.css"></head>
 <body><a class="skip" href="#main">Skip to content</a><div class="publication">
 <header class="masthead"><a class="wordmark" href="index.html">Tsunami <span>Research</span></a>
-<p>Independent forecast lab<br>Evidence. Probability. Accountability.</p></header>
+<p>Independent market research</p></header>
 <nav aria-label="Primary"><a href="#live">Live ledger</a><a href="#archive">Archived research</a><a href="#reading">Reading the ledger</a><a href="scores.json">Scores JSON</a></nav>
 <main id="main"><section class="hero" aria-labelledby="title"><div><p class="eyebrow">The public forecast ledger</p>
-<h1 id="title">A view of what’s next.<br><em>A record of what was said.</em></h1>
-<p class="dek">Explicit probabilities. Frozen evidence. Outcomes in the open. Research you can inspect, not just read.</p></div>
+<h1 id="title">Weekly market forecasts</h1>
+<p class="dek">Each forecast has a probability, a dated evidence trail and a rule for scoring the outcome.</p></div>
 <aside class="edition" aria-label="Edition timing"><span class="edition-mark" aria-hidden="true">TR /</span>
 <p><strong>Latest live evidence as of</strong><br>{as_of_label}</p><p><strong>Static edition built</strong><br>{_time(built)}</p>
 <p>Not a real-time feed. Each record has its own evidence cutoff and resolution deadline. Timestamps retain their stated offsets; +00:00 is UTC.</p></aside></section>
@@ -291,7 +352,7 @@ Lower Brier is better (0–1). Baseline comparison uses matched records only; ma
 {_ledger(live, results, artifacts, now, 'Prospective')}</section>
 <section id="archive" class="archive" aria-labelledby="archive-title"><div class="section-heading"><p class="eyebrow">02 / Archived · not live</p>
 <h2 id="archive-title">The research archive</h2><p>Historical replay is a separate exercise. It does not count toward live performance.</p></div>
-<div class="replay">{_replay(replay)}</div>{_ledger(archived, results, artifacts, now, 'Archived replay')}</section>
+<div class="replay">{_replay(replay)}</div>{_study(study)}{_ledger(archived, results, artifacts, now, 'Archived replay')}</section>
 <section id="reading" class="reading" aria-labelledby="reading-title"><p class="eyebrow">03 / Notes to the reader</p><h2 id="reading-title">How to read this ledger</h2>
 <div class="detail-grid"><div><h3>A probability, not a promise</h3><p>Each percentage is the probability of Yes under the stated resolution rule.
 A missing baseline is not zero. Brier scores measure squared probability error; small samples are not evidence of durable skill.</p></div>
@@ -307,6 +368,8 @@ Void records are not scored.</p></div></div><p>Forecast JSON links are content-a
                   "replay.json": _json(replay),
                   "scores.json": _json({"built_at": built, "summary": summary, "results": results,
                                         "forecast_files": {i: "forecasts/" + name for i, name in artifacts.items()}})})
+    if study is not None:
+        files["study.json"] = _json(study)
     # Preflight every target before modifying anything. Never follow a planted
     # destination symlink, including an empty artifact directory.
     artifact_directory = output / "forecasts"
