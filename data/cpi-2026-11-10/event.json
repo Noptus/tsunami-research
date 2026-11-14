@@ -1,0 +1,39 @@
+{
+  "release_date": "2026-11-10",
+  "embargo_at": "2026-11-10T13:30:00Z",
+  "cutoff_at": "2026-11-10T13:45:00Z",
+  "outcome_event_date": "2026-11-10",
+  "outcome_next_date": "2026-11-12",
+  "sources": {
+    "bls": {
+      "path": "bls.html.gz",
+      "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+      "sha256": "22ff1687db42e0b47ecd4a8265228713563d95bca2809d3aeddc24f36405ae11",
+      "available_at": "2026-11-10T13:30:00Z",
+      "retrieved_at": "2026-11-14T21:27:03+00:00",
+      "evidence_type": "archived_official_embargo",
+      "source_sha256": "ee0bffd2cfb13f9faf79b5b23e5b74d87d67f61888dfd34346f81dee9182a320",
+      "encoding": "gzip"
+    },
+    "training": {
+      "path": "alfred-2026-11-09.csv",
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2025-05-01&coed=2026-11-09&vintage_date=2026-11-09",
+      "sha256": "8c6e31fa1c32dcf6709effa9d0cb8f322cc45f03728b078e4f1fbe83568ce8cc",
+      "available_at": "2026-11-10T04:59:59Z",
+      "retrieved_at": "2026-11-14T21:27:03+00:00",
+      "evidence_type": "alfred_end_of_day_vintage",
+      "source_sha256": "8c6e31fa1c32dcf6709effa9d0cb8f322cc45f03728b078e4f1fbe83568ce8cc",
+      "encoding": "identity"
+    },
+    "outcome": {
+      "path": "alfred-2026-11-13.csv",
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2026-11-10&coed=2026-11-12&vintage_date=2026-11-13",
+      "sha256": "7779360e9aa01436fea2494193d5024f5f075794b101ab021ea7821b6765b3b5",
+      "available_at": "2026-11-14T04:59:59Z",
+      "retrieved_at": "2026-11-14T21:27:03+00:00",
+      "evidence_type": "alfred_end_of_day_vintage",
+      "source_sha256": "7779360e9aa01436fea2494193d5024f5f075794b101ab021ea7821b6765b3b5",
+      "encoding": "identity"
+    }
+  }
+}

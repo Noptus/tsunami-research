@@ -1,0 +1,154 @@
+[
+  {
+    "id": "sp500-up-at-least-two-percent-2026-11-20",
+    "week_ending": "2026-11-20",
+    "deadline_at": "2026-11-20T21:00:00Z",
+    "kind": "market_threshold",
+    "question": "Will the S&P 500 close at least 2% higher over the week ending November 20?",
+    "probability": 0.17,
+    "baseline_probability": 0.1469387755102041,
+    "method": "Analyst judgment anchored to a Laplace-smoothed Friday-to-Friday frequency",
+    "rationale": "The ten-year reference sample gives roughly 15%. Two recent weeks moved more than 2% in opposite directions, and NVIDIA has a scheduled earnings call after a leadership transition. I shift both tails modestly above their long sample frequencies instead of assigning a strong directional view. An orderly earnings update and unchanged core CPI momentum support the upside scenario.",
+    "risks": [
+      "In a separate lookback of the most recent 52 eligible Friday pairs, five met this threshold. The ten-calendar-year baseline excludes weeks with a missing Friday endpoint.",
+      "October headline CPI slowed from 0.6% to 0.4% month over month while core CPI held at 0.3%. That mix supports competing rate narratives.",
+      "One earnings event can expand the range while leaving the sign of the weekly move uncertain.",
+      "The opposite tail is part of the same return distribution. Its result is dependent on this forecast."
+    ],
+    "resolution_rule": "YES if the FRED SP500 observation for 2026-11-20 divided by the 2026-11-13 observation minus one is at least 0.02. Use close-to-close price return, with no dividend adjustment. Await both published observations. Preserve the first resolution snapshot. If the provider still has no observation by December 1 at 17:00 ET, record a void with evidence.",
+    "evidence": [
+      {
+        "title": "FRED SP500 historical close snapshot through November 13",
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=2016-11-15&coed=2026-11-13",
+        "available_at": "2026-11-14T01:03:00Z",
+        "sha256": "80bc4bcbdcb196716c2cca223c074e6f94f91e98675eb76904e55a343101181a"
+      },
+      {
+        "title": "NVIDIA announces CEO transition and confirms November 17 earnings (November 12 release, date-only availability bound)",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/",
+        "available_at": "2026-11-13T08:00:00Z"
+      },
+      {
+        "title": "BLS October 2026 CPI release",
+        "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+        "available_at": "2026-11-10T13:30:00Z"
+      }
+    ],
+    "mode": "prospective",
+    "market": {
+      "series": "SP500",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-20",
+      "direction": "gte",
+      "threshold_pct": 2.0
+    },
+    "baseline": {
+      "hits": 71,
+      "samples": 488,
+      "range_start": "2016-11-15",
+      "range_end": "2026-11-13",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=2016-11-15&coed=2026-11-13",
+      "sha256": "80bc4bcbdcb196716c2cca223c074e6f94f91e98675eb76904e55a343101181a"
+    },
+    "issued_at": "2026-11-14T21:31:10Z",
+    "as_of_at": "2026-11-14T21:31:10Z"
+  },
+  {
+    "id": "sp500-down-at-least-two-percent-2026-11-20",
+    "week_ending": "2026-11-20",
+    "deadline_at": "2026-11-20T21:00:00Z",
+    "kind": "market_threshold",
+    "question": "Will the S&P 500 close at least 2% lower over the week ending November 20?",
+    "probability": 0.15,
+    "baseline_probability": 0.1346938775510204,
+    "method": "Analyst judgment anchored to a Laplace-smoothed Friday-to-Friday frequency",
+    "rationale": "The ten-year reference sample gives roughly 13%. A large downside week is plausible if NVIDIA's results change expectations for AI spending while firm core CPI keeps yields from cushioning the equity move. Recent large weekly moves warrant a small tail adjustment. The leadership transition is already public, which limits the case for a large adjustment based on that news alone.",
+    "risks": [
+      "In a separate lookback of the most recent 52 eligible Friday pairs, five met this threshold. The ten-calendar-year baseline excludes weeks with a missing Friday endpoint.",
+      "NVIDIA's board says it expects operations and customer commitments to continue.",
+      "Upside and downside thresholds resolve on the same weekly return, so their scores are dependent.",
+      "The opposite tail is part of the same return distribution. Its result is dependent on this forecast."
+    ],
+    "resolution_rule": "YES if the FRED SP500 observation for 2026-11-20 divided by the 2026-11-13 observation minus one is at most -0.02. Use close-to-close price return, with no dividend adjustment. Await both published observations. Preserve the first resolution snapshot. If the provider still has no observation by December 1 at 17:00 ET, record a void with evidence.",
+    "evidence": [
+      {
+        "title": "FRED SP500 historical close snapshot through November 13",
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=2016-11-15&coed=2026-11-13",
+        "available_at": "2026-11-14T01:03:00Z",
+        "sha256": "80bc4bcbdcb196716c2cca223c074e6f94f91e98675eb76904e55a343101181a"
+      },
+      {
+        "title": "NVIDIA announces CEO transition and confirms November 17 earnings (November 12 release, date-only availability bound)",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/",
+        "available_at": "2026-11-13T08:00:00Z"
+      },
+      {
+        "title": "BLS October 2026 CPI release",
+        "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+        "available_at": "2026-11-10T13:30:00Z"
+      }
+    ],
+    "mode": "prospective",
+    "market": {
+      "series": "SP500",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-20",
+      "direction": "lte",
+      "threshold_pct": -2.0
+    },
+    "baseline": {
+      "hits": 65,
+      "samples": 488,
+      "range_start": "2016-11-15",
+      "range_end": "2026-11-13",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=2016-11-15&coed=2026-11-13",
+      "sha256": "80bc4bcbdcb196716c2cca223c074e6f94f91e98675eb76904e55a343101181a"
+    },
+    "issued_at": "2026-11-14T21:31:10Z",
+    "as_of_at": "2026-11-14T21:31:10Z"
+  },
+  {
+    "id": "nvidia-huang-ceo-return-2026-11-20",
+    "week_ending": "2026-11-20",
+    "deadline_at": "2026-11-21T04:59:59Z",
+    "kind": "binary_event",
+    "question": "Will NVIDIA announce that Jensen Huang has been appointed CEO again by November 20?",
+    "probability": 0.06,
+    "baseline_probability": null,
+    "method": "Analyst judgment, with no defensible matched reference class",
+    "rationale": "NVIDIA's November 12 Form 8-K reports that the board accepted Huang's resignation, appointed Colette Kress interim CEO and began a permanent search. A reversal is possible, but the formal appointment, public search and seven-day window make a quick return to the CEO role unlikely. The November 17 earnings release is the clearest scheduled opportunity for an update.",
+    "risks": [
+      "An interim appointment leaves room for a rapid board decision.",
+      "Founder visibility makes informal involvement plausible, but it does not satisfy this question.",
+      "The 6% estimate is subjective and has no statistical confidence interval."
+    ],
+    "resolution_rule": "YES only if an NVIDIA news or investor-relations release, or an NVIDIA SEC filing, first published after the immutable forecast release and by 23:59:59 ET on November 20, announces that Jen-Hsun (Jensen) Huang has been appointed NVIDIA CEO or interim CEO, effective by that deadline. A board, advisory or founder role, media reporting and an appearance at the earnings call do not qualify. NO after checking NVIDIA releases and SEC filings covering the whole interval, on or after November 24 at 19:00 ET. If the two archives are unavailable or materially conflict through December 1 at 17:00 ET, record a void with the search and evidence. The board decision was reported as November 11 and the SEC filing was accepted November 12.",
+    "evidence": [
+      {
+        "title": "NVIDIA Form 8-K, Item 5.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+        "available_at": "2026-11-12T13:52:41Z"
+      },
+      {
+        "title": "SEC accession and accepted time",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/0001045810-26-000082-index.html",
+        "available_at": "2026-11-12T13:52:41Z"
+      },
+      {
+        "title": "NVIDIA announces CEO transition and confirms November 17 earnings (November 12 release, date-only availability bound)",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/",
+        "available_at": "2026-11-13T08:00:00Z"
+      }
+    ],
+    "mode": "prospective",
+    "resolution_hosts": [
+      "investor.nvidia.com",
+      "nvidianews.nvidia.com",
+      "www.sec.gov"
+    ],
+    "resolve_no_not_before": "2026-11-25T00:00:00Z",
+    "void_not_before": "2026-12-01T22:00:00Z",
+    "issued_at": "2026-11-14T21:31:10Z",
+    "as_of_at": "2026-11-14T21:31:10Z"
+  }
+]

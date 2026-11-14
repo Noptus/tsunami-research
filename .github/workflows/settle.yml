@@ -1,0 +1,56 @@
+name: Settle market forecasts
+
+on:
+  schedule:
+    - cron: '23 12 * * 1,6'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tsunamiresearch-settlement
+  cancel-in-progress: false
+
+jobs:
+  settle:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.publication.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Validate issue integrity before resolution
+        run: python -m tsunami validate --repository "$GITHUB_REPOSITORY"
+      - name: Resolve eligible questions
+        run: python -m tsunami settle-markets
+      - name: Append findings
+        id: changed
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- results)" ]; then
+            echo 'resolved=false' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- results/
+          git commit -m 'Append settled market forecasts'
+          git push
+          echo 'resolved=true' >> "$GITHUB_OUTPUT"
+      - if: steps.changed.outputs.resolved == 'true'
+        run: python -m tsunami build
+      - if: steps.changed.outputs.resolved == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - if: steps.changed.outputs.resolved == 'true'
+        id: publication
+        uses: actions/deploy-pages@v4
