@@ -1,0 +1,12 @@
+{
+  "forecast_id": "sp500-up-at-least-two-percent-2026-11-20",
+  "forecast_sha256": "603f3fef201bf5d06a07edcf2c2f31d4060059c601bbdce4fa10850c5909e91a",
+  "outcome": 0,
+  "resolution_note": "FRED SP500 closes for 2026-11-13 and 2026-11-20. The percentage change did not meet the predeclared threshold. Raw index levels are not republished.",
+  "resolved_at": "2026-11-24T00:04:43+00:00",
+  "source_sha256": "482ead3cb036251befe8ed2f511962089d9e8df6ba9578ec6857b0b849865d36",
+  "source_urls": [
+    "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=2026-11-13&coed=2026-11-20"
+  ],
+  "status": "resolved"
+}
